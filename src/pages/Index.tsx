@@ -1,17 +1,456 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+"use client";
 
+import React from 'react';
 import { MadeWithDyad } from "@/components/made-with-dyad";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Phone, Building2, MapPin, CheckCircle, TrendingUp, Users, Target, Lightbulb } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">
-          Start building your amazing project here!
-        </p>
-      </div>
-      <MadeWithDyad />
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-blue-900 to-blue-700 text-white py-20 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Aumente o faturamento da sua clínica odontológica com estratégia e direção
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+            Diagnóstico completo, identificação de gargalos e plano estratégico personalizado para crescimento sustentável
+          </p>
+          <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 text-lg font-semibold">
+            Solicitar Diagnóstico
+          </Button>
+        </div>
+      </section>
+
+      {/* Sobre a Empresa */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sobre a RCS Consultoria</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              A RCS Consultoria é especializada em consultoria estratégica para clínicas odontológicas. 
+              Com experiência prática no setor, focamos em diagnóstico completo e planejamento estratégico 
+              para aumentar o faturamento e organizar a clínica de forma estruturada.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Como Funciona */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Como Funciona</h2>
+            <p className="text-lg text-gray-600">Processo estruturado para transformar sua clínica</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="text-center">
+              <CardHeader>
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-blue-600 font-bold text-xl">1</span>
+                </div>
+                <CardTitle>Levantamento de Dados</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Coleta completa de informações sobre sua clínica, processos e indicadores</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardHeader>
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-blue-600 font-bold text-xl">2</span>
+                </div>
+                <CardTitle>Diagnóstico Completo</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Análise detalhada para entender o cenário atual e oportunidades</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardHeader>
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-blue-600 font-bold text-xl">3</span>
+                </div>
+                <CardTitle>Identificação de Gargalos</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Pontos críticos que estão limitando o crescimento e rentabilidade</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardHeader>
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-blue-600 font-bold text-xl">4</span>
+                </div>
+                <CardTitle>Plano Estratégico</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Roadmap personalizado com ações claras para crescimento sustentável</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Principais Problemas */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Principais Problemas que Resolvemos</h2>
+            <p className="text-lg text-gray-600">Dores comuns que impedem o crescimento das clínicas</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="border-l-4 border-l-red-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <TrendingUp className="text-red-500" />
+                  Baixa Conversão de Orçamentos
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Pacientes que não fecham o tratamento por falta de processo comercial eficaz</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-orange-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Calendar className="text-orange-500" />
+                  Agenda com Horários Ociosos
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Horários vagos que representam perda de receita e subutilização da estrutura</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-yellow-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Users className="text-yellow-500" />
+                  Falta de Processo Comercial
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Ausência de metodologia para converter leads em pacientes tratados</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-purple-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Target className="text-purple-500" />
+                  Divulgação Ineficiente
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Investimento em marketing sem retorno mensurável e estratégico</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-blue-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Building2 className="text-blue-500" />
+                  Falta de Organização
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Estrutura operacional que não escala com o crescimento do negócio</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-green-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Lightbulb className="text-green-500" />
+                  Falta de Visão Estratégica
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">Foco no dia a dia sem planejamento para crescimento sustentável</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Oportunidades de Crescimento */}
+      <section className="py-20 px-4 bg-blue-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Oportunidades de Crescimento</h2>
+            <p className="text-lg text-gray-600">Resultados que sua clínica pode alcançar</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="text-green-600 text-2xl" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Aumento de Faturamento</h3>
+              <p className="text-gray-600">Escala de receita com estratégias comprovadas</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Calendar className="text-blue-600 text-2xl" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Melhor Aproveitamento da Agenda</h3>
+              <p className="text-gray-600">Otimização de horários e redução de ociosidade</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="text-purple-600 text-2xl" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Aumento do Ticket Médio</h3>
+              <p className="text-gray-600">Maior valor por paciente com upselling estratégico</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="text-orange-600 text-2xl" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Estruturação de Marketing</h3>
+              <p className="text-gray-600">Sistemas de aquisição de pacientes com ROI mensurável</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building2 className="text-red-600 text-2xl" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Previsibilidade de Resultados</h3>
+              <p className="text-gray-600">Planejamento financeiro com metas claras e atingíveis</p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Lightbulb className="text-yellow-600 text-2xl" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Gestão Estratégica</h3>
+              <p className="text-gray-600">Indicadores que guiam decisões com base em dados</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Diferencial */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nosso Diferencial</h2>
+            <p className="text-lg text-gray-600">O que nos torna únicos no mercado</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="bg-gradient-to-r from-blue-50 to-blue-100 border-blue-200">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-900">
+                  <CheckCircle className="text-blue-600" />
+                  Visão Estratégica + Prática
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700">
+                  Combinamos análise estratégica com implementação prática, garantindo que teoria se traduza em resultados reais para sua clínica.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-r from-green-50 to-green-100 border-green-200">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-green-900">
+                  <TrendingUp className="text-green-600" />
+                  Foco em Resultado Financeiro
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700">
+                  Todas as estratégicas são direcionadas para o aumento do faturamento e rentabilidade, com métricas claras de sucesso.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-r from-purple-50 to-purple-100 border-purple-200">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-purple-900">
+                  <Target className="text-purple-600" />
+                  Direcionamento Claro
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700">
+                  Roadmap específico com ações passo a passo, eliminando a incerteza e garantindo execução eficaz.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-r from-orange-50 to-orange-100 border-orange-200">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-orange-900">
+                  <Lightbulb className="text-orange-600" />
+                  Aplicação Simples
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-700">
+                  Metodologia acessível que pode ser implementada sem necessidade de grandes mudanças operacionais.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Para Quem É */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Para Quem é a RCS Consultoria</h2>
+            <p className="text-lg text-gray-600">Se você se identifica com algum destes perfis, estamos aqui para ajudar</p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="text-center">
+              <CardHeader>
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="text-blue-600 text-2xl" />
+                </div>
+                <CardTitle>Clínicas que Querem Crescer</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Clínicas estabelecidas que buscam escalar operações e aumentar faturamento de forma sustentável.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardHeader>
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="text-green-600 text-2xl" />
+                </div>
+                <CardTitle>Dentistas que Precisam de Gestão</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Profissionais técnicos com excelente habilidade clínica, mas necessidade de desenvolver competências de gestão.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center">
+              <CardHeader>
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Building2 className="text-purple-600 text-2xl" />
+                </div>
+                <CardTitle>Negócios que Faturam mas Não Escalam</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600">
+                  Clínicas com boa receita, mas que não conseguem transformar isso em crescimento consistente e organizado.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Descubra onde sua clínica está perdendo faturamento
+          </h2>
+          <p className="text-xl mb-8 text-blue-100">
+            Nossa consultoria estratégica identifica oportunidades ocultas e cria um plano personalizado para crescimento sustentável.
+          </p>
+          <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 text-lg font-semibold">
+            Solicitar Diagnóstico
+          </Button>
+        </div>
+      </section>
+
+      {/* Contato */}
+      <section className="py-20 px-4">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Entre em Contato</h2>
+            <p className="text-lg text-gray-600">
+              Preencha os campos abaixo e nossa equipe entrará em contato para agendar uma conversa estratégica
+            </p>
+          </div>
+          
+          <Card>
+            <CardContent className="p-8">
+              <form className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <Label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                      Nome Completo
+                    </Label>
+                    <Input id="name" type="text" placeholder="Seu nome completo" />
+                  </div>
+                  <div>
+                    <Label htmlFor="clinic" className="block text-sm font-medium text-gray-700 mb-2">
+                      Nome da Clínica
+                    </Label>
+                    <Input id="clinic" type="text" placeholder="Nome da sua clínica" />
+                  </div>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <Label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                      Telefone/WhatsApp
+                    </Label>
+                    <Input id="phone" type="tel" placeholder="(11) 99999-9999" />
+                  </div>
+                  <div>
+                    <Label htmlFor="city" className="block text-sm font-medium text-gray-700 mb-2">
+                      Cidade
+                    </Label>
+                    <Input id="city" type="text" placeholder="Sua cidade" />
+                  </div>
+                </div>
+                
+                <div>
+                  <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
+                    Enviar Solicitação
+                  </Button>
+                </div>
+              </form>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center">
+            <h3 className="text-2xl font-bold mb-4">RCS Consultoria</h3>
+            <p className="text-gray-400 mb-6">
+              Roberto Carlos Santana Consultoria Estratégica
+            </p>
+            <p className="text-gray-400">
+              Especialistas em crescimento para clínicas odontológicas
+            </p>
+          </div>
+          <MadeWithDyad />
+        </div>
+      </footer>
     </div>
   );
 };
