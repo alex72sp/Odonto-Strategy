@@ -13,11 +13,14 @@ import { showSuccess } from "@/utils/toast";
 
 const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleOpenModal = () => setIsModalOpen(true);
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    
     const form = e.currentTarget as HTMLFormElement;
     const formData = new FormData(form);
     
@@ -29,12 +32,14 @@ const Index = () => {
     const whatsappNumber = "5511983232828";
     const messageText = `Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica.\n\n*Dados do Lead:*\n*Nome:* ${name}\n*Clínica:* ${clinic}\n*Telefone:* ${phone}\n*Cidade:* ${city}`;
     
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(messageText)}`;
     
-    showSuccess("Abrindo WhatsApp...");
+    showSuccess("Redirecionando para o WhatsApp...");
     
-    // Abrir em nova aba imediatamente
-    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    setTimeout(() => {
+      window.location.href = whatsappUrl;
+      setIsSubmitting(false);
+    }, 500);
   };
 
   return (
@@ -282,8 +287,13 @@ const Index = () => {
                 </div>
                 
                 <div>
-                  <Button type="submit" size="lg" className="w-full bg-cta text-primary-dark hover:bg-cta-hover">
-                    Enviar Solicitação via WhatsApp
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    disabled={isSubmitting}
+                    className="w-full bg-cta text-primary-dark hover:bg-cta-hover"
+                  >
+                    {isSubmitting ? "Conectando..." : "Enviar Solicitação via WhatsApp"}
                   </Button>
                 </div>
               </form>
