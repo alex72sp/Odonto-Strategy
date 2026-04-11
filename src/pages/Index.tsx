@@ -23,13 +23,12 @@ import {
 const Index = () => {
   const whatsappNumber = "5511983232828";
   const whatsappMessage = encodeURIComponent(
-    "Olá, gostaria de solicitar um diagnóstico estratégico para minha clínica odontológica.\n\n" +
+    "Olá! Quero um diagnóstico da minha clínica.\n\n" +
     "Nome:\n" +
     "Clínica:\n" +
     "Cidade:\n" +
-    "Faturamento médio mensal (aproximado):\n" +
-    "Principal dificuldade hoje:\n\n" +
-    "Gostaria de entender como funciona a consultoria."
+    "Faturamento:\n" +
+    "Dificuldade:"
   );
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -234,10 +233,10 @@ const Index = () => {
             <Button 
               onClick={handleCtaClick}
               size="lg" 
-              className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-16 py-10 text-2xl font-bold rounded-2xl shadow-2xl transition-all hover:scale-105 flex items-center gap-4"
+              className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] w-full max-w-xs md:max-w-none md:w-auto px-6 md:px-16 py-6 md:py-10 text-xl md:text-2xl font-bold rounded-2xl shadow-2xl transition-all hover:scale-105 flex items-center justify-center gap-3 md:gap-4 h-auto whitespace-normal text-center"
             >
-              <MessageCircle className="h-8 w-8" />
-              Falar com um consultor no WhatsApp
+              <MessageCircle className="h-6 w-6 md:h-8 md:w-8 shrink-0" />
+              Falar no WhatsApp
             </Button>
             <p className="text-white/60 text-sm font-medium uppercase tracking-widest">
               Atendimento imediato e qualificado
