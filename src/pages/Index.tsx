@@ -5,8 +5,7 @@ import { MadeWithDyad } from "@/components/made-with-dyad";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { DiagnosisForm } from "@/components/DiagnosisForm";
 import { Phone, Building2, MapPin, CheckCircle, TrendingUp, Users, Target, Lightbulb, Calendar } from "lucide-react";
 
 const Index = () => {
@@ -413,47 +412,7 @@ const Index = () => {
             </p>
           </div>
           
-          <Card className="bg-white shadow-elevated">
-            <CardContent className="p-8">
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <Label htmlFor="name" className="block text-sm font-medium text-primary-dark mb-2">
-                      Nome Completo
-                    </Label>
-                    <Input id="name" type="text" placeholder="Seu nome completo" />
-                  </div>
-                  <div>
-                    <Label htmlFor="clinic" className="block text-sm font-medium text-primary-dark mb-2">
-                      Nome da Clínica
-                    </Label>
-                    <Input id="clinic" type="text" placeholder="Nome da sua clínica" />
-                  </div>
-                </div>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <Label htmlFor="phone" className="block text-sm font-medium text-primary-dark mb-2">
-                      Telefone/WhatsApp
-                    </Label>
-                    <Input id="phone" type="tel" placeholder="(11) 99999-9999" />
-                  </div>
-                  <div>
-                    <Label htmlFor="city" className="block text-sm font-medium text-primary-dark mb-2">
-                      Cidade
-                    </Label>
-                    <Input id="city" type="text" placeholder="Sua cidade" />
-                  </div>
-                </div>
-                
-                <div>
-                  <Button type="submit" size="lg" className="w-full bg-cta text-primary-dark hover:bg-cta-hover">
-                    Enviar Solicitação
-                  </Button>
-                </div>
-              </form>
-            </CardContent>
-          </Card>
+          <DiagnosisForm />
         </div>
       </section>
 
