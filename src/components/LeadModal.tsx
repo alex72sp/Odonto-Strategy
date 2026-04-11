@@ -35,15 +35,16 @@ const LeadModal = ({ isOpen, onClose }: LeadModalProps) => {
     e.preventDefault();
     
     const whatsappNumber = "5511983232828";
-    const messageText = `Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica.\n\n*Dados do Lead:*\n*Nome:* ${formData.name}\n*Clínica:* ${formData.clinic}\n*Telefone:* ${formData.phone}\n*Cidade:* ${formData.city}`;
+    const message = `Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica.%0A%0A*Dados do Lead:*%0A*Nome:* ${formData.name}%0A*Clínica:* ${formData.clinic}%0A*Telefone:* ${formData.phone}%0A*Cidade:* ${formData.city}`;
     
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
     
-    showSuccess("Abrindo WhatsApp...");
+    showSuccess("Redirecionando para o WhatsApp...");
     
-    // Abrir imediatamente para evitar bloqueio de popup do navegador
-    window.open(whatsappUrl, '_blank');
-    onClose();
+    setTimeout(() => {
+      window.open(whatsappUrl, '_blank');
+      onClose();
+    }, 1000);
   };
 
   return (
