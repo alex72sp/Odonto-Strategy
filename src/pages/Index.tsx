@@ -1,44 +1,17 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import { MadeWithDyad } from "@/components/made-with-dyad";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Building2, CheckCircle, TrendingUp, Users, Target, Lightbulb, Calendar } from "lucide-react";
-import LeadModal from "@/components/LeadModal";
-import { showSuccess } from "@/utils/toast";
+import { Phone, Building2, MapPin, CheckCircle, TrendingUp, Users, Target, Lightbulb, Calendar } from "lucide-react";
 
 const Index = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleOpenModal = () => setIsModalOpen(true);
-
-  const handleFormSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget as HTMLFormElement);
-    const name = formData.get('name');
-    const clinic = formData.get('clinic');
-    const phone = formData.get('phone');
-    const city = formData.get('city');
-
-    const whatsappNumber = "5511983232828";
-    const message = `Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica.%0A%0A*Dados do Lead:*%0A*Nome:* ${name}%0A*Clínica:* ${clinic}%0A*Telefone:* ${phone}%0A*Cidade:* ${city}`;
-    
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
-    
-    showSuccess("Redirecionando para o WhatsApp...");
-    setTimeout(() => {
-      window.open(whatsappUrl, '_blank');
-    }, 1000);
-  };
-
   return (
     <div className="min-h-screen">
-      <LeadModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-
       {/* Hero Section - Strong Visual Impact */}
       <section className="relative gradient-hero text-white py-24 px-4">
         <div className="max-w-6xl mx-auto text-center">
@@ -53,11 +26,7 @@ const Index = () => {
           <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
             Diagnóstico completo, identificação de gargalos e plano estratégico personalizado para crescimento sustentável
           </p>
-          <Button 
-            size="lg" 
-            onClick={handleOpenModal}
-            className="bg-cta text-primary-dark hover:bg-cta-hover px-10 py-5 text-lg font-semibold shadow-elevated"
-          >
+          <Button size="lg" className="bg-cta text-primary-dark hover:bg-cta-hover px-10 py-5 text-lg font-semibold shadow-elevated">
             Solicitar Diagnóstico
           </Button>
         </div>
@@ -428,11 +397,7 @@ const Index = () => {
           <p className="text-xl mb-8 text-blue-100">
             Nossa consultoria estratégica identifica oportunidades ocultas e cria um plano personalizado para crescimento sustentável.
           </p>
-          <Button 
-            size="lg" 
-            onClick={handleOpenModal}
-            className="bg-cta text-primary-dark hover:bg-cta-hover px-10 py-5 text-lg font-semibold shadow-elevated"
-          >
+          <Button size="lg" className="bg-cta text-primary-dark hover:bg-cta-hover px-10 py-5 text-lg font-semibold shadow-elevated">
             Solicitar Diagnóstico
           </Button>
         </div>
@@ -450,19 +415,19 @@ const Index = () => {
           
           <Card className="bg-white shadow-elevated">
             <CardContent className="p-8">
-              <form onSubmit={handleFormSubmit} className="space-y-6">
+              <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <Label htmlFor="name" className="block text-sm font-medium text-primary-dark mb-2">
                       Nome Completo
                     </Label>
-                    <Input id="name" name="name" type="text" placeholder="Seu nome completo" required />
+                    <Input id="name" type="text" placeholder="Seu nome completo" />
                   </div>
                   <div>
                     <Label htmlFor="clinic" className="block text-sm font-medium text-primary-dark mb-2">
                       Nome da Clínica
                     </Label>
-                    <Input id="clinic" name="clinic" type="text" placeholder="Nome da sua clínica" required />
+                    <Input id="clinic" type="text" placeholder="Nome da sua clínica" />
                   </div>
                 </div>
                 
@@ -471,19 +436,19 @@ const Index = () => {
                     <Label htmlFor="phone" className="block text-sm font-medium text-primary-dark mb-2">
                       Telefone/WhatsApp
                     </Label>
-                    <Input id="phone" name="phone" type="tel" placeholder="(11) 99999-9999" required />
+                    <Input id="phone" type="tel" placeholder="(11) 99999-9999" />
                   </div>
                   <div>
                     <Label htmlFor="city" className="block text-sm font-medium text-primary-dark mb-2">
                       Cidade
                     </Label>
-                    <Input id="city" name="city" type="text" placeholder="Sua cidade" required />
+                    <Input id="city" type="text" placeholder="Sua cidade" />
                   </div>
                 </div>
                 
                 <div>
                   <Button type="submit" size="lg" className="w-full bg-cta text-primary-dark hover:bg-cta-hover">
-                    Enviar Solicitação via WhatsApp
+                    Enviar Solicitação
                   </Button>
                 </div>
               </form>
