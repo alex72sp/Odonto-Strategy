@@ -5,8 +5,6 @@ import { MadeWithDyad } from "@/components/made-with-dyad";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import Header from "@/components/Header";
 import { 
   CheckCircle, 
@@ -18,12 +16,21 @@ import {
   ArrowRight,
   ShieldCheck,
   BarChart3,
-  Zap
+  Zap,
+  MessageCircle
 } from "lucide-react";
 
 const Index = () => {
   const whatsappNumber = "5511983232828";
-  const whatsappMessage = encodeURIComponent("Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica odontológica.");
+  const whatsappMessage = encodeURIComponent(
+    "Olá, gostaria de solicitar um diagnóstico estratégico para minha clínica odontológica.\n\n" +
+    "Nome:\n" +
+    "Clínica:\n" +
+    "Cidade:\n" +
+    "Faturamento médio mensal (aproximado):\n" +
+    "Principal dificuldade hoje:\n\n" +
+    "Gostaria de entender como funciona a consultoria."
+  );
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   const handleCtaClick = () => {
@@ -48,9 +55,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-[#F5F5F5] font-sans text-[#1A1A1A] scroll-smooth">
-      <Header onScroll={scrollToSection} />
+      <Header onScroll={(id) => id === 'contato' ? handleCtaClick() : scrollToSection(id)} />
 
-      {/* Hero Section - Foco em Estrutura e Diagnóstico */}
+      {/* Hero Section */}
       <section className="relative overflow-hidden bg-[#0B6B4F] text-white py-32 md:py-48 px-4">
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
           <div className="absolute -top-24 -left-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -81,7 +88,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Seção de Autoridade - Foco em Direcionamento (ID: SOBRE) */}
+      {/* Seção de Autoridade */}
       <section id="sobre" className="py-24 px-4 bg-white scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -121,7 +128,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Como Funciona - Foco em Diagnóstico (ID: SERVICOS) */}
+      {/* Como Funciona */}
       <section id="servicos" className="py-24 px-4 bg-[#F5F5F5] scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -213,8 +220,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Call to Action Final */}
-      <section className="py-24 px-4 bg-[#0B6B4F] relative overflow-hidden">
+      {/* Call to Action Final - Substituindo o Formulário */}
+      <section id="contato" className="py-32 px-4 bg-[#0B6B4F] relative overflow-hidden scroll-mt-20">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 -skew-x-12 translate-x-1/2"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white leading-tight">
@@ -223,55 +230,19 @@ const Index = () => {
           <p className="text-xl mb-12 text-white/80 leading-relaxed">
             Não deixe o crescimento da sua clínica ao acaso. Agende agora uma conversa estratégica e tenha mais clareza sobre o potencial do seu negócio.
           </p>
-          <Button 
-            onClick={handleCtaClick}
-            size="lg" 
-            className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-16 py-8 text-2xl font-bold rounded-2xl shadow-2xl transition-all hover:scale-105"
-          >
-            Falar com um Consultor no WhatsApp
-          </Button>
-        </div>
-      </section>
-
-      {/* Contato */}
-      <section id="contato" className="py-24 px-4 bg-[#F5F5F5] scroll-mt-20">
-        <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0B6B4F] mb-4">Solicite um Contato</h2>
-            <p className="text-lg text-[#333333]">Preencha os dados e retornaremos para agendar uma conversa.</p>
+          <div className="flex flex-col items-center gap-6">
+            <Button 
+              onClick={handleCtaClick}
+              size="lg" 
+              className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-16 py-10 text-2xl font-bold rounded-2xl shadow-2xl transition-all hover:scale-105 flex items-center gap-4"
+            >
+              <MessageCircle className="h-8 w-8" />
+              Falar com um consultor no WhatsApp
+            </Button>
+            <p className="text-white/60 text-sm font-medium uppercase tracking-widest">
+              Atendimento imediato e qualificado
+            </p>
           </div>
-          
-          <Card className="bg-white shadow-2xl border-none rounded-3xl overflow-hidden">
-            <CardContent className="p-10">
-              <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); handleCtaClick(); }}>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="text-[#0B6B4F] font-semibold">Nome Completo</Label>
-                    <Input id="name" className="bg-[#F5F5F5] border-none h-12 rounded-xl focus:ring-2 focus:ring-[#0B6B4F]" placeholder="Seu nome" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="clinic" className="text-[#0B6B4F] font-semibold">Nome da Clínica</Label>
-                    <Input id="clinic" className="bg-[#F5F5F5] border-none h-12 rounded-xl focus:ring-2 focus:ring-[#0B6B4F]" placeholder="Sua clínica" />
-                  </div>
-                </div>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-[#0B6B4F] font-semibold">WhatsApp</Label>
-                    <Input id="phone" className="bg-[#F5F5F5] border-none h-12 rounded-xl focus:ring-2 focus:ring-[#0B6B4F]" placeholder="(11) 99999-9999" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="city" className="text-[#0B6B4F] font-semibold">Cidade</Label>
-                    <Input id="city" className="bg-[#F5F5F5] border-none h-12 rounded-xl focus:ring-2 focus:ring-[#0B6B4F]" placeholder="Sua cidade" />
-                  </div>
-                </div>
-                
-                <Button type="submit" size="lg" className="w-full bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] h-14 text-lg font-bold rounded-xl shadow-lg">
-                  Enviar e Iniciar Conversa
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
         </div>
       </section>
 
