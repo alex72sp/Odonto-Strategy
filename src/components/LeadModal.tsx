@@ -11,7 +11,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { showSuccess } from "@/utils/toast";
 
 interface LeadModalProps {
   isOpen: boolean;
@@ -37,12 +36,11 @@ const LeadModal = ({ isOpen, onClose }: LeadModalProps) => {
     const whatsappNumber = "5511983232828";
     const messageText = `Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica.\n\n*Dados do Lead:*\n*Nome:* ${formData.name}\n*Clínica:* ${formData.clinic}\n*Telefone:* ${formData.phone}\n*Cidade:* ${formData.city}`;
     
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
+    // Método mais direto e compatível com todos os navegadores/celulares
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(messageText)}`;
     
-    showSuccess("Abrindo WhatsApp...");
-    
-    // Abrir em nova aba imediatamente (mais confiável)
-    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    // Redirecionamento direto para evitar bloqueios de popup
+    window.location.href = whatsappUrl;
     onClose();
   };
 

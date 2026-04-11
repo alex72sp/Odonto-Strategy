@@ -9,7 +9,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Building2, CheckCircle, TrendingUp, Users, Target, Lightbulb, Calendar } from "lucide-react";
 import LeadModal from "@/components/LeadModal";
-import { showSuccess } from "@/utils/toast";
 
 const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,12 +28,10 @@ const Index = () => {
     const whatsappNumber = "5511983232828";
     const messageText = `Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica.\n\n*Dados do Lead:*\n*Nome:* ${name}\n*Clínica:* ${clinic}\n*Telefone:* ${phone}\n*Cidade:* ${city}`;
     
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(messageText)}`;
     
-    showSuccess("Abrindo WhatsApp...");
-    
-    // Abrir em nova aba imediatamente
-    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    // Redirecionamento direto para garantir que funcione em qualquer dispositivo
+    window.location.href = whatsappUrl;
   };
 
   return (
