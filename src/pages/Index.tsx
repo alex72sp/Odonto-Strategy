@@ -190,61 +190,77 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Oportunidades de Crescimento - Dark Background */}
-      <section className="py-20 px-4 bg-section-dark text-white">
+      {/* Oportunidades de Crescimento - CORRIGIDO com contraste máximo */}
+      <section className="py-20 px-4 bg-primary-dark text-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Oportunidades de Crescimento</h2>
-            <p className="text-lg text-primary-light">Resultados que sua clínica pode alcançar</p>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Oportunidades de Crescimento
+            </h2>
+            <p className="text-xl text-white/85 max-w-3xl mx-auto">
+              Resultados que sua clínica pode alcançar
+            </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="text-primary-dark text-2xl" />
+              <div className="w-20 h-20 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <TrendingUp className="text-primary-dark text-3xl" />
               </div>
-              <h3 className="text-xl font-semibold text-primary-dark mb-2">Aumento de Faturamento</h3>
-              <p className="text-gray-600">Escala de receita com estratégias comprovadas</p>
+              <h3 className="text-2xl font-bold text-white mb-4">Aumento de Faturamento</h3>
+              <p className="text-gray-100 text-lg">
+                Escala de receita com estratégias comprovadas
+              </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
-                <Calendar className="text-primary-dark text-2xl" />
+              <div className="w-20 h-20 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Calendar className="text-primary-dark text-3xl" />
               </div>
-              <h3 className="text-xl font-semibold text-primary-dark mb-2">Melhor Aproveitamento da Agenda</h3>
-              <p className="text-gray-600">Otimização de horários e redução de ociosidade</p>
+              <h3 className="text-2xl font-bold text-white mb-4">Melhor Aproveitamento da Agenda</h3>
+              <p className="text-gray-100 text-lg">
+                Otimização de horários e redução de ociosidade
+              </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="text-primary-dark text-2xl" />
+              <div className="w-20 h-20 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Users className="text-primary-dark text-3xl" />
               </div>
-              <h3 className="text-xl font-semibold text-primary-dark mb-2">Aumento do Ticket Médio</h3>
-              <p className="text-gray-600">Maior valor por paciente com upselling estratégico</p>
+              <h3 className="text-2xl font-bold text-white mb-4">Aumento do Ticket Médio</h3>
+              <p className="text-gray-100 text-lg">
+                Maior valor por paciente com upselling estratégico
+              </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="text-primary-dark text-2xl" />
+              <div className="w-20 h-20 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Target className="text-primary-dark text-3xl" />
               </div>
-              <h3 className="text-xl font-semibold text-primary-dark mb-2">Estruturação de Marketing</h3>
-              <p className="text-gray-600">Sistemas de aquisição de pacientes com ROI mensurável</p>
+              <h3 className="text-2xl font-bold text-white mb-4">Estruturação de Marketing</h3>
+              <p className="text-gray-100 text-lg">
+                Sistemas de aquisição de pacientes com ROI mensurável
+              </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
-                <Building2 className="text-primary-dark text-2xl" />
+              <div className="w-20 h-20 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Building2 className="text-primary-dark text-3xl" />
               </div>
-              <h3 className="text-xl font-semibold text-primary-dark mb-2">Previsibilidade de Resultados</h3>
-              <p className="text-gray-600">Planejamento financeiro com metas claras e atingíveis</p>
+              <h3 className="text-2xl font-bold text-white mb-4">Previsibilidade de Resultados</h3>
+              <p className="text-gray-100 text-lg">
+                Planejamento financeiro com metas claras e atingíveis
+              </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
-                <Lightbulb className="text-primary-dark text-2xl" />
+              <div className="w-20 h-20 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Lightbulb className="text-primary-dark text-3xl" />
               </div>
-              <h3 className="text-xl font-semibold text-primary-dark mb-2">Gestão Estratégica</h3>
-              <p className="text-gray-600">Indicadores que guiam decisões com base em dados</p>
+              <h3 className="text-2xl font-bold text-white mb-4">Gestão Estratégica</h3>
+              <p className="text-gray-100 text-lg">
+                Indicadores que guiam decisões com base em dados
+              </p>
             </div>
           </div>
         </div>
