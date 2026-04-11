@@ -29,8 +29,15 @@ const Index = () => {
     window.open(whatsappLink, '_blank');
   };
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-[#F5F5F5] font-sans text-[#1A1A1A]">
+    <div className="min-h-screen bg-[#F5F5F5] font-sans text-[#1A1A1A] scroll-smooth">
       {/* Hero Section - Foco em Estrutura e Diagnóstico */}
       <section className="relative overflow-hidden bg-[#0B6B4F] text-white py-28 md:py-40 px-4">
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
@@ -62,8 +69,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Seção de Autoridade - Foco em Direcionamento */}
-      <section className="py-24 px-4 bg-white">
+      {/* Seção de Autoridade - Foco em Direcionamento (ID: SOBRE) */}
+      <section id="sobre" className="py-24 px-4 bg-white scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
@@ -102,8 +109,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Como Funciona - Foco em Diagnóstico */}
-      <section className="py-24 px-4 bg-[#F5F5F5]">
+      {/* Como Funciona - Foco em Diagnóstico (ID: SERVICOS) */}
+      <section id="servicos" className="py-24 px-4 bg-[#F5F5F5] scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-[#0B6B4F] mb-6">O Caminho para a Organização</h2>
@@ -215,7 +222,7 @@ const Index = () => {
       </section>
 
       {/* Contato */}
-      <section className="py-24 px-4 bg-[#F5F5F5]">
+      <section id="contato" className="py-24 px-4 bg-[#F5F5F5] scroll-mt-20">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B6B4F] mb-4">Solicite um Contato</h2>
@@ -265,9 +272,27 @@ const Index = () => {
               <p className="text-white/60 max-w-xs">Consultoria Estratégica para o Mercado Odontológico.</p>
             </div>
             <div className="flex gap-6">
-              <Button variant="ghost" className="text-white hover:text-[#2ECC71] hover:bg-white/5" onClick={handleCtaClick}>WhatsApp</Button>
-              <Button variant="ghost" className="text-white hover:text-[#2ECC71] hover:bg-white/5">Sobre</Button>
-              <Button variant="ghost" className="text-white hover:text-[#2ECC71] hover:bg-white/5">Serviços</Button>
+              <Button 
+                variant="ghost" 
+                className="text-white hover:text-[#2ECC71] hover:bg-white/5" 
+                onClick={handleCtaClick}
+              >
+                WhatsApp
+              </Button>
+              <Button 
+                variant="ghost" 
+                className="text-white hover:text-[#2ECC71] hover:bg-white/5"
+                onClick={() => scrollToSection('sobre')}
+              >
+                Sobre
+              </Button>
+              <Button 
+                variant="ghost" 
+                className="text-white hover:text-[#2ECC71] hover:bg-white/5"
+                onClick={() => scrollToSection('servicos')}
+              >
+                Serviços
+              </Button>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-white/5 text-center text-white/40 text-sm">
