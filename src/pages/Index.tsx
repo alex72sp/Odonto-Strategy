@@ -25,7 +25,7 @@ const Index = () => {
     const city = formData.get('city');
 
     const whatsappNumber = "5511983232828";
-    const message = `Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica.%0A%0ADados do Lead.%0ANome: ${name}%0AClínica: ${clinic}%0ATelefone: ${phone}%0ACidade: ${city}`;
+    const message = `Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica.%0A%0A*Dados do Lead:*%0A*Nome:* ${name}%0A*Clínica:* ${clinic}%0A*Telefone:* ${phone}%0A*Cidade:* ${city}`;
     
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
     
