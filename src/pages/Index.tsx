@@ -11,28 +11,33 @@ import { Phone, Building2, MapPin, CheckCircle, TrendingUp, Users, Target, Light
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-dark to-primary-medium text-white py-20 px-4">
+    <div className="min-h-screen">
+      {/* Hero Section - Strong Visual Impact */}
+      <section className="relative gradient-hero text-white py-24 px-4">
         <div className="max-w-6xl mx-auto text-center">
+          <div className="mb-8">
+            <Badge className="bg-white/20 text-white border-white/30 mb-4">
+              CONSULTORIA ESTRATÉGICA
+            </Badge>
+          </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
-            Aumente o faturamento da sua clínica odontológica com estratégia e direção
+            Aumente o faturamento da sua clínica odontológica
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
             Diagnóstico completo, identificação de gargalos e plano estratégico personalizado para crescimento sustentável
           </p>
-          <Button size="lg" className="bg-cta text-primary-dark hover:bg-cta-hover px-8 py-4 text-lg font-semibold">
+          <Button size="lg" className="bg-cta text-primary-dark hover:bg-cta-hover px-10 py-5 text-lg font-semibold shadow-elevated">
             Solicitar Diagnóstico
           </Button>
         </div>
       </section>
 
-      {/* Sobre a Empresa */}
-      <section className="py-20 px-4">
+      {/* Sobre a Empresa - Light Background */}
+      <section className="py-20 px-4 bg-section-light">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Sobre a RCS Consultoria</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-dark max-w-3xl mx-auto">
               A RCS Consultoria é especializada em consultoria estratégica para clínicas odontológicas. 
               Com experiência prática no setor, focamos em diagnóstico completo e planejamento estratégico 
               para aumentar o faturamento e organizar a clínica de forma estruturada.
@@ -41,16 +46,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Como Funciona */}
-      <section className="py-20 px-4 bg-section-light">
+      {/* Como Funciona - Dark Background */}
+      <section className="py-20 px-4 bg-section-dark text-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Como Funciona</h2>
-            <p className="text-lg text-primary-medium">Processo estruturado para transformar sua clínica</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Como Funciona</h2>
+            <p className="text-lg text-primary-light">Processo estruturado para transformar sua clínica</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="text-center border-primary-light">
+            <Card className="text-center bg-white text-primary-dark shadow-elevated">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-primary-dark font-bold text-xl">1</span>
@@ -62,7 +67,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-primary-light">
+            <Card className="text-center bg-white text-primary-dark shadow-elevated">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-primary-dark font-bold text-xl">2</span>
@@ -74,7 +79,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-primary-light">
+            <Card className="text-center bg-white text-primary-dark shadow-elevated">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-primary-dark font-bold text-xl">3</span>
@@ -86,7 +91,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-primary-light">
+            <Card className="text-center bg-white text-primary-dark shadow-elevated">
               <CardHeader>
                 <div className="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-primary-dark font-bold text-xl">4</span>
@@ -101,8 +106,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Principais Problemas */}
-      <section className="py-20 px-4">
+      {/* Principais Problemas - Light Background */}
+      <section className="py-20 px-4 bg-section-light">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Principais Problemas que Resolvemos</h2>
@@ -110,7 +115,7 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="border-l-4 border-l-red-500">
+            <Card className="bg-white shadow-elevated border-l-4 border-l-red-500">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <TrendingUp className="text-red-500" />
@@ -122,7 +127,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-l-orange-500">
+            <Card className="bg-white shadow-elevated border-l-4 border-l-orange-500">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Calendar className="text-orange-500" />
@@ -134,7 +139,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-l-yellow-500">
+            <Card className="bg-white shadow-elevated border-l-4 border-l-yellow-500">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Users className="text-yellow-500" />
@@ -146,7 +151,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-l-purple-500">
+            <Card className="bg-white shadow-elevated border-l-4 border-l-purple-500">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Target className="text-purple-500" />
@@ -158,7 +163,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-l-blue-500">
+            <Card className="bg-white shadow-elevated border-l-4 border-l-blue-500">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Building2 className="text-blue-500" />
@@ -170,7 +175,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-l-green-500">
+            <Card className="bg-white shadow-elevated border-l-4 border-l-green-500">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Lightbulb className="text-green-500" />
@@ -185,12 +190,12 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Oportunidades de Crescimento */}
-      <section className="py-20 px-4 bg-section-light">
+      {/* Oportunidades de Crescimento - Dark Background */}
+      <section className="py-20 px-4 bg-section-dark text-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Oportunidades de Crescimento</h2>
-            <p className="text-lg text-primary-medium">Resultados que sua clínica pode alcançar</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Oportunidades de Crescimento</h2>
+            <p className="text-lg text-primary-light">Resultados que sua clínica pode alcançar</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -245,8 +250,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Diferencial */}
-      <section className="py-20 px-4">
+      {/* Diferencial - Light Background */}
+      <section className="py-20 px-4 bg-section-light">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Nosso Diferencial</h2>
@@ -254,7 +259,7 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-gradient-to-r from-primary-light/20 to-primary-medium/20 border-primary-light">
+            <Card className="bg-white shadow-elevated">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <CheckCircle className="text-primary-medium" />
@@ -268,7 +273,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-r from-primary-light/20 to-primary-medium/20 border-primary-light">
+            <Card className="bg-white shadow-elevated">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <TrendingUp className="text-primary-medium" />
@@ -282,7 +287,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-r from-primary-light/20 to-primary-medium/20 border-primary-light">
+            <Card className="bg-white shadow-elevated">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Target className="text-primary-medium" />
@@ -296,7 +301,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-r from-primary-light/20 to-primary-medium/20 border-primary-light">
+            <Card className="bg-white shadow-elevated">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Lightbulb className="text-primary-medium" />
@@ -313,16 +318,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Para Quem É */}
-      <section className="py-20 px-4 bg-section-light">
+      {/* Para Quem É - Dark Background */}
+      <section className="py-20 px-4 bg-section-dark text-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Para Quem é a RCS Consultoria</h2>
-            <p className="text-lg text-primary-medium">Se você se identifica com algum destes perfis, estamos aqui para ajudar</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Para Quem é a RCS Consultoria</h2>
+            <p className="text-lg text-primary-light">Se você se identifica com algum destes perfis, estamos aqui para ajudar</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center border-primary-light">
+            <Card className="text-center bg-white text-primary-dark shadow-elevated">
               <CardHeader>
                 <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <TrendingUp className="text-primary-dark text-2xl" />
@@ -336,7 +341,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-primary-light">
+            <Card className="text-center bg-white text-primary-dark shadow-elevated">
               <CardHeader>
                 <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="text-primary-dark text-2xl" />
@@ -350,7 +355,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border-primary-light">
+            <Card className="text-center bg-white text-primary-dark shadow-elevated">
               <CardHeader>
                 <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
                   <Building2 className="text-primary-dark text-2xl" />
@@ -367,8 +372,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary-dark to-primary-medium text-white">
+      {/* Call to Action - Strong Visual Impact */}
+      <section className="py-20 px-4 gradient-hero text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Descubra onde sua clínica está perdendo faturamento
@@ -376,14 +381,14 @@ const Index = () => {
           <p className="text-xl mb-8 text-blue-100">
             Nossa consultoria estratégica identifica oportunidades ocultas e cria um plano personalizado para crescimento sustentável.
           </p>
-          <Button size="lg" className="bg-cta text-primary-dark hover:bg-cta-hover px-8 py-4 text-lg font-semibold">
+          <Button size="lg" className="bg-cta text-primary-dark hover:bg-cta-hover px-10 py-5 text-lg font-semibold shadow-elevated">
             Solicitar Diagnóstico
           </Button>
         </div>
       </section>
 
-      {/* Contato */}
-      <section className="py-20 px-4">
+      {/* Contato - Light Background */}
+      <section className="py-20 px-4 bg-section-light">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Entre em Contato</h2>
@@ -392,7 +397,7 @@ const Index = () => {
             </p>
           </div>
           
-          <Card className="border-primary-light">
+          <Card className="bg-white shadow-elevated">
             <CardContent className="p-8">
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -436,7 +441,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Footer - Strong Dark Background */}
       <footer className="bg-primary-dark text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
@@ -444,11 +449,11 @@ const Index = () => {
             <p className="text-gray-400 mb-6">
               Roberto Carlos Santana Consultoria Estratégica
             </p>
-            <p className="text-gray-400">
+            <p className="text-gray-400 mb-8">
               Especialistas em crescimento para clínicas odontológicas
             </p>
+            <MadeWithDyad />
           </div>
-          <MadeWithDyad />
         </div>
       </footer>
     </div>

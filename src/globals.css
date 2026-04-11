@@ -98,15 +98,23 @@
   }
 }
 
-/* Custom color classes for RCS Consultoria */
+/* Custom color classes for RCS Consultoria - Enhanced Visual Impact */
 .text-primary-dark { color: #0B6B4F; }
 .text-primary-medium { color: #0F8A5F; }
 .text-primary-light { color: #2ECC71; }
 .text-cta { color: #0B6B4F; }
+.text-dark { color: #333333; }
+.text-white { color: #FFFFFF; }
 .bg-primary-dark { background-color: #0B6B4F; }
 .bg-primary-medium { background-color: #0F8A5F; }
 .bg-primary-light { background-color: #2ECC71; }
 .bg-cta { background-color: #F4C542; }
 .bg-cta-hover { background-color: #E0B837; }
-.bg-section-light { background-color: #F5F5F5; }
+.bg-section-light { background-color: #EAF7F1; }
+.bg-section-dark { background-color: #0B6B4F; }
+.bg-white { background-color: #FFFFFF; }
 .border-primary-light { border-color: #2ECC71; }
+.shadow-elevated { box-shadow: 0 10px 25px rgba(11, 107, 79, 0.15); }
+.shadow-deep { box-shadow: 0 20px 40px rgba(11, 107, 79, 0.2); }
+.gradient-primary { background: linear-gradient(135deg, #0B6B4F, #0F8A5F); }
+.gradient-hero { background: linear-gradient(135deg, #0B6B4F, #0F8A5F); }
