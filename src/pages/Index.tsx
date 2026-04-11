@@ -19,20 +19,21 @@ const Index = () => {
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget as HTMLFormElement);
-    const name = formData.get('name');
-    const clinic = formData.get('clinic');
-    const phone = formData.get('phone');
-    const city = formData.get('city');
+    const name = formData.get('name') as string;
+    const clinic = formData.get('clinic') as string;
+    const phone = formData.get('phone') as string;
+    const city = formData.get('city') as string;
 
     const whatsappNumber = "5511983232828";
-    const message = `Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica.%0A%0ADados do Lead.%0ANome: ${name}%0AClínica: ${clinic}%0ATelefone: ${phone}%0ACidade: ${city}`;
+    const messageText = `Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica.\n\nDados do Lead.\nNome: ${name}\nClínica: ${clinic}\nTelefone: ${phone}\nCidade: ${city}`;
     
-    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+    const encodedMessage = encodeURIComponent(messageText);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
     
-    showSuccess("Redirecionando para o WhatsApp...");
-    setTimeout(() => {
-      window.open(whatsappUrl, '_blank');
-    }, 1000);
+    showSuccess("Abrindo WhatsApp...");
+    
+    // Abrir imediatamente para evitar bloqueio de pop-up
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
