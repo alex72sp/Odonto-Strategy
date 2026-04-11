@@ -25,7 +25,6 @@ const LeadModal = ({ isOpen, onClose }: LeadModalProps) => {
     phone: '',
     city: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
@@ -34,21 +33,17 @@ const LeadModal = ({ isOpen, onClose }: LeadModalProps) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
     
     const whatsappNumber = "5511983232828";
     const messageText = `Olá! Gostaria de solicitar um diagnóstico estratégico para minha clínica.\n\n*Dados do Lead:*\n*Nome:* ${formData.name}\n*Clínica:* ${formData.clinic}\n*Telefone:* ${formData.phone}\n*Cidade:* ${formData.city}`;
     
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(messageText)}`;
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(messageText)}`;
     
-    showSuccess("Redirecionando para o WhatsApp...");
+    showSuccess("Abrindo WhatsApp...");
     
-    // Usar location.href é mais seguro contra bloqueadores de popup
-    setTimeout(() => {
-      window.location.href = whatsappUrl;
-      setIsSubmitting(false);
-      onClose();
-    }, 500);
+    // Abrir em nova aba imediatamente (mais confiável)
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    onClose();
   };
 
   return (
@@ -108,10 +103,9 @@ const LeadModal = ({ isOpen, onClose }: LeadModalProps) => {
           </div>
           <Button 
             type="submit" 
-            disabled={isSubmitting}
             className="w-full bg-cta text-primary-dark hover:bg-cta-hover font-bold text-lg shadow-elevated mt-4"
           >
-            {isSubmitting ? "Conectando..." : "Iniciar Atendimento no WhatsApp"}
+            Iniciar Atendimento no WhatsApp
           </Button>
         </form>
       </DialogContent>
