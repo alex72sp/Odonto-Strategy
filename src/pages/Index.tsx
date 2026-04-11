@@ -13,15 +13,15 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-900 to-blue-700 text-white py-20 px-4">
+      <section className="relative bg-gradient-to-br from-primary-dark to-primary-medium text-white py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
             Aumente o faturamento da sua clínica odontológica com estratégia e direção
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
             Diagnóstico completo, identificação de gargalos e plano estratégico personalizado para crescimento sustentável
           </p>
-          <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 text-lg font-semibold">
+          <Button size="lg" className="bg-cta text-primary-dark hover:bg-cta-hover px-8 py-4 text-lg font-semibold">
             Solicitar Diagnóstico
           </Button>
         </div>
@@ -31,7 +31,7 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Sobre a RCS Consultoria</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Sobre a RCS Consultoria</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               A RCS Consultoria é especializada em consultoria estratégica para clínicas odontológicas. 
               Com experiência prática no setor, focamos em diagnóstico completo e planejamento estratégico 
@@ -42,56 +42,56 @@ const Index = () => {
       </section>
 
       {/* Como Funciona */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-section-light">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Como Funciona</h2>
-            <p className="text-lg text-gray-600">Processo estruturado para transformar sua clínica</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Como Funciona</h2>
+            <p className="text-lg text-primary-medium">Processo estruturado para transformar sua clínica</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="text-center">
+            <Card className="text-center border-primary-light">
               <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 font-bold text-xl">1</span>
+                <div className="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-dark font-bold text-xl">1</span>
                 </div>
-                <CardTitle>Levantamento de Dados</CardTitle>
+                <CardTitle className="text-primary-dark">Levantamento de Dados</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">Coleta completa de informações sobre sua clínica, processos e indicadores</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center border-primary-light">
               <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 font-bold text-xl">2</span>
+                <div className="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-dark font-bold text-xl">2</span>
                 </div>
-                <CardTitle>Diagnóstico Completo</CardTitle>
+                <CardTitle className="text-primary-dark">Diagnóstico Completo</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">Análise detalhada para entender o cenário atual e oportunidades</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center border-primary-light">
               <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 font-bold text-xl">3</span>
+                <div className="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-dark font-bold text-xl">3</span>
                 </div>
-                <CardTitle>Identificação de Gargalos</CardTitle>
+                <CardTitle className="text-primary-dark">Identificação de Gargalos</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">Pontos críticos que estão limitando o crescimento e rentabilidade</p>
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center border-primary-light">
               <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-600 font-bold text-xl">4</span>
+                <div className="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary-dark font-bold text-xl">4</span>
                 </div>
-                <CardTitle>Plano Estratégico</CardTitle>
+                <CardTitle className="text-primary-dark">Plano Estratégico</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">Roadmap personalizado com ações claras para crescimento sustentável</p>
@@ -105,14 +105,14 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Principais Problemas que Resolvemos</h2>
-            <p className="text-lg text-gray-600">Dores comuns que impedem o crescimento das clínicas</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Principais Problemas que Resolvemos</h2>
+            <p className="text-lg text-primary-medium">Dores comuns que impedem o crescimento das clínicas</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="border-l-4 border-l-red-500">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <TrendingUp className="text-red-500" />
                   Baixa Conversão de Orçamentos
                 </CardTitle>
@@ -124,7 +124,7 @@ const Index = () => {
 
             <Card className="border-l-4 border-l-orange-500">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Calendar className="text-orange-500" />
                   Agenda com Horários Ociosos
                 </CardTitle>
@@ -136,7 +136,7 @@ const Index = () => {
 
             <Card className="border-l-4 border-l-yellow-500">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Users className="text-yellow-500" />
                   Falta de Processo Comercial
                 </CardTitle>
@@ -148,7 +148,7 @@ const Index = () => {
 
             <Card className="border-l-4 border-l-purple-500">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Target className="text-purple-500" />
                   Divulgação Ineficiente
                 </CardTitle>
@@ -160,7 +160,7 @@ const Index = () => {
 
             <Card className="border-l-4 border-l-blue-500">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Building2 className="text-blue-500" />
                   Falta de Organização
                 </CardTitle>
@@ -172,7 +172,7 @@ const Index = () => {
 
             <Card className="border-l-4 border-l-green-500">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <CardTitle className="flex items-center gap-2 text-primary-dark">
                   <Lightbulb className="text-green-500" />
                   Falta de Visão Estratégica
                 </CardTitle>
@@ -186,59 +186,59 @@ const Index = () => {
       </section>
 
       {/* Oportunidades de Crescimento */}
-      <section className="py-20 px-4 bg-blue-50">
+      <section className="py-20 px-4 bg-section-light">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Oportunidades de Crescimento</h2>
-            <p className="text-lg text-gray-600">Resultados que sua clínica pode alcançar</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Oportunidades de Crescimento</h2>
+            <p className="text-lg text-primary-medium">Resultados que sua clínica pode alcançar</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="text-green-600 text-2xl" />
+              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                <TrendingUp className="text-primary-dark text-2xl" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Aumento de Faturamento</h3>
+              <h3 className="text-xl font-semibold text-primary-dark mb-2">Aumento de Faturamento</h3>
               <p className="text-gray-600">Escala de receita com estratégias comprovadas</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Calendar className="text-blue-600 text-2xl" />
+              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                <Calendar className="text-primary-dark text-2xl" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Melhor Aproveitamento da Agenda</h3>
+              <h3 className="text-xl font-semibold text-primary-dark mb-2">Melhor Aproveitamento da Agenda</h3>
               <p className="text-gray-600">Otimização de horários e redução de ociosidade</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="text-purple-600 text-2xl" />
+              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="text-primary-dark text-2xl" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Aumento do Ticket Médio</h3>
+              <h3 className="text-xl font-semibold text-primary-dark mb-2">Aumento do Ticket Médio</h3>
               <p className="text-gray-600">Maior valor por paciente com upselling estratégico</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="text-orange-600 text-2xl" />
+              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                <Target className="text-primary-dark text-2xl" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Estruturação de Marketing</h3>
+              <h3 className="text-xl font-semibold text-primary-dark mb-2">Estruturação de Marketing</h3>
               <p className="text-gray-600">Sistemas de aquisição de pacientes com ROI mensurável</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Building2 className="text-red-600 text-2xl" />
+              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building2 className="text-primary-dark text-2xl" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Previsibilidade de Resultados</h3>
+              <h3 className="text-xl font-semibold text-primary-dark mb-2">Previsibilidade de Resultados</h3>
               <p className="text-gray-600">Planejamento financeiro com metas claras e atingíveis</p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Lightbulb className="text-yellow-600 text-2xl" />
+              <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                <Lightbulb className="text-primary-dark text-2xl" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Gestão Estratégica</h3>
+              <h3 className="text-xl font-semibold text-primary-dark mb-2">Gestão Estratégica</h3>
               <p className="text-gray-600">Indicadores que guiam decisões com base em dados</p>
             </div>
           </div>
@@ -249,15 +249,15 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nosso Diferencial</h2>
-            <p className="text-lg text-gray-600">O que nos torna únicos no mercado</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Nosso Diferencial</h2>
+            <p className="text-lg text-primary-medium">O que nos torna únicos no mercado</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-gradient-to-r from-blue-50 to-blue-100 border-blue-200">
+            <Card className="bg-gradient-to-r from-primary-light/20 to-primary-medium/20 border-primary-light">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-blue-900">
-                  <CheckCircle className="text-blue-600" />
+                <CardTitle className="flex items-center gap-2 text-primary-dark">
+                  <CheckCircle className="text-primary-medium" />
                   Visão Estratégica + Prática
                 </CardTitle>
               </CardHeader>
@@ -268,10 +268,10 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-r from-green-50 to-green-100 border-green-200">
+            <Card className="bg-gradient-to-r from-primary-light/20 to-primary-medium/20 border-primary-light">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-green-900">
-                  <TrendingUp className="text-green-600" />
+                <CardTitle className="flex items-center gap-2 text-primary-dark">
+                  <TrendingUp className="text-primary-medium" />
                   Foco em Resultado Financeiro
                 </CardTitle>
               </CardHeader>
@@ -282,10 +282,10 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-r from-purple-50 to-purple-100 border-purple-200">
+            <Card className="bg-gradient-to-r from-primary-light/20 to-primary-medium/20 border-primary-light">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-purple-900">
-                  <Target className="text-purple-600" />
+                <CardTitle className="flex items-center gap-2 text-primary-dark">
+                  <Target className="text-primary-medium" />
                   Direcionamento Claro
                 </CardTitle>
               </CardHeader>
@@ -296,10 +296,10 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-r from-orange-50 to-orange-100 border-orange-200">
+            <Card className="bg-gradient-to-r from-primary-light/20 to-primary-medium/20 border-primary-light">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-orange-900">
-                  <Lightbulb className="text-orange-600" />
+                <CardTitle className="flex items-center gap-2 text-primary-dark">
+                  <Lightbulb className="text-primary-medium" />
                   Aplicação Simples
                 </CardTitle>
               </CardHeader>
@@ -314,20 +314,20 @@ const Index = () => {
       </section>
 
       {/* Para Quem É */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-section-light">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Para Quem é a RCS Consultoria</h2>
-            <p className="text-lg text-gray-600">Se você se identifica com algum destes perfis, estamos aqui para ajudar</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Para Quem é a RCS Consultoria</h2>
+            <p className="text-lg text-primary-medium">Se você se identifica com algum destes perfis, estamos aqui para ajudar</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center">
+            <Card className="text-center border-primary-light">
               <CardHeader>
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="text-blue-600 text-2xl" />
+                <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="text-primary-dark text-2xl" />
                 </div>
-                <CardTitle>Clínicas que Querem Crescer</CardTitle>
+                <CardTitle className="text-primary-dark">Clínicas que Querem Crescer</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
@@ -336,12 +336,12 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center border-primary-light">
               <CardHeader>
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="text-green-600 text-2xl" />
+                <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="text-primary-dark text-2xl" />
                 </div>
-                <CardTitle>Dentistas que Precisam de Gestão</CardTitle>
+                <CardTitle className="text-primary-dark">Dentistas que Precisam de Gestão</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
@@ -350,12 +350,12 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center">
+            <Card className="text-center border-primary-light">
               <CardHeader>
-                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Building2 className="text-purple-600 text-2xl" />
+                <div className="w-16 h-16 bg-primary-light rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Building2 className="text-primary-dark text-2xl" />
                 </div>
-                <CardTitle>Negócios que Faturam mas Não Escalam</CardTitle>
+                <CardTitle className="text-primary-dark">Negócios que Faturam mas Não Escalam</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
@@ -368,7 +368,7 @@ const Index = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 px-4 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+      <section className="py-20 px-4 bg-gradient-to-r from-primary-dark to-primary-medium text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Descubra onde sua clínica está perdendo faturamento
@@ -376,7 +376,7 @@ const Index = () => {
           <p className="text-xl mb-8 text-blue-100">
             Nossa consultoria estratégica identifica oportunidades ocultas e cria um plano personalizado para crescimento sustentável.
           </p>
-          <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 px-8 py-4 text-lg font-semibold">
+          <Button size="lg" className="bg-cta text-primary-dark hover:bg-cta-hover px-8 py-4 text-lg font-semibold">
             Solicitar Diagnóstico
           </Button>
         </div>
@@ -386,24 +386,24 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Entre em Contato</h2>
-            <p className="text-lg text-gray-600">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-dark mb-4">Entre em Contato</h2>
+            <p className="text-lg text-primary-medium">
               Preencha os campos abaixo e nossa equipe entrará em contato para agendar uma conversa estratégica
             </p>
           </div>
           
-          <Card>
+          <Card className="border-primary-light">
             <CardContent className="p-8">
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <Label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <Label htmlFor="name" className="block text-sm font-medium text-primary-dark mb-2">
                       Nome Completo
                     </Label>
                     <Input id="name" type="text" placeholder="Seu nome completo" />
                   </div>
                   <div>
-                    <Label htmlFor="clinic" className="block text-sm font-medium text-gray-700 mb-2">
+                    <Label htmlFor="clinic" className="block text-sm font-medium text-primary-dark mb-2">
                       Nome da Clínica
                     </Label>
                     <Input id="clinic" type="text" placeholder="Nome da sua clínica" />
@@ -412,13 +412,13 @@ const Index = () => {
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <Label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    <Label htmlFor="phone" className="block text-sm font-medium text-primary-dark mb-2">
                       Telefone/WhatsApp
                     </Label>
                     <Input id="phone" type="tel" placeholder="(11) 99999-9999" />
                   </div>
                   <div>
-                    <Label htmlFor="city" className="block text-sm font-medium text-gray-700 mb-2">
+                    <Label htmlFor="city" className="block text-sm font-medium text-primary-dark mb-2">
                       Cidade
                     </Label>
                     <Input id="city" type="text" placeholder="Sua cidade" />
@@ -426,7 +426,7 @@ const Index = () => {
                 </div>
                 
                 <div>
-                  <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
+                  <Button type="submit" size="lg" className="w-full bg-cta text-primary-dark hover:bg-cta-hover">
                     Enviar Solicitação
                   </Button>
                 </div>
@@ -437,7 +437,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4">
+      <footer className="bg-primary-dark text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">RCS Consultoria</h3>

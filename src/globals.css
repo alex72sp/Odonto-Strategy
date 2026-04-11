@@ -13,11 +13,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 11 61% 31%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 12 66% 37%;
+    --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -30,7 +30,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 11 61% 31%;
 
     --radius: 0.5rem;
 
@@ -38,13 +38,11 @@
 
     --sidebar-foreground: 240 5.3% 26.1%;
 
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-primary: 11 61% 31%;
     --sidebar-primary-foreground: 0 0% 98%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-accent: 210 40% 96.1%;
+    --sidebar-accent-foreground: 11 61% 31%;
 
     --sidebar-border: 220 13% 91%;
 
@@ -62,7 +60,7 @@
     --popover-foreground: 210 40% 98%;
 
     --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-foreground: 11 61% 31%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -99,3 +97,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom color classes for RCS Consultoria */
+.text-primary-dark { color: #0B6B4F; }
+.text-primary-medium { color: #0F8A5F; }
+.text-primary-light { color: #2ECC71; }
+.text-cta { color: #0B6B4F; }
+.bg-primary-dark { background-color: #0B6B4F; }
+.bg-primary-medium { background-color: #0F8A5F; }
+.bg-primary-light { background-color: #2ECC71; }
+.bg-cta { background-color: #F4C542; }
+.bg-cta-hover { background-color: #E0B837; }
+.bg-section-light { background-color: #F5F5F5; }
+.border-primary-light { border-color: #2ECC71; }
