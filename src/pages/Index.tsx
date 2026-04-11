@@ -31,9 +31,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-[#F5F5F5] font-sans text-[#1A1A1A]">
-      {/* Hero Section - Impacto de Grande Rede */}
+      {/* Hero Section - Foco em Estrutura e Diagnóstico */}
       <section className="relative overflow-hidden bg-[#0B6B4F] text-white py-28 md:py-40 px-4">
-        {/* Elementos decorativos de fundo para profundidade */}
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
           <div className="absolute -top-24 -left-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
           <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#2ECC71] rounded-full blur-3xl"></div>
@@ -41,14 +40,14 @@ const Index = () => {
 
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <Badge className="bg-[#2ECC71] text-[#0B6B4F] hover:bg-[#2ECC71] border-none mb-6 px-4 py-1 text-sm font-bold tracking-wider uppercase">
-            Consultoria de Elite para Dentistas
+            Consultoria Estratégica para Dentistas
           </Badge>
           <h1 className="text-4xl md:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight">
-            Transforme sua clínica em um <br className="hidden md:block" /> 
-            <span className="text-[#F4C542]">negócio de alto lucro</span>
+            Estruture sua clínica para um <br className="hidden md:block" /> 
+            <span className="text-[#F4C542]">crescimento sustentável</span>
           </h1>
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed font-light">
-            Diagnóstico estratégico completo para identificar gargalos e implementar um plano de crescimento acelerado e sustentável.
+            Diagnóstico estratégico completo para identificar gargalos e estruturar um plano de direcionamento focado em organização e potencial de lucro.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button 
@@ -56,14 +55,14 @@ const Index = () => {
               size="lg" 
               className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-12 py-8 text-xl font-bold rounded-xl shadow-2xl transition-all hover:scale-105 active:scale-95"
             >
-              Solicitar Diagnóstico Gratuito
+              Solicitar Diagnóstico Estratégico
               <ArrowRight className="ml-2 h-6 w-6" />
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Seção de Autoridade - Prova de Valor */}
+      {/* Seção de Autoridade - Foco em Direcionamento */}
       <section className="py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -73,14 +72,14 @@ const Index = () => {
                 Por que a RCS Consultoria é a escolha de clínicas consolidadas?
               </h2>
               <p className="text-lg text-[#333333] mb-8 leading-relaxed">
-                Não entregamos apenas planilhas. Entregamos <strong>visão de negócio</strong>. Roberto Carlos Santana traz a experiência prática necessária para tirar o dentista do operacional e colocá-lo no comando estratégico da sua clínica.
+                Não entregamos apenas planilhas. Entregamos <strong>visão de negócio</strong>. Roberto Carlos Santana traz a experiência necessária para auxiliar o dentista a sair do operacional e assumir o comando estratégico da sua clínica.
               </p>
               <ul className="space-y-4">
                 {[
-                  "Metodologia testada em grandes redes",
-                  "Foco total em ROI e faturamento líquido",
-                  "Implementação prática e acompanhada",
-                  "Diagnóstico baseado em dados reais"
+                  "Metodologia baseada em indicadores reais",
+                  "Foco em estruturação e saúde financeira",
+                  "Direcionamento estratégico para aplicação prática",
+                  "Diagnóstico baseado em dados da sua clínica"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-[#0B6B4F] font-semibold">
                     <ShieldCheck className="h-6 w-6 text-[#2ECC71]" />
@@ -91,32 +90,32 @@ const Index = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-[#EAF7F1] p-8 rounded-3xl text-center shadow-sm">
-                <div className="text-4xl font-bold text-[#0B6B4F] mb-2">+30%</div>
-                <div className="text-sm text-[#0F8A5F] font-medium uppercase tracking-wider">Aumento Médio de Faturamento</div>
+                <div className="text-4xl font-bold text-[#0B6B4F] mb-2">Dados</div>
+                <div className="text-sm text-[#0F8A5F] font-medium uppercase tracking-wider">Análise de Indicadores Reais</div>
               </div>
               <div className="bg-[#0B6B4F] p-8 rounded-3xl text-center shadow-xl mt-8">
-                <div className="text-4xl font-bold text-white mb-2">100%</div>
-                <div className="text-sm text-white/80 font-medium uppercase tracking-wider">Foco em Resultados</div>
+                <div className="text-4xl font-bold text-white mb-2">Foco</div>
+                <div className="text-sm text-white/80 font-medium uppercase tracking-wider">Estratégia e Organização</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Como Funciona - Cards com Profundidade */}
+      {/* Como Funciona - Foco em Diagnóstico */}
       <section className="py-24 px-4 bg-[#F5F5F5]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#0B6B4F] mb-6">O Caminho para a Escala</h2>
-            <p className="text-xl text-[#333333] max-w-2xl mx-auto">Nosso processo é estruturado para garantir que nenhuma oportunidade seja perdida.</p>
+            <h2 className="text-3xl md:text-5xl font-bold text-[#0B6B4F] mb-6">O Caminho para a Organização</h2>
+            <p className="text-xl text-[#333333] max-w-2xl mx-auto">Nosso processo é estruturado para identificar onde sua clínica pode melhorar.</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { step: "01", title: "Levantamento", desc: "Coleta rigorosa de dados e indicadores da clínica.", icon: <BarChart3 /> },
-              { step: "02", title: "Diagnóstico", desc: "Análise profunda para encontrar vazios de faturamento.", icon: <Target /> },
-              { step: "03", title: "Gargalos", desc: "Identificação de processos que travam o crescimento.", icon: <Zap /> },
-              { step: "04", title: "Plano", desc: "Roadmap estratégico para execução imediata.", icon: <TrendingUp /> }
+              { step: "02", title: "Diagnóstico", desc: "Análise profunda para encontrar oportunidades de faturamento.", icon: <Target /> },
+              { step: "03", title: "Gargalos", desc: "Identificação de processos que podem ser otimizados.", icon: <Zap /> },
+              { step: "04", title: "Plano", desc: "Roadmap estratégico com direcionamento para aplicação.", icon: <TrendingUp /> }
             ].map((item, i) => (
               <Card key={i} className="border-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgba(11,107,79,0.1)] transition-all duration-300 hover:-translate-y-2 rounded-2xl overflow-hidden bg-white">
                 <CardHeader className="pb-2">
@@ -137,22 +136,22 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Problemas que Resolvemos - Contraste Forte */}
+      {/* Problemas que Identificamos */}
       <section className="py-24 px-4 bg-[#0B6B4F] text-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">O que está travando sua clínica?</h2>
-            <p className="text-xl text-white/80">Resolvemos as dores que impedem o seu próximo nível.</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">O que pode estar travando sua clínica?</h2>
+            <p className="text-xl text-white/80">Identificamos os pontos críticos que impedem o seu próximo nível.</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Baixa Conversão", desc: "Orçamentos que não fecham por falta de técnica comercial.", color: "border-red-400" },
-              { title: "Agenda Ociosa", desc: "Custo fixo alto com horários vagos e falta de fluxo.", color: "border-orange-400" },
-              { title: "Falta de Processos", desc: "Dependência total do dono para qualquer decisão.", color: "border-yellow-400" },
-              { title: "Marketing sem ROI", desc: "Investimento em anúncios que não trazem pacientes qualificados.", color: "border-purple-400" },
-              { title: "Gestão Amadora", desc: "Falta de indicadores claros para tomada de decisão.", color: "border-blue-400" },
-              { title: "Baixo Ticket Médio", desc: "Foco em procedimentos simples com baixa margem.", color: "border-green-400" }
+              { title: "Conversão de Orçamentos", desc: "Identificação de falhas no processo comercial e fechamento.", color: "border-red-400" },
+              { title: "Otimização de Agenda", desc: "Análise de horários ociosos e fluxo de pacientes.", color: "border-orange-400" },
+              { title: "Estruturação de Processos", desc: "Mapeamento de dependências que sobrecarregam o gestor.", color: "border-yellow-400" },
+              { title: "Análise de Marketing", desc: "Avaliação do retorno sobre investimento em aquisição de pacientes.", color: "border-purple-400" },
+              { title: "Gestão por Indicadores", desc: "Estruturação de dados claros para tomada de decisão assertiva.", color: "border-blue-400" },
+              { title: "Análise de Ticket Médio", desc: "Identificação de oportunidades em procedimentos de maior margem.", color: "border-green-400" }
             ].map((item, i) => (
               <div key={i} className={`bg-white/5 backdrop-blur-sm p-8 rounded-2xl border-l-4 ${item.color} hover:bg-white/10 transition-colors`}>
                 <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
@@ -166,22 +165,22 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Oportunidades de Crescimento - Visual Moderno */}
+      {/* Resultados do Direcionamento */}
       <section className="py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#0B6B4F] mb-6">Resultados Tangíveis</h2>
-            <p className="text-xl text-[#333333]">O que acontece após a nossa consultoria estratégica.</p>
+            <h2 className="text-3xl md:text-5xl font-bold text-[#0B6B4F] mb-6">Direcionamento Estratégico</h2>
+            <p className="text-xl text-[#333333]">O que buscamos estruturar através da nossa consultoria.</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
-              { title: "Aumento de Faturamento", icon: <TrendingUp />, desc: "Estratégias para escalar a receita mensal." },
-              { title: "Otimização de Agenda", icon: <Calendar />, desc: "Máxima ocupação com pacientes de alto valor." },
-              { title: "Ticket Médio Elevado", icon: <Users />, desc: "Upselling ético e tratamentos complexos." },
-              { title: "Marketing de Elite", icon: <Target />, desc: "Atração constante de leads qualificados." },
-              { title: "Previsibilidade", icon: <BarChart3 />, desc: "Saiba exatamente quanto vai faturar no próximo mês." },
-              { title: "Liberdade de Gestão", icon: <Lightbulb />, desc: "Processos que funcionam sem a sua presença constante." }
+              { title: "Potencial de Faturamento", icon: <TrendingUp />, desc: "Identificação de caminhos para escalar a receita." },
+              { title: "Melhoria na Agenda", icon: <Calendar />, desc: "Estratégias para ocupação com pacientes qualificados." },
+              { title: "Análise de Ticket Médio", icon: <Users />, desc: "Direcionamento para tratamentos de maior valor agregado." },
+              { title: "Marketing Estratégico", icon: <Target />, desc: "Avaliação de canais para atração constante de leads." },
+              { title: "Clareza de Indicadores", icon: <BarChart3 />, desc: "Melhor previsibilidade com base em dados reais." },
+              { title: "Organização de Gestão", icon: <Lightbulb />, desc: "Processos estruturados para uma gestão mais profissional." }
             ].map((item, i) => (
               <div key={i} className="group text-center">
                 <div className="w-20 h-20 bg-[#EAF7F1] text-[#0B6B4F] rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:bg-[#0B6B4F] group-hover:text-white transition-all duration-300 group-hover:rotate-6">
@@ -195,32 +194,32 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Call to Action Final - Conversão Máxima */}
+      {/* Call to Action Final */}
       <section className="py-24 px-4 bg-[#0B6B4F] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 -skew-x-12 translate-x-1/2"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-8 text-white leading-tight">
-            Sua clínica está pronta para o próximo nível?
+            Sua clínica está pronta para uma gestão profissional?
           </h2>
           <p className="text-xl mb-12 text-white/80 leading-relaxed">
-            Não deixe o crescimento da sua clínica ao acaso. Agende agora uma conversa estratégica e descubra o potencial oculto do seu negócio.
+            Não deixe o crescimento da sua clínica ao acaso. Agende agora uma conversa estratégica e tenha mais clareza sobre o potencial do seu negócio.
           </p>
           <Button 
             onClick={handleCtaClick}
             size="lg" 
             className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-16 py-8 text-2xl font-bold rounded-2xl shadow-2xl transition-all hover:scale-105"
           >
-            Falar com Consultor no WhatsApp
+            Falar com um Consultor no WhatsApp
           </Button>
         </div>
       </section>
 
-      {/* Contato - Limpo e Profissional */}
+      {/* Contato */}
       <section className="py-24 px-4 bg-[#F5F5F5]">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B6B4F] mb-4">Solicite um Contato</h2>
-            <p className="text-lg text-[#333333]">Preencha os dados e retornaremos em até 24h.</p>
+            <p className="text-lg text-[#333333]">Preencha os dados e retornaremos para agendar uma conversa.</p>
           </div>
           
           <Card className="bg-white shadow-2xl border-none rounded-3xl overflow-hidden">
@@ -257,7 +256,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer - Sólido */}
+      {/* Footer */}
       <footer className="bg-[#0B6B4F] text-white py-16 px-4 border-t border-white/10">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
