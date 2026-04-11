@@ -72,7 +72,7 @@ const Index = () => {
                 Por que a RCS Consultoria é a escolha de clínicas consolidadas?
               </h2>
               <p className="text-lg text-[#333333] mb-8 leading-relaxed">
-                Não entregamos apenas planilhas. Entregamos <strong>visão de negócio</strong>. Roberto Carlos Santana traz a experiência necessária para auxiliar o dentista a sair do operacional e assumir o comando estratégico da sua clínica.
+                Não entregamos apenas planilhas. Entregamos <strong>visão de negócio</strong>. A RCS Consultoria traz a experiência necessária para auxiliar o dentista a sair do operacional e assumir o comando estratégico da sua clínica.
               </p>
               <ul className="space-y-4">
                 {[
@@ -262,7 +262,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-center md:text-left">
               <h3 className="text-3xl font-black mb-2 tracking-tighter">RCS <span className="text-[#2ECC71]">CONSULTORIA</span></h3>
-              <p className="text-white/60 max-w-xs">Roberto Carlos Santana - Consultoria Estratégica para o Mercado Odontológico.</p>
+              <p className="text-white/60 max-w-xs">Consultoria Estratégica para o Mercado Odontológico.</p>
             </div>
             <div className="flex gap-6">
               <Button variant="ghost" className="text-white hover:text-[#2ECC71] hover:bg-white/5" onClick={handleCtaClick}>WhatsApp</Button>
