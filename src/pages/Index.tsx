@@ -250,7 +250,11 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-center md:text-left">
-              <h3 className="text-3xl font-black mb-2 tracking-tighter">ODONTO <span className="text-[#2ECC71]">STRATEGY</span></h3>
+              <img 
+                src="dyad-media://media/nimble-capybara-snore/.dyad/media/6e5e2df5e4eb5b5f99887b9eaa9a7bc2.jpeg" 
+                alt="Odonto Strategy Logo" 
+                className="h-16 w-auto object-contain mx-auto md:mx-0 mb-4 bg-white p-2 rounded-lg"
+              />
               <p className="text-white/60 max-w-xs">Consultoria Estratégica para o Mercado Odontológico.</p>
             </div>
             <div className="flex gap-6">

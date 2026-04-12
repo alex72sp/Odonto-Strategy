@@ -12,22 +12,15 @@ const Header = ({ onScroll }: HeaderProps) => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
         <div 
-          className="flex items-center gap-3 cursor-pointer" 
+          className="flex items-center cursor-pointer" 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          {/* Espaço para o Logo - Altura otimizada para desktop e mobile */}
-          <div className="flex items-center">
-            <span className="text-xl md:text-2xl font-bold text-[#1A3C34] tracking-tight flex items-center gap-2">
-              <div className="w-8 h-8 md:w-10 md:h-10 bg-[#0B6B4F] rounded-lg flex items-center justify-center text-white">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="w-5 h-5 md:w-6 md:h-6">
-                  <path d="M7 12l3 3 7-7" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
-                </svg>
-              </div>
-              <span className="font-black">ODONTO</span>
-              <span className="text-[#0B6B4F] font-light">STRATEGY</span>
-            </span>
-          </div>
+          {/* Logotipo Oficial Odonto Strategy */}
+          <img 
+            src="dyad-media://media/nimble-capybara-snore/.dyad/media/6e5e2df5e4eb5b5f99887b9eaa9a7bc2.jpeg" 
+            alt="Odonto Strategy Logo" 
+            className="h-12 md:h-16 w-auto object-contain"
+          />
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
