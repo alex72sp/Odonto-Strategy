@@ -15,9 +15,9 @@ const Header = ({ onScroll }: HeaderProps) => {
           className="flex items-center cursor-pointer" 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          {/* Logotipo Oficial Odonto Strategy */}
+          {/* Logotipo Oficial Odonto Strategy - Link Corrigido */}
           <img 
-            src="dyad-media://media/nimble-capybara-snore/.dyad/media/6e5e2df5e4eb5b5f99887b9eaa9a7bc2.jpeg" 
+            src="dyad-media://media/nimble-capybara-snore/.dyad/media/792ef36865eb71bdf60d0fd21ddb2886.jpeg" 
             alt="Odonto Strategy Logo" 
             className="h-12 md:h-16 w-auto object-contain"
           />
