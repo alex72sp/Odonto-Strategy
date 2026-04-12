@@ -73,11 +73,11 @@ const Index = () => {
             Consultoria Odontológica Estratégica
           </Badge>
           <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight">
-            Sua clínica poderia faturar mais — <br className="hidden md:block" /> 
+            Sua clínica poderia faturar mais, <br className="hidden md:block" /> 
             <span className="text-[#F4C542]">mas algo está travando.</span>
           </h1>
           <p className="text-lg md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed font-light">
-            Nós identificamos exatamente onde estão os gargalos da sua operação e mostramos o que precisa ser ajustado para melhorar faturamento, organização e previsibilidade.
+            Nós identificamos exatamente onde estão os gargalos da sua operação e mostramos o que precisa ser ajustado para melhorar faturamento, organization e previsibilidade.
           </p>
           <div className="flex justify-center">
             <Button 
