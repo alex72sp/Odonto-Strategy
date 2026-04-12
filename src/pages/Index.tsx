@@ -18,7 +18,8 @@ import {
   BarChart3,
   Zap,
   MessageCircle,
-  AlertCircle
+  AlertCircle,
+  Quote
 } from "lucide-react";
 
 const Index = () => {
@@ -72,11 +73,11 @@ const Index = () => {
             Consultoria Odontológica Estratégica
           </Badge>
           <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight">
-            Descubra o que está travando o <br className="hidden md:block" /> 
-            <span className="text-[#F4C542]">crescimento da sua clínica</span>
+            Sua clínica poderia faturar mais — <br className="hidden md:block" /> 
+            <span className="text-[#F4C542]">mas algo está travando.</span>
           </h1>
           <p className="text-lg md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed font-light">
-            Analisamos sua operação e mostramos onde estão os gargalos e o que precisa ser ajustado para melhorar faturamento e organização.
+            Nós identificamos exatamente onde estão os gargalos da sua operação e mostramos o que precisa ser ajustado para melhorar faturamento, organização e previsibilidade.
           </p>
           <div className="flex justify-center">
             <Button 
@@ -88,6 +89,18 @@ const Index = () => {
               <ArrowRight className="ml-2 h-5 w-5 md:h-6 md:w-6" />
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Frase de Autoridade */}
+      <section className="py-12 bg-[#EAF7F1] border-y border-[#0B6B4F]/10">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="flex justify-center mb-4">
+            <Quote className="text-[#2ECC71] h-8 w-8 opacity-50" />
+          </div>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0B6B4F] italic leading-tight">
+            “A maioria das clínicas não cresce por falta de pacientes, mas por falta de processo.”
+          </h2>
         </div>
       </section>
 
@@ -141,10 +154,10 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Diagnóstico", desc: "Coleta e análise profunda de dados operacionais.", icon: <BarChart3 /> },
-              { step: "02", title: "Gargalos", desc: "Identificação de pontos de perda financeira.", icon: <AlertCircle /> },
-              { step: "03", title: "Estratégia", desc: "Definição de metas e plano de ação claro.", icon: <Target /> },
-              { step: "04", title: "Direcionamento", desc: "Roadmap para execução e crescimento real.", icon: <TrendingUp /> }
+              { step: "01", title: "Análise detalhada da operação", desc: "Coleta e análise profunda de dados operacionais.", icon: <BarChart3 /> },
+              { step: "02", title: "Identificação dos pontos críticos", desc: "Identificação de pontos de perda financeira.", icon: <AlertCircle /> },
+              { step: "03", title: "Direcionamento estratégico claro", desc: "Definição de metas e plano de ação claro.", icon: <Target /> },
+              { step: "04", title: "Execução e Resultados", desc: "Roadmap para execução e crescimento real.", icon: <TrendingUp /> }
             ].map((item, i) => (
               <Card key={i} className="border-none shadow-sm hover:shadow-md transition-all duration-300 rounded-2xl overflow-hidden bg-white">
                 <CardHeader className="pb-2">
@@ -194,29 +207,26 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Resultados do Direcionamento */}
+      {/* Para quem é essa consultoria */}
       <section className="py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-[#0B6B4F] mb-6">Direcionamento Estratégico</h2>
-            <p className="text-xl text-[#333333]">O que entregamos para profissionalizar sua gestão odontológica.</p>
+            <h2 className="text-3xl md:text-5xl font-bold text-[#0B6B4F] mb-6">Para quem é essa consultoria</h2>
+            <p className="text-xl text-[#333333]">Identifique se este é o momento ideal para o seu negócio.</p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Visão Estratégica", icon: <Lightbulb />, desc: "Clareza total sobre o futuro e o potencial do seu negócio." },
-              { title: "Organização Interna", icon: <ShieldCheck />, desc: "Processos estruturados que funcionam sem a presença do dono." },
-              { title: "Decisões Seguras", icon: <BarChart3 />, desc: "Gestão baseada em indicadores reais para crescer com segurança." },
-              { title: "Aumento de Faturamento", icon: <TrendingUp />, desc: "Foco em conversão e procedimentos de maior rentabilidade." },
-              { title: "Otimização de Tempo", icon: <Calendar />, desc: "Agenda produtiva e redução drástica da sobrecarga operacional." },
-              { title: "Autoridade de Mercado", icon: <Users />, desc: "Posicionamento de clínica referência na sua região." }
+              { title: "Clínicas em Crescimento", desc: "Clínicas que já atendem pacientes, mas querem escalar o faturamento com segurança." },
+              { title: "Gestores Sobrecarregados", desc: "Profissionais que sentem desorganização na operação e excesso de trabalho operacional." },
+              { title: "Busca por Eficiência", desc: "Quem sabe que pode faturar mais, mas não sabe exatamente o que ajustar na gestão." }
             ].map((item, i) => (
-              <div key={i} className="group text-center">
-                <div className="w-20 h-20 bg-[#EAF7F1] text-[#0B6B4F] rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:bg-[#0B6B4F] group-hover:text-white transition-all duration-300">
-                  {React.cloneElement(item.icon as React.ReactElement, { size: 32 })}
+              <div key={i} className="p-8 rounded-3xl bg-[#F5F5F5] border border-[#0B6B4F]/5 hover:border-[#2ECC71]/30 transition-all">
+                <div className="w-12 h-12 bg-[#0B6B4F] text-white rounded-full flex items-center justify-center mb-6">
+                  <CheckCircle size={24} />
                 </div>
-                <h3 className="text-2xl font-bold text-[#0B6B4F] mb-3">{item.title}</h3>
-                <p className="text-[#333333] text-lg leading-relaxed">{item.desc}</p>
+                <h3 className="text-xl font-bold text-[#0B6B4F] mb-4">{item.title}</h3>
+                <p className="text-[#333333] leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -231,7 +241,7 @@ const Index = () => {
             Sua clínica está pronta para o próximo nível?
           </h2>
           <p className="text-xl mb-12 text-white/80 leading-relaxed">
-            Agende uma conversa estratégica e descubra como podemos profissionalizar sua gestão e acelerar seus resultados.
+            Se você sente que sua clínica pode mais, mas não sabe exatamente onde ajustar, o próximo passo é entender o que está travando.
           </p>
           <div className="flex flex-col items-center gap-6">
             <Button 
