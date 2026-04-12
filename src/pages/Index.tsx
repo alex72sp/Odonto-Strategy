@@ -94,10 +94,10 @@ const Index = () => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-[#EAF7F1] rounded-2xl -z-10"></div>
               <h2 className="text-3xl md:text-5xl font-bold text-[#0B6B4F] mb-8 leading-tight">
-                Por que a RCS Consultoria é a escolha de clínicas consolidadas?
+                Por que a Odonto Strategy é a escolha de clínicas consolidadas?
               </h2>
               <p className="text-lg text-[#333333] mb-8 leading-relaxed">
-                Não entregamos apenas planilhas. Entregamos <strong>visão de negócio</strong>. A RCS Consultoria traz a experiência necessária para auxiliar o dentista a sair do operacional e assumir o comando estratégico da sua clínica.
+                Não entregamos apenas planilhas. Entregamos <strong>visão de negócio</strong>. A Odonto Strategy traz a experiência necessária para auxiliar o dentista a sair do operacional e assumir o comando estratégico da sua clínica.
               </p>
               <ul className="space-y-4">
                 {[
@@ -219,7 +219,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Call to Action Final - Substituindo o Formulário */}
+      {/* Call to Action Final */}
       <section id="contato" className="py-32 px-4 bg-[#0B6B4F] relative overflow-hidden scroll-mt-20">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 -skew-x-12 translate-x-1/2"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -250,7 +250,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-center md:text-left">
-              <h3 className="text-3xl font-black mb-2 tracking-tighter">RCS <span className="text-[#2ECC71]">CONSULTORIA</span></h3>
+              <h3 className="text-3xl font-black mb-2 tracking-tighter">ODONTO <span className="text-[#2ECC71]">STRATEGY</span></h3>
               <p className="text-white/60 max-w-xs">Consultoria Estratégica para o Mercado Odontológico.</p>
             </div>
             <div className="flex gap-6">
@@ -278,7 +278,7 @@ const Index = () => {
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-white/5 text-center text-white/40 text-sm">
-            <p>© {new Date().getFullYear()} RCS Consultoria. Todos os direitos reservados.</p>
+            <p>© {new Date().getFullYear()} Odonto Strategy. Todos os direitos reservados.</p>
             <div className="mt-4">
               <MadeWithDyad />
             </div>
