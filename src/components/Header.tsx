@@ -40,16 +40,16 @@ const Header = ({ onScroll }: HeaderProps) => {
             Sobre
           </button>
           <button 
-            onClick={() => onScroll('servicos')} 
+            onClick={() => onScroll('metodologia')} 
             className="text-xs font-bold text-[#1A3C34] hover:text-[#0B6B4F] transition-colors tracking-widest uppercase"
           >
-            Serviços
+            Metodologia
           </button>
           <Button 
             onClick={() => onScroll('contato')}
             className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold rounded-lg px-6 shadow-md hover:shadow-lg transition-all"
           >
-            SOLICITAR DIAGNÓSTICO
+            Solicitar diagnóstico
           </Button>
         </nav>
         
