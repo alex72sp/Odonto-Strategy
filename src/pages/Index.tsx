@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { MadeWithDyad } from "@/components/made-with-dyad";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -21,6 +21,9 @@ import {
 } from "lucide-react";
 
 const Index = () => {
+  const [footerLogoError, setFooterLogoError] = useState(false);
+  const logoUrl = "dyad-media://media/nimble-capybara-snore/.dyad/media/792ef36865eb71bdf60d0fd21ddb2886.jpeg";
+
   const whatsappNumber = "5511983232828";
   const whatsappMessage = encodeURIComponent(
     "Olá! Quero um diagnóstico da minha clínica.\n\n" +
@@ -250,12 +253,20 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-center md:text-left">
-              {/* Logotipo Oficial Odonto Strategy - Link Corrigido */}
-              <img 
-                src="dyad-media://media/nimble-capybara-snore/.dyad/media/792ef36865eb71bdf60d0fd21ddb2886.jpeg" 
-                alt="Odonto Strategy Logo" 
-                className="h-16 w-auto object-contain mx-auto md:mx-0 mb-4 bg-white p-2 rounded-lg"
-              />
+              {footerLogoError ? (
+                <div className="mb-4">
+                  <span className="text-2xl font-black text-white tracking-tighter">
+                    ODONTO <span className="text-[#2ECC71]">STRATEGY</span>
+                  </span>
+                </div>
+              ) : (
+                <img 
+                  src={logoUrl} 
+                  alt="Odonto Strategy Logo" 
+                  className="h-16 w-auto object-contain mx-auto md:mx-0 mb-4 bg-white p-2 rounded-lg"
+                  onError={() => setFooterLogoError(true)}
+                />
+              )}
               <p className="text-white/60 max-w-xs">Consultoria Estratégica para o Mercado Odontológico.</p>
             </div>
             <div className="flex gap-6">

@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 
 interface HeaderProps {
@@ -8,6 +8,9 @@ interface HeaderProps {
 }
 
 const Header = ({ onScroll }: HeaderProps) => {
+  const [imageError, setImageError] = useState(false);
+  const logoUrl = "dyad-media://media/nimble-capybara-snore/.dyad/media/792ef36865eb71bdf60d0fd21ddb2886.jpeg";
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
@@ -15,12 +18,18 @@ const Header = ({ onScroll }: HeaderProps) => {
           className="flex items-center cursor-pointer" 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          {/* Logotipo Oficial Odonto Strategy - Link Corrigido */}
-          <img 
-            src="dyad-media://media/nimble-capybara-snore/.dyad/media/792ef36865eb71bdf60d0fd21ddb2886.jpeg" 
-            alt="Odonto Strategy Logo" 
-            className="h-12 md:h-16 w-auto object-contain"
-          />
+          {imageError ? (
+            <span className="text-xl md:text-2xl font-black text-[#0B6B4F] tracking-tighter">
+              ODONTO <span className="text-[#2ECC71]">STRATEGY</span>
+            </span>
+          ) : (
+            <img 
+              src={logoUrl} 
+              alt="Odonto Strategy Logo" 
+              className="h-12 md:h-16 w-auto object-contain"
+              onError={() => setImageError(true)}
+            />
+          )}
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
