@@ -6,8 +6,12 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Blog = () => {
+  const whatsappLink = "https://wa.me/5511983232828";
+  
   const posts = [
     {
       slug: "por-que-sua-clinica-odontologica-nao-cresce",
@@ -53,7 +57,7 @@ const Blog = () => {
 
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             {posts.map((post, i) => (
               <Link key={i} to={`/blog/${post.slug}`}>
                 <Card className="h-full border-none shadow-sm hover:shadow-md transition-all overflow-hidden group">
@@ -79,6 +83,21 @@ const Blog = () => {
                 </Card>
               </Link>
             ))}
+          </div>
+
+          <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold text-[#0B6B4F] mb-4">Quer aplicar essas estratégias na sua clínica?</h3>
+            <p className="text-gray-600 mb-8">
+              Nossa consultoria ajuda você a transformar conhecimento em resultados práticos e faturamento real.
+            </p>
+            <Button 
+              onClick={() => window.open(whatsappLink, '_blank')}
+              size="lg"
+              className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] px-10 py-7 text-lg font-bold rounded-xl shadow-xl transition-all hover:scale-105 flex items-center gap-2"
+            >
+              Solicitar diagnóstico gratuito
+              <ArrowRight className="h-5 w-5" />
+            </Button>
           </div>
         </div>
       </section>
