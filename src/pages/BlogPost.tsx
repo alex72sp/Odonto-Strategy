@@ -87,7 +87,7 @@ const BlogPost = () => {
       },
       "por-que-sua-clinica-odontologica-nao-cresce": {
         title: "Por que sua clínica odontológica não cresce",
-        image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1200",
         alt: "consultoria odontológica em clínica",
         content: `
           <p>A consultoria odontológica é essencial para clínicas que querem aumentar o faturamento com organização, estratégia e processos bem definidos.</p>

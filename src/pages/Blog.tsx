@@ -45,7 +45,7 @@ const Blog = () => {
       excerpt: "Descubra os erros mais comuns que impedem o crescimento de clínicas odontológicas e como a consultoria odontológica pode ajudar.",
       category: "Gestão",
       date: "15 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
