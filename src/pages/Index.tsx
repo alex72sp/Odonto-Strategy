@@ -36,25 +36,29 @@ const Index = () => {
           </Badge>
           <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight tracking-tight">
             Sua clínica odontológica poderia faturar mais, <br className="hidden md:block" /> 
-            <span className="text-[#F4C542]">mas algo está travando.</span>
+            <span className="text-[#F4C542]">mas algo está travando o crescimento.</span>
           </h1>
-          <p className="text-xl md:text-3xl font-bold mb-8 text-[#2ECC71]">
-            O problema pode não ser falta de pacientes.
+          <p className="text-lg md:text-2xl font-medium mb-8 text-[#2ECC71] max-w-3xl mx-auto leading-relaxed">
+            Identificamos os pontos que estão limitando o crescimento da sua clínica e mostramos o caminho mais claro para melhorar resultados com mais consistência.
           </p>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+          
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-sm md:text-base text-white/90 font-medium italic">
+              Sem clareza do problema, qualquer tentativa de crescimento vira tentativa e erro.
+            </p>
             <Button 
               onClick={() => window.open(whatsappLink, '_blank')}
               size="lg" 
               className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-8 py-6 text-lg font-bold rounded-xl shadow-2xl transition-all hover:scale-105 w-full md:w-auto max-w-[350px]"
             >
-              Solicitar diagnóstico estratégico
+              Quero um diagnóstico estratégico
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Bloco de Impacto (Novo) */}
+      {/* Bloco de Impacto */}
       <section className="py-16 px-4 bg-[#EAF7F1]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-extrabold text-[#0B6B4F] mb-6 leading-tight">
@@ -74,7 +78,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Bloco de Autoridade: O que é analisado (Novo) */}
+      {/* Bloco de Autoridade: O que é analisado */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
@@ -190,7 +194,7 @@ const Index = () => {
               size="lg" 
               className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] px-10 py-7 text-lg font-bold rounded-xl shadow-xl transition-all hover:scale-105 w-full md:w-auto max-w-[350px]"
             >
-              Solicitar diagnóstico estratégico
+              Quero um diagnóstico estratégico
             </Button>
             <Link to="/blog" className="text-[#2ECC71] font-bold flex items-center gap-2 hover:underline text-lg">
               Acesse nosso blog com dicas de gestão para clínicas odontológicas <ArrowRight size={20} />

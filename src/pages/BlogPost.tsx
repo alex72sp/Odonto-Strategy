@@ -143,7 +143,7 @@ const BlogPost = () => {
           <p>O atendimento clínica odontológica é, muitas vezes, o fator decisivo para o fechamento de um tratamento. O paciente decide se confia em você muito antes de sentar na cadeira.</p>
           <p>Saber <a href='/blog/pacientes-nao-fecham-orcamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>melhorar resultados clínica odontológica</a> passa obrigatoriamente pela excelência na experiência do paciente.</p>
           
-          <h2>Por que o atendimento influencia na decisão</h2>
+          <h2>Por que o atendimento influência na decisão</h2>
           <p>A odontologia lida com medos e expectativas. Um atendimento acolhedor reduz a ansiedade e aumenta a confiança na competência do profissional.</p>
           
           <h2>Erros comuns no atendimento odontológico</h2>
@@ -196,11 +196,14 @@ const BlogPost = () => {
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
-          {/* Bloco de Conversão no Blog (Novo) */}
+          {/* Bloco de Conversão no Blog */}
           <div className="bg-[#EAF7F1] p-8 md:p-12 rounded-3xl border border-[#0B6B4F]/10 text-center mb-12">
             <h3 className="text-2xl font-bold text-[#0B6B4F] mb-4">
               Sua clínica está travada em algum desses pontos?
             </h3>
+            <p className="text-lg text-[#333] mb-6 leading-relaxed">
+              Na prática, a maioria das clínicas não tem um único problema, mas sim vários pequenos pontos que, juntos, acabam travando o crescimento.
+            </p>
             <p className="text-lg text-[#333] mb-8 leading-relaxed">
               Se você se identificou com esses pontos, é bem provável que existam gargalos na sua clínica que não estão visíveis no dia a dia. O diagnóstico estratégico mostra exatamente onde estão esses problemas e quais caminhos fazem sentido para melhorar os resultados.
             </p>
