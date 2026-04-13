@@ -16,28 +16,36 @@ const Blog = () => {
   
   const posts = [
     {
+      slug: "pacientes-nao-fecham-orcamento-clinica-odontologica",
+      title: "Por que pacientes não fecham orçamento na sua clínica odontológica",
+      excerpt: "Entenda os motivos reais por que pacientes não fecham orçamento dentista e como reverter essa situação com processos comerciais.",
+      category: "Conversão",
+      date: "20 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      slug: "como-conseguir-pacientes-clinica-odontologica",
+      title: "Como conseguir mais pacientes para sua clínica odontológica",
+      excerpt: "Descubra estratégias práticas sobre como conseguir mais pacientes odontologia e construir um posicionamento sólido no mercado.",
+      category: "Marketing",
+      date: "18 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      slug: "como-encher-agenda-clinica-odontologica",
+      title: "Como encher a agenda da sua clínica odontológica com estratégia",
+      excerpt: "Aprenda como ter uma agenda cheia clínica odontológica através de uma gestão clínica odontológica eficiente e previsível.",
+      category: "Gestão",
+      date: "16 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
+    },
+    {
       slug: "por-que-sua-clinica-odontologica-nao-cresce",
       title: "Por que sua clínica odontológica não cresce",
       excerpt: "Descubra os erros mais comuns que impedem o crescimento de clínicas odontológicas e como a consultoria odontológica pode ajudar.",
       category: "Gestão",
       date: "15 Mai, 2024",
       image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      slug: "aumentar-faturamento-clinica-odontologica",
-      title: "Como aumentar o faturamento da sua clínica odontológica",
-      excerpt: "Estratégias práticas para elevar o ticket médio e a conversão de orçamentos através de uma gestão de clínica odontológica eficiente.",
-      category: "Faturamento",
-      date: "10 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      slug: "erros-gestao-clinica-odontologica",
-      title: "Principais erros na gestão de clínicas odontológicas",
-      excerpt: "Aprenda a identificar falhas operacionais que estão drenando o lucro da sua clínica odontológica todos os meses.",
-      category: "Estratégia",
-      date: "05 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800"
     }
   ];
 

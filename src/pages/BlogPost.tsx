@@ -14,6 +14,77 @@ const BlogPost = () => {
 
   const getPostContent = (slug: string | undefined) => {
     const posts: Record<string, any> = {
+      "pacientes-nao-fecham-orcamento-clinica-odontologica": {
+        title: "Por que pacientes não fecham orçamento na sua clínica odontológica",
+        image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=1200",
+        alt: "clínica odontológica atendimento paciente",
+        content: `
+          <p>Muitos dentistas enfrentam a frustração de realizar diversas avaliações e perceber que os pacientes não fecham orçamento dentista no final do dia. Esse problema impacta diretamente a saúde financeira do negócio.</p>
+          <p>Entender os motivos reais por trás dessa negativa é o primeiro passo para <a href='/aumentar-faturamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>aumentar faturamento clínica odontológica</a> de forma consistente.</p>
+          
+          <h2>Principais motivos para a baixa conversão</h2>
+          <p>A falta de clareza no valor percebido é um dos maiores vilões. Se o paciente enxerga apenas o preço e não o benefício, ele tende a buscar a opção mais barata.</p>
+          <p>A ausência de um processo comercial estruturado na recepção também contribui para a perda de oportunidades. O atendimento precisa ser consultivo e não apenas informativo.</p>
+          <p>Muitas vezes existe uma insegurança do paciente em relação ao tratamento ou a falta de senso de urgência. Sem um fechamento conduzido, o paciente sai da clínica para pensar e acaba não voltando.</p>
+          
+          <h2>Como melhorar a conversão de pacientes</h2>
+          <p>A abordagem correta começa na escuta ativa. Entenda as dores do paciente antes de apresentar a solução técnica. Use uma explicação simples e evite termos excessivamente técnicos que geram confusão.</p>
+          <p>A condução do atendimento deve levar o paciente a uma decisão. Ofereça opções de pagamento claras e reforce os riscos de não realizar o tratamento agora.</p>
+          
+          <h2>O impacto disso no faturamento</h2>
+          <p>Pequenos ajustes na taxa de conversão podem gerar grandes saltos no lucro. Quando você otimiza o processo de vendas, cada hora de cadeira se torna muito mais valiosa.</p>
+          <p>A <a href='/consultoria-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>consultoria odontológica</a> foca justamente em ajustar esses pontos cegos da operação.</p>
+          
+          <p>Ter uma estrutura sólida é o que diferencia clínicas que apenas sobrevivem daquelas que dominam o mercado local. O segredo está na estratégia.</p>
+        `
+      },
+      "como-conseguir-pacientes-clinica-odontologica": {
+        title: "Como conseguir mais pacientes para sua clínica odontológica",
+        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200",
+        alt: "dentista analisando resultados",
+        content: `
+          <p>O problema da agenda vazia assombra muitos profissionais que buscam saber como conseguir mais pacientes odontologia. No entanto, atrair pessoas sem estratégia pode ser um erro caro.</p>
+          <p>Para <a href='/aumentar-faturamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>aumentar faturamento clínica odontológica</a>, é preciso atrair o público certo para os procedimentos mais lucrativos.</p>
+          
+          <h2>Por que sua clínica não atrai pacientes</h2>
+          <p>Um posicionamento fraco no mercado faz com que sua clínica seja vista como apenas mais uma. Sem diferenciação, você compete apenas por preço.</p>
+          <p>O marketing errado também é um fator comum. Investir em anúncios sem um funil de vendas preparado na recepção é desperdiçar investimento todos os meses.</p>
+          
+          <h2>Estratégias que realmente funcionam</h2>
+          <p>A presença digital deve ser estratégica e focada em autoridade. Mostre os bastidores, os resultados e a segurança que sua clínica oferece.</p>
+          <p>Estimular a indicação de pacientes atuais é uma das formas mais baratas e eficientes de crescer. Um paciente satisfeito é o seu melhor vendedor.</p>
+          <p>O posicionamento como especialista em determinadas áreas ajuda a atrair casos de maior ticket médio, melhorando a rentabilidade do negócio.</p>
+          
+          <h2>O erro de focar só em marketing</h2>
+          <p>Muitas clínicas acreditam que o marketing resolverá todos os problemas. Porém, se a base estruturada não estiver pronta, o marketing apenas acelerará a perda de dinheiro.</p>
+          <p>Antes de escalar, é fundamental garantir que a <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão clínica odontológica</a> esteja alinhada com os objetivos de crescimento.</p>
+          
+          <p>O sucesso sustentável vem da união entre atração eficiente e operação organizada. Comece arrumando a casa para depois convidar os convidados.</p>
+        `
+      },
+      "como-encher-agenda-clinica-odontologica": {
+        title: "Como encher a agenda da sua clínica odontológica com estratégia",
+        image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200",
+        alt: "consultoria odontológica estratégia",
+        content: `
+          <p>Muitos dentistas sofrem com a agenda ociosa mesmo investindo tempo e esforço na clínica. Ter uma agenda cheia clínica odontológica exige mais do que sorte: exige método.</p>
+          <p>A base para esse resultado é uma <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão clínica odontológica</a> profissional e focada em produtividade.</p>
+          
+          <h2>Por que a agenda fica ociosa</h2>
+          <p>A falta de processos claros de confirmação e remarcação gera buracos que custam caro. Cada hora de cadeira vazia é um prejuízo irrecuperável para o faturamento.</p>
+          <p>A baixa conversão de orçamentos também impede que a agenda se mantenha ocupada com tratamentos de longo prazo. Além disso, a desorganização no fluxo de pacientes causa gargalos desnecessários.</p>
+          
+          <h2>Como organizar a agenda corretamente</h2>
+          <p>O controle deve ser rigoroso. Utilize ferramentas que permitam a previsibilidade dos atendimentos e o acompanhamento em tempo real da ocupação.</p>
+          <p>Crie um fluxo de pacientes que priorize a produtividade do dentista. O tempo clínico deve ser sagrado e protegido por uma recepção eficiente.</p>
+          
+          <h2>Como aumentar ocupação sem depender só de marketing</h2>
+          <p>Trabalhe a base de pacientes inativos. Muitas vezes o lucro que você busca está em pessoas que já conhecem sua clínica mas não retornam há meses.</p>
+          <p>Melhore a taxa de comparecimento com lembretes estratégicos e uma comunicação humanizada. Reduzir as faltas é a forma mais rápida de encher a agenda.</p>
+          
+          <p>Lembre-se: estrutura vem antes de escala. Uma agenda cheia só é lucrativa se a operação for eficiente. Solicite um <a href='/diagnostico-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>diagnóstico estratégico</a> para identificar seus gargalos.</p>
+        `
+      },
       "por-que-sua-clinica-odontologica-nao-cresce": {
         title: "Por que sua clínica odontológica não cresce",
         image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200",
@@ -28,37 +99,6 @@ const BlogPost = () => {
           <h3>3. Ausência de Indicadores</h3>
           <p>Quem não mede, não gerencia. Você sabe qual é o seu ticket médio? Sem esses dados, você está voando às cegas.</p>
           <p>Uma consultoria odontológica ajuda a identificar esses gargalos e traçar uma estratégia para clínica odontológica vencedora.</p>
-        `
-      },
-      "aumentar-faturamento-clinica-odontologica": {
-        title: "Como aumentar o faturamento da sua clínica odontológica",
-        image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1200",
-        alt: "dentista analisando resultados da clínica para aumentar faturamento",
-        content: `
-          <p>A consultoria odontológica é essencial para clínicas que querem aumentar o faturamento com organização, estratégia e processos bem definidos.</p>
-          <p>Aumentar faturamento da clínica odontológica não é apenas sobre ter mais pacientes, mas sobre ser mais eficiente com os que você já tem.</p>
-          <h3>Onde as clínicas perdem dinheiro?</h3>
-          <p>A perda acontece principalmente na recepção e na hora de fechar o orçamento. Se o paciente sente que o valor é apenas preço, ele vai procurar o mais barato.</p>
-          <h3>Estratégias Práticas</h3>
-          <p>Melhore a experiência do paciente desde o agendamento. Treine sua equipe para vender benefícios e não apenas procedimentos. Use a gestão de clínica odontológica para controlar custos e margens.</p>
-          <p>O diagnóstico estratégico é o primeiro passo para entender onde sua clínica odontológica está falhando.</p>
-        `
-      },
-      "erros-gestao-clinica-odontologica": {
-        title: "Principais erros na gestão de clínicas odontológicas",
-        image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=1200",
-        alt: "dentista atendendo paciente em consultório odontológico",
-        content: `
-          <p>A consultoria odontológica é essencial para clínicas que querem aumentar o faturamento com organização, estratégia e processos bem definidos.</p>
-          <p>Erros na gestão de clínica odontológica podem custar caro. Identificar essas falhas é o papel de uma consultoria odontológica séria.</p>
-          <h3>Lista de Erros Comuns</h3>
-          <ul>
-            <li><strong>Falta de processo:</strong> Cada um faz de um jeito, gerando confusão.</li>
-            <li><strong>Agenda mal organizada:</strong> Muitos buracos e falta de confirmação eficiente.</li>
-            <li><strong>Baixa conversão:</strong> Orçamentos que não viram tratamentos.</li>
-            <li><strong>Marketing sem estratégia:</strong> Gastar dinheiro sem saber o retorno real.</li>
-          </ul>
-          <p>Esses erros impactam diretamente no faturamento. Corrigi-los exige método e acompanhamento constante.</p>
         `
       }
     };
