@@ -91,7 +91,7 @@ const BlogPost = () => {
       },
       "aumentar-faturamento-clinica-odontologica": {
         title: "Como aumentar o faturamento da sua clínica odontológica com organização e estratégia",
-        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&q=80&w=1200",
         alt: "consultório odontológico moderno",
         content: `
           <p>Muitos dentistas trabalham exaustivamente, mas percebem que o faturamento clínica odontológica baixo impede o crescimento real do negócio. O esforço clínico nem sempre se traduz em lucro líquido.</p>
@@ -132,13 +132,13 @@ const BlogPost = () => {
           <p>A padronização de todas as etapas do atendimento garante qualidade constante. A organização financeira permite investimentos estratégicos e segurança para o dono.</p>
           <p>Uma estratégia clara de crescimento orienta os esforços da equipe para o que realmente traz resultado. A organização é a base para qualquer escala.</p>
           
-          <p>Gestão eficiente é o que permite ao dentista ter liberdade e lucro. Se você sente que sua clínica está travada, fale conosco pelo WhatsApp para entender como podemos ajudar.</p>
+          <p>Gestão eficiente é o que permite ao dentista tener liberdade e lucro. Se você sente que sua clínica está travada, fale conosco pelo WhatsApp para entender como podemos ajudar.</p>
         `
       },
       "melhorar-atendimento-clinica-odontologica": {
         title: "Como melhorar o atendimento na clínica odontológica e aumentar a conversão",
-        image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200",
-        alt: "dentista atendendo paciente em clínica odontológica",
+        image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200",
+        alt: "atendimento em clínica odontológica",
         content: `
           <p>O atendimento clínica odontológica é, muitas vezes, o fator decisivo para o fechamento de um tratamento. O paciente decide se confia em você muito antes de sentar na cadeira.</p>
           <p>Saber <a href='/blog/pacientes-nao-fecham-orcamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>melhorar conversão pacientes dentista</a> passa obrigatoriamente pela excelência na experiência do paciente.</p>

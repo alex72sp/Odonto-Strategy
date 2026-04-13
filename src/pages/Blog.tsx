@@ -45,7 +45,7 @@ const Blog = () => {
       excerpt: "Estratégias práticas para aumentar faturamento clínica odontológica através de processos sólidos e visão empresarial.",
       category: "Financeiro",
       date: "14 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&q=80&w=800"
     },
     {
       slug: "erros-gestao-clinica-odontologica",
@@ -61,7 +61,7 @@ const Blog = () => {
       excerpt: "O atendimento clínica odontológica é a chave para converter mais pacientes e criar um diferencial competitivo real.",
       category: "Atendimento",
       date: "10 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
