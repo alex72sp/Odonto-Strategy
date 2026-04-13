@@ -31,7 +31,7 @@ const Blog = () => {
       excerpt: "Aprenda a identificar falhas operacionais que estão drenando o lucro da sua clínica odontológica todos os meses.",
       category: "Estratégia",
       date: "05 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
