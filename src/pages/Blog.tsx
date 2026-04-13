@@ -53,7 +53,7 @@ const Blog = () => {
       excerpt: "Identifique os erros gestão clínica odontológica mais comuns e aprenda como organizar sua operação para crescer.",
       category: "Gestão",
       date: "12 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800"
     },
     {
       slug: "melhorar-atendimento-clinica-odontologica",
