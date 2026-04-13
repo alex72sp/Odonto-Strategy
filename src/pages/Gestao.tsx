@@ -3,6 +3,7 @@
 import React from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BrandDivider from "@/components/BrandDivider";
 import { Button } from "@/components/ui/button";
 import { LayoutDashboard, Users, Calendar, ClipboardCheck } from "lucide-react";
 
@@ -68,6 +69,7 @@ const Gestao = () => {
         </div>
       </section>
 
+      <BrandDivider />
       <Footer />
     </div>
   );

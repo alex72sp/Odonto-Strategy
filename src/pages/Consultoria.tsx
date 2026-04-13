@@ -3,6 +3,7 @@
 import React from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BrandDivider from "@/components/BrandDivider";
 import { Button } from "@/components/ui/button";
 import { ShieldCheck } from "lucide-react";
 
@@ -65,6 +66,7 @@ const Consultoria = () => {
         </div>
       </section>
 
+      <BrandDivider />
       <Footer />
     </div>
   );
