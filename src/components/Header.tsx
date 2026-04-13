@@ -13,7 +13,8 @@ const Header = () => {
   const logoUrl = "dyad-media://media/nimble-capybara-snore/.dyad/media/792ef36865eb71bdf60d0fd21ddb2886.jpeg";
 
   const whatsappNumber = "5511983232828";
-  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
 
   const handleCtaClick = () => {
     window.open(whatsappLink, '_blank');

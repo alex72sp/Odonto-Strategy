@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Search, AlertCircle, Target, CheckCircle2 } from "lucide-react";
 
 const Diagnostico = () => {
-  const whatsappLink = "https://wa.me/5511983232828";
+  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
@@ -70,7 +71,7 @@ const Diagnostico = () => {
                 onClick={() => window.open(whatsappLink, '_blank')}
                 className="w-full bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold py-6"
               >
-                Agendar meu diagnóstico
+                Solicitar diagnóstico
               </Button>
             </div>
           </div>

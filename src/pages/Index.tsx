@@ -16,7 +16,8 @@ import {
 } from "lucide-react";
 
 const Index = () => {
-  const whatsappLink = "https://wa.me/5511983232828";
+  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
     <div className="min-h-screen bg-[#F5F5F5] font-sans text-[#1A1A1A]">
@@ -128,7 +129,7 @@ const Index = () => {
               size="lg" 
               className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] px-10 py-7 text-lg font-bold rounded-xl shadow-xl transition-all hover:scale-105 w-full md:w-auto max-w-[320px]"
             >
-              Solicitar diagnóstico agora
+              Solicitar diagnóstico
             </Button>
             <Link to="/consultoria-odontologica-completa" className="text-[#2ECC71] font-bold flex items-center gap-2 hover:underline text-lg">
               Conheça nossa consultoria odontológica completa <ArrowRight size={20} />

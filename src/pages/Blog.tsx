@@ -10,7 +10,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Blog = () => {
-  const whatsappLink = "https://wa.me/5511983232828";
+  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
   
   const posts = [
     {
@@ -95,7 +96,7 @@ const Blog = () => {
               size="lg"
               className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] px-10 py-7 text-lg font-bold rounded-xl shadow-xl transition-all hover:scale-105 flex items-center gap-2"
             >
-              Solicitar diagnóstico gratuito
+              Solicitar diagnóstico
               <ArrowRight className="h-5 w-5" />
             </Button>
           </div>

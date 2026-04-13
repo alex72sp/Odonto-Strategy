@@ -4,10 +4,11 @@ import React from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ShieldCheck, Target, BarChart3, TrendingUp } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 
 const Consultoria = () => {
-  const whatsappLink = "https://wa.me/5511983232828";
+  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">

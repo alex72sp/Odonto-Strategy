@@ -6,6 +6,8 @@ import { MadeWithDyad } from "@/components/made-with-dyad";
 
 const Footer = () => {
   const logoUrl = "dyad-media://media/nimble-capybara-snore/.dyad/media/792ef36865eb71bdf60d0fd21ddb2886.jpeg";
+  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
     <footer className="bg-[#0B6B4F] text-white py-16 px-4 border-t border-white/10">
@@ -35,7 +37,7 @@ const Footer = () => {
             <ul className="space-y-4 text-sm text-white/70">
               <li><Link to="/diagnostico-clinica-odontologica" className="hover:text-white transition-colors">Diagnóstico</Link></li>
               <li><Link to="/aumentar-faturamento-clinica-odontologica" className="hover:text-white transition-colors">Faturamento</Link></li>
-              <li><a href="https://wa.me/5511983232828" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">WhatsApp</a></li>
+              <li><a href={whatsappLink} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">WhatsApp</a></li>
             </ul>
           </div>
         </div>

@@ -9,7 +9,8 @@ import { ArrowLeft, MessageCircle } from "lucide-react";
 
 const BlogPost = () => {
   const { slug } = useParams();
-  const whatsappLink = "https://wa.me/5511983232828";
+  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   const getPostContent = (slug: string | undefined) => {
     const posts: Record<string, any> = {
@@ -106,7 +107,7 @@ const BlogPost = () => {
               onClick={() => window.open(whatsappLink, '_blank')}
               className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold px-8 py-6 rounded-xl flex items-center gap-2 mx-auto"
             >
-              <MessageCircle className="h-5 w-5" /> Falar com um especialista
+              <MessageCircle className="h-5 w-5" /> Falar no WhatsApp
             </Button>
           </div>
         </div>

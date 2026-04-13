@@ -4,11 +4,11 @@ import React from 'react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { CheckCircle2, ArrowRight, TrendingUp, Target, BarChart3 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 
 const ConsultoriaPilar = () => {
-  const whatsappLink = "https://wa.me/5511983232828";
+  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
     <div className="min-h-screen bg-[#F5F5F5]">
@@ -81,7 +81,7 @@ const ConsultoriaPilar = () => {
               onClick={() => window.open(whatsappLink, '_blank')}
               className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold px-8 py-6 rounded-xl text-lg"
             >
-              Solicitar diagnóstico estratégico
+              Solicitar diagnóstico
             </Button>
           </div>
         </div>
