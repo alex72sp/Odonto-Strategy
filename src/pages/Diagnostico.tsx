@@ -15,9 +15,12 @@ const Diagnostico = () => {
       
       <section className="pt-32 pb-20 px-4 bg-[#0B6B4F] text-white">
         <div className="max-w-4xl mx-auto text-center">
+          <p className="text-sm mb-6 text-white/80">
+            A consultoria odontológica é essencial para clínicas que querem aumentar o faturamento com organização, estratégia e processos bem definidos.
+          </p>
           <h1 className="text-3xl md:text-5xl font-extrabold mb-6">Diagnóstico estratégico para clínica odontológica</h1>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-            Identificamos os gargalos invisíveis que estão travando o crescimento do seu negócio.
+            Identificamos os gargalos invisíveis que estão travando o crescimento da sua clínica odontológica.
           </p>
         </div>
       </section>
@@ -28,7 +31,7 @@ const Diagnostico = () => {
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#0B6B4F] mb-6">Como funciona o diagnóstico?</h2>
               <p className="text-[#333] mb-6 leading-relaxed">
-                O diagnóstico é o primeiro passo da nossa consultoria. É uma análise profunda da situação atual da sua clínica para entender por que os resultados não estão aparecendo.
+                O diagnóstico é o primeiro passo da nossa consultoria odontológica. É uma análise profunda da situação atual da sua clínica odontológica para entender por que os resultados não estão aparecendo.
               </p>
               <div className="space-y-6">
                 {[
@@ -47,7 +50,7 @@ const Diagnostico = () => {
               </div>
             </div>
             <div className="bg-[#F5F5F5] p-8 rounded-3xl border border-gray-100">
-              <h3 className="text-xl font-bold text-[#0B6B4F] mb-6">O que analisamos:</h3>
+              <h3 className="text-xl font-bold text-[#0B6B4F] mb-6">O que analisamos na clínica odontológica:</h3>
               <ul className="space-y-4 mb-8">
                 {[
                   "Taxa de conversão da recepção",

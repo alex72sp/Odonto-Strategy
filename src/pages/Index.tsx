@@ -8,16 +8,11 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { 
   ArrowRight, 
-  CheckCircle, 
   TrendingUp, 
-  Users, 
   Target, 
   BarChart3, 
-  AlertCircle, 
-  Zap,
   MessageCircle,
-  XCircle,
-  Quote
+  XCircle
 } from "lucide-react";
 
 const Index = () => {
@@ -29,17 +24,15 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-[#0B6B4F] text-white pt-32 pb-24 md:pt-48 md:pb-40 px-4">
-        <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-          <div className="absolute -top-24 -left-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-[#2ECC71] rounded-full blur-3xl"></div>
-        </div>
-
         <div className="max-w-6xl mx-auto text-center relative z-10">
+          <p className="text-sm md:text-base mb-6 text-white/80 max-w-2xl mx-auto">
+            A consultoria odontológica é essencial para clínicas que querem aumentar o faturamento com organização, estratégia e processos bem definidos.
+          </p>
           <Badge className="bg-[#2ECC71] text-[#0B6B4F] hover:bg-[#2ECC71] border-none mb-6 px-4 py-1 text-sm font-bold tracking-wider uppercase">
-            Consultoria odontológica estratégica
+            Estratégia para clínica odontológica
           </Badge>
           <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight tracking-tight">
-            Sua clínica poderia faturar mais, <br className="hidden md:block" /> 
+            Sua clínica odontológica poderia faturar mais, <br className="hidden md:block" /> 
             <span className="text-[#F4C542]">mas algo está travando.</span>
           </h1>
           <p className="text-xl md:text-3xl font-bold mb-8 text-[#2ECC71]">
@@ -64,16 +57,14 @@ const Index = () => {
       {/* Bloco de Impacto */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-4xl font-bold text-[#0B6B4F] mb-4">
-              Você pode estar perdendo dinheiro todos os dias sem perceber
-            </h2>
-          </div>
+          <h2 className="text-2xl md:text-4xl font-bold text-[#0B6B4F] mb-8 text-center">
+            Você pode estar perdendo dinheiro todos os dias sem perceber
+          </h2>
           
           <div className="grid md:grid-cols-2 gap-4 mb-12">
             {[
               "Pacientes não fecham orçamento",
-              "Agenda tem espaços vazios",
+              "Agenda ociosa na clínica odontológica",
               "Processos desorganizados",
               "Marketing sem retorno claro"
             ].map((item, i) => (
@@ -84,11 +75,9 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center">
-            <p className="text-xl md:text-2xl font-bold text-[#0B6B4F]">
-              O problema não está na falta de pacientes, está na estrutura da clínica odontológica.
-            </p>
-          </div>
+          <p className="text-xl text-center font-bold text-[#0B6B4F]">
+            O problema não está na falta de pacientes, está na estrutura da clínica odontológica.
+          </p>
         </div>
       </section>
 
@@ -98,19 +87,19 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-2xl md:text-4xl font-bold text-[#0B6B4F] mb-6 leading-tight">
-                O que fazemos de diferente
+                Gestão de clínica odontológica focada em resultados
               </h2>
               <p className="text-base md:text-lg text-[#333333] mb-6 leading-relaxed">
-                O mercado foca em execução, como tráfego e redes sociais. Nós atuamos antes disso. Analisamos a clínica, identificamos falhas e entregamos um plano claro.
+                O mercado foca em execução, como tráfego e redes sociais. Nós atuamos antes disso. Analisamos a clínica, identificamos falhas e entregamos um plano claro para aumentar faturamento da clínica odontológica.
               </p>
               <div className="bg-[#0B6B4F] p-6 rounded-2xl text-white mb-8 shadow-xl">
                 <p className="font-bold text-lg mb-2">Não executamos. Não operamos marketing. Não gerenciamos equipe.</p>
                 <p className="text-[#2ECC71] font-black text-xl uppercase tracking-wider">Entregamos direção estratégica.</p>
               </div>
-              <div className="space-y-4">
-                <p className="text-[#0B6B4F] font-bold">Consultoria estratégica para clínicas que querem organizar antes de investir.</p>
-                <p className="text-[#0B6B4F] font-bold">Gestão de clínica odontológica focada em resultados reais.</p>
-              </div>
+              <p className="text-[#0B6B4F] font-bold mb-4">Consultoria odontológica estratégica para clínicas que querem organizar antes de investir.</p>
+              <Link to="/consultoria-odontologica-completa" className="text-[#2ECC71] font-bold flex items-center gap-2 hover:underline">
+                Conheça nossa consultoria odontológica completa <ArrowRight size={16} />
+              </Link>
             </div>
             <div className="grid grid-cols-1 gap-4">
               {[
@@ -139,24 +128,21 @@ const Index = () => {
 
       {/* Call to Action Final */}
       <section className="py-24 px-4 bg-[#0B6B4F] relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 -skew-x-12 translate-x-1/2"></div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white leading-tight">
-            Sua clínica está pronta para o próximo nível?
+            Sua clínica odontológica está pronta para o próximo nível?
           </h2>
           <p className="text-lg mb-10 text-white/80 leading-relaxed">
             Se sua clínica já atende pacientes, mas o faturamento não cresce como deveria, o problema não está apenas na captação. Está na estrutura. O primeiro passo não é investir mais. É entender o que está travando.
           </p>
-          <div className="flex flex-col items-center gap-6">
-            <Button 
-              onClick={() => window.open(whatsappLink, '_blank')}
-              size="lg" 
-              className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-10 py-7 text-lg font-bold rounded-xl shadow-2xl transition-all hover:scale-105 flex items-center justify-center gap-3 w-full max-w-[280px] md:w-auto"
-            >
-              <MessageCircle className="h-5 w-5 shrink-0" />
-              Falar no WhatsApp
-            </Button>
-          </div>
+          <Button 
+            onClick={() => window.open(whatsappLink, '_blank')}
+            size="lg" 
+            className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-10 py-7 text-lg font-bold rounded-xl shadow-2xl transition-all hover:scale-105 flex items-center justify-center gap-3 w-full max-w-[280px] md:w-auto"
+          >
+            <MessageCircle className="h-5 w-5 shrink-0" />
+            Falar no WhatsApp
+          </Button>
         </div>
       </section>
 

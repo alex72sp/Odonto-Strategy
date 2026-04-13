@@ -8,6 +8,7 @@ import Consultoria from "./pages/Consultoria";
 import Gestao from "./pages/Gestao";
 import Faturamento from "./pages/Faturamento";
 import Diagnostico from "./pages/Diagnostico";
+import ConsultoriaPilar from "./pages/ConsultoriaPilar";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/gestao-clinica-odontologica" element={<Gestao />} />
           <Route path="/aumentar-faturamento-clinica-odontologica" element={<Faturamento />} />
           <Route path="/diagnostico-clinica-odontologica" element={<Diagnostico />} />
+          <Route path="/consultoria-odontologica-completa" element={<ConsultoriaPilar />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="*" element={<NotFound />} />

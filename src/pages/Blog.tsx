@@ -12,23 +12,26 @@ const Blog = () => {
     {
       slug: "por-que-sua-clinica-odontologica-nao-cresce",
       title: "Por que sua clínica odontológica não cresce",
-      excerpt: "Descubra os 5 erros mais comuns que impedem o crescimento de clínicas odontológicas e como evitá-los.",
+      excerpt: "Descubra os erros mais comuns que impedem o crescimento de clínicas odontológicas e como a consultoria odontológica pode ajudar.",
       category: "Gestão",
-      date: "15 Mai, 2024"
+      date: "15 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
     },
     {
-      slug: "como-aumentar-o-faturamento-de-uma-clinica-odontologica",
-      title: "Como aumentar o faturamento de uma clínica odontológica",
-      excerpt: "Estratégias práticas para elevar o ticket médio e a conversão de orçamentos sem gastar mais com marketing.",
+      slug: "aumentar-faturamento-clinica-odontologica",
+      title: "Como aumentar o faturamento da sua clínica odontológica",
+      excerpt: "Estratégias práticas para elevar o ticket médio e a conversão de orçamentos através de uma gestão de clínica odontológica eficiente.",
       category: "Faturamento",
-      date: "10 Mai, 2024"
+      date: "10 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800"
     },
     {
-      slug: "erros-na-gestao-de-clinicas-odontologicas",
-      title: "Erros na gestão de clínicas odontológicas",
-      excerpt: "Aprenda a identificar falhas operacionais que estão drenando o lucro do seu consultório todos os meses.",
+      slug: "erros-gestao-clinica-odontologica",
+      title: "Principais erros na gestão de clínicas odontológicas",
+      excerpt: "Aprenda a identificar falhas operacionais que estão drenando o lucro da sua clínica odontológica todos os meses.",
       category: "Estratégia",
-      date: "05 Mai, 2024"
+      date: "05 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1454165833767-027ffea9e778?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
@@ -38,9 +41,12 @@ const Blog = () => {
       
       <section className="pt-32 pb-20 px-4 bg-[#0B6B4F] text-white">
         <div className="max-w-4xl mx-auto text-center">
+          <p className="text-sm mb-6 text-white/80">
+            A consultoria odontológica é essencial para clínicas que querem aumentar o faturamento com organização, estratégia e processos bem definidos.
+          </p>
           <h1 className="text-3xl md:text-5xl font-extrabold mb-6">Blog Odonto Strategy</h1>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-            Conteúdo estratégico sobre gestão, faturamento e marketing para dentistas.
+            Conteúdo estratégico sobre gestão de clínica odontológica e faturamento.
           </p>
         </div>
       </section>
@@ -51,8 +57,12 @@ const Blog = () => {
             {posts.map((post, i) => (
               <Link key={i} to={`/blog/${post.slug}`}>
                 <Card className="h-full border-none shadow-sm hover:shadow-md transition-all overflow-hidden group">
-                  <div className="h-48 bg-[#EAF7F1] flex items-center justify-center group-hover:bg-[#D5EFE2] transition-colors">
-                    <span className="text-[#0B6B4F] font-black text-4xl opacity-20">OS</span>
+                  <div className="h-48 overflow-hidden">
+                    <img 
+                      src={post.image} 
+                      alt={post.title} 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
                   </div>
                   <CardHeader>
                     <div className="flex justify-between items-center mb-2">
