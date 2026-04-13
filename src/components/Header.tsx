@@ -2,15 +2,12 @@
 
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
-  const [imageError, setImageError] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate();
   const location = useLocation();
-  const logoUrl = "dyad-media://media/nimble-capybara-snore/.dyad/media/792ef36865eb71bdf60d0fd21ddb2886.jpeg";
 
   const whatsappNumber = "5511983232828";
   const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
@@ -31,18 +28,10 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          {imageError ? (
-            <span className="text-xl font-black text-[#0B6B4F] tracking-tighter">
-              ODONTO <span className="text-[#2ECC71]">STRATEGY</span>
-            </span>
-          ) : (
-            <img 
-              src={logoUrl} 
-              alt="Odonto Strategy Logo" 
-              className="h-12 md:h-16 w-auto object-contain"
-              onError={() => setImageError(true)}
-            />
-          )}
+          <span className="text-xl md:text-2xl font-black tracking-tighter uppercase">
+            <span className="text-[#0B6B4F]">ODONTO</span>{" "}
+            <span className="text-[#2ECC71]">STRATEGY</span>
+          </span>
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">

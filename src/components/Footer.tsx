@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 
 const Footer = () => {
-  const logoUrl = "dyad-media://media/nimble-capybara-snore/.dyad/media/792ef36865eb71bdf60d0fd21ddb2886.jpeg";
   const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
@@ -14,11 +13,12 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
-            <img 
-              src={logoUrl} 
-              alt="Odonto Strategy Logo" 
-              className="h-12 w-auto object-contain mb-6 bg-white p-2 rounded-lg"
-            />
+            <div className="mb-6">
+              <span className="text-2xl font-black tracking-tighter uppercase">
+                <span className="text-white">ODONTO</span>{" "}
+                <span className="text-[#2ECC71]">STRATEGY</span>
+              </span>
+            </div>
             <p className="text-white/60 text-sm max-w-sm leading-relaxed">
               Consultoria estratégica especializada em gestão de clínicas odontológicas. Focamos em identificar gargalos e estruturar processos para crescimento sustentável.
             </p>
