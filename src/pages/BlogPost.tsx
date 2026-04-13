@@ -5,7 +5,7 @@ import { useParams, Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, MessageCircle } from "lucide-react";
+import { ArrowLeft, MessageCircle, ArrowRight } from "lucide-react";
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -20,7 +20,7 @@ const BlogPost = () => {
         alt: "dentista atendendo paciente em clínica odontológica",
         content: `
           <p>Muitos dentistas enfrentam a frustração de realizar diversas avaliações e perceber que os pacientes não fecham orçamento dentista no final do dia. Esse problema impacta diretamente a saúde financeira do negócio.</p>
-          <p>Entender os motivos reais por trás dessa negativa é o primeiro passo para <a href='/aumentar-faturamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>aumentar faturamento clínica odontológica</a> de forma consistente.</p>
+          <p>Entender os motivos reais por trás dessa negativa é o primeiro passo para <a href='/aumentar-faturamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>aumentar faturamento dentista</a> de forma consistente.</p>
           
           <h2>Principais motivos para a baixa conversão</h2>
           <p>A falta de clareza no valor percebido é um dos maiores vilões. Se o paciente enxerga apenas o preço e não o benefício, ele tende a buscar a opção mais barata.</p>
@@ -33,9 +33,9 @@ const BlogPost = () => {
           
           <h2>O impacto disso no faturamento</h2>
           <p>Pequenos ajustes na taxa de conversão podem gerar grandes saltos no lucro. Quando você otimiza o processo de vendas, cada hora de cadeira se torna muito mais valiosa.</p>
-          <p>A <a href='/consultoria-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>consultoria odontológica</a> foca justamente em ajustar esses pontos cegos da operação.</p>
+          <p>A <a href='/consultoria-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>consultoria para dentistas</a> foca justamente em ajustar esses pontos cegos da operação.</p>
           
-          <p>Ter uma estrutura sólida é o que diferencia clínicas que apenas sobrevivem daquelas que dominam o mercado local. O segredo está na estratégia.</p>
+          <p>Ter uma estrutura sólida é o que diferencia clínicas que apenas sobrevivem daquelas que dominam o mercado local. O segredo está na estratégia para clínica odontológica.</p>
         `
       },
       "como-conseguir-pacientes-clinica-odontologica": {
@@ -58,7 +58,7 @@ const BlogPost = () => {
           
           <h2>O erro de depender só de marketing</h2>
           <p>Marketing sem estrutura interna não resolve o problema. Se a recepção não converte o contato em agendamento, o investimento é desperdiçado.</p>
-          <p>A <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão clínica odontológica</a> deve estar alinhada para receber a demanda. A organização deve vir antes da escala.</p>
+          <p>A <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão para clínicas odontológicas</a> deve estar alinhada para receber a demanda. A organização deve vir antes da escala.</p>
           
           <p>Reforce a importância de ter uma estratégia clara e uma organização impecável. O crescimento sustentável depende de uma base sólida.</p>
         `
@@ -69,7 +69,7 @@ const BlogPost = () => {
         alt: "clínica odontológica com agenda organizada",
         content: `
           <p>Ter uma agenda cheia clínica odontológica é o desejo de todo gestor. No entanto, muitos sofrem com a agenda ociosa mesmo com esforço constante.</p>
-          <p>A solução para esse problema passa por entender como lotar agenda dentista com inteligência e <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão de agenda odontológica</a> eficiente.</p>
+          <p>A solução para esse problema passa por entender como lotar agenda dentista com inteligência e <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão para clínicas odontológicas</a> eficiente.</p>
           
           <h2>Por que a agenda da clínica fica vazia</h2>
           <p>A falta de um processo de confirmação rigoroso gera faltas inesperadas. Cada buraco na agenda representa um prejuízo financeiro imediato.</p>
@@ -95,7 +95,7 @@ const BlogPost = () => {
         alt: "consultório odontológico moderno",
         content: `
           <p>Muitos dentistas trabalham exaustivamente, mas percebem que o faturamento clínica odontológica baixo impede o crescimento real do negócio. O esforço clínico nem sempre se traduz em lucro líquido.</p>
-          <p>Para <a href='/aumentar-faturamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>aumentar faturamento clínica odontológica</a>, é preciso sair do operacional e olhar para a clínica como uma empresa.</p>
+          <p>Para <a href='/aumentar-faturamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>aumentar faturamento dentista</a>, é preciso sair do operacional e olhar para a clínica como uma empresa.</p>
           
           <h2>Por que o faturamento não cresce</h2>
           <p>A falta de controle financeiro impede que você saiba onde o dinheiro está sendo desperdiçado. Sem números claros, as decisões são baseadas em suposições.</p>
@@ -107,7 +107,7 @@ const BlogPost = () => {
           
           <h2>Como estruturar crescimento sustentável</h2>
           <p>O planejamento estratégico define onde a clínica quer chegar e quais passos são necessários. O acompanhamento de indicadores permite corrigir a rota rapidamente.</p>
-          <p>A tomada de decisão baseada em dados é o que separa as clínicas amadoras das profissionais. A <a href='/consultoria-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>consultoria odontológica</a> oferece o suporte necessário para essa transição.</p>
+          <p>A tomada de decisão baseada em dados é o que separa as clínicas amadoras das profissionais. A <a href='/consultoria-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>consultoria para dentistas</a> oferece o suporte necessário para essa transição.</p>
           
           <p>Crescimento real não vem apenas de trazer mais pacientes, mas de gerir melhor os que você já tem. Solicite um <a href='/diagnostico-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>diagnóstico estratégico</a> para começar.</p>
         `
@@ -118,7 +118,7 @@ const BlogPost = () => {
         alt: "gestão de clínica odontológica",
         content: `
           <p>Existem problemas silenciosos que impedem o sucesso de muitos consultórios. Identificar os erros gestão clínica odontológica é o primeiro passo para a profissionalização.</p>
-          <p>Muitas vezes, o dentista foca apenas na técnica e esquece que a <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão de clínica odontológica</a> é o que sustenta o negócio.</p>
+          <p>Muitas vezes, o dentista foca apenas na técnica e esquece que a <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão para clínicas odontológicas</a> é o que sustenta o negócio.</p>
           
           <h2>Principais erros na gestão</h2>
           <p>A falta de processos padronizados gera confusão na equipe e insatisfação no paciente. Sem um manual de conduta, cada um trabalha de um jeito diferente.</p>
@@ -141,7 +141,7 @@ const BlogPost = () => {
         alt: "atendimento em clínica odontológica",
         content: `
           <p>O atendimento clínica odontológica é, muitas vezes, o fator decisivo para o fechamento de um tratamento. O paciente decide se confia em você muito antes de sentar na cadeira.</p>
-          <p>Saber <a href='/blog/pacientes-nao-fecham-orcamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>melhorar conversão pacientes dentista</a> passa obrigatoriamente pela excelência na experiência do paciente.</p>
+          <p>Saber <a href='/blog/pacientes-nao-fecham-orcamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>melhorar resultados clínica odontológica</a> passa obrigatoriamente pela excelência na experiência do paciente.</p>
           
           <h2>Por que o atendimento influencia na decisão</h2>
           <p>A odontologia lida com medos e expectativas. Um atendimento acolhedor reduz a ansiedade e aumenta a confiança na competência do profissional.</p>
@@ -196,15 +196,25 @@ const BlogPost = () => {
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
-          <div className="bg-[#F5F5F5] p-8 rounded-3xl border border-gray-100 text-center">
-            <h3 className="text-xl font-bold text-[#0B6B4F] mb-4">Gostou do conteúdo?</h3>
-            <p className="text-sm text-[#333] mb-6">Podemos ajudar sua clínica odontológica a superar esses desafios com nossa consultoria estratégica.</p>
-            <Button 
-              onClick={() => window.open(whatsappLink, '_blank')}
-              className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold px-8 py-6 rounded-xl flex items-center gap-2 mx-auto"
-            >
-              <MessageCircle className="h-5 w-5" /> Falar no WhatsApp
-            </Button>
+          {/* Bloco de Conversão no Blog (Novo) */}
+          <div className="bg-[#EAF7F1] p-8 md:p-12 rounded-3xl border border-[#0B6B4F]/10 text-center mb-12">
+            <h3 className="text-2xl font-bold text-[#0B6B4F] mb-4">
+              Sua clínica está travada em algum desses pontos?
+            </h3>
+            <p className="text-lg text-[#333] mb-8 leading-relaxed">
+              Se você se identificou com esses pontos, é bem provável que existam gargalos na sua clínica que não estão visíveis no dia a dia. O diagnóstico estratégico mostra exatamente onde estão esses problemas e quais caminhos fazem sentido para melhorar os resultados.
+            </p>
+            <div className="flex flex-col md:flex-row justify-center gap-4">
+              <Button 
+                onClick={() => window.open(whatsappLink, '_blank')}
+                className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold px-8 py-7 rounded-xl flex items-center gap-2 text-lg"
+              >
+                <MessageCircle className="h-6 w-6" /> Solicitar diagnóstico estratégico
+              </Button>
+              <Link to="/" className="flex items-center justify-center gap-2 text-[#0B6B4F] font-bold hover:underline">
+                Voltar para a página inicial <ArrowRight size={20} />
+              </Link>
+            </div>
           </div>
         </div>
       </article>

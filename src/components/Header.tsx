@@ -50,7 +50,7 @@ const Header = () => {
             onClick={handleCtaClick}
             className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold rounded-lg px-6 shadow-md transition-all"
           >
-            Solicitar diagnóstico
+            Diagnóstico estratégico
           </Button>
         </nav>
         
@@ -86,7 +86,7 @@ const Header = () => {
             }}
             className="bg-[#0B6B4F] text-white w-full font-bold"
           >
-            Solicitar diagnóstico
+            Solicitar diagnóstico estratégico
           </Button>
         </div>
       )}
