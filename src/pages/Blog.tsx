@@ -38,6 +38,30 @@ const Blog = () => {
       category: "Gestão",
       date: "16 Mai, 2024",
       image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      slug: "aumentar-faturamento-clinica-odontologica",
+      title: "Como aumentar o faturamento da sua clínica odontológica com organização e estratégia",
+      excerpt: "Estratégias práticas para aumentar faturamento clínica odontológica através de processos sólidos e visão empresarial.",
+      category: "Financeiro",
+      date: "14 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      slug: "erros-gestao-clinica-odontologica",
+      title: "Erros na gestão de clínicas odontológicas que travam o crescimento",
+      excerpt: "Identifique os erros gestão clínica odontológica mais comuns e aprenda como organizar sua operação para crescer.",
+      category: "Gestão",
+      date: "12 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      slug: "melhorar-atendimento-clinica-odontologica",
+      title: "Como melhorar o atendimento na clínica odontológica e aumentar a conversão",
+      excerpt: "O atendimento clínica odontológica é a chave para converter mais pacientes e criar um diferencial competitivo real.",
+      category: "Atendimento",
+      date: "10 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
