@@ -29,7 +29,7 @@ const Blog = () => {
       excerpt: "Descubra estratégias práticas sobre como conseguir mais pacientes odontologia e construir um posicionamento sólido no mercado.",
       category: "Marketing",
       date: "18 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800"
     },
     {
       slug: "como-encher-agenda-clinica-odontologica",

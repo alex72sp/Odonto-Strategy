@@ -40,7 +40,7 @@ const BlogPost = () => {
       },
       "como-conseguir-pacientes-clinica-odontologica": {
         title: "Como conseguir mais pacientes para sua clínica odontológica",
-        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=1200",
         alt: "dentista analisando resultados",
         content: `
           <p>O problema da agenda vazia assombra muitos profissionais que buscam saber como conseguir mais pacientes odontologia. No entanto, atrair pessoas sem estratégia pode ser um erro caro.</p>
