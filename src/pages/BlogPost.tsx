@@ -17,7 +17,7 @@ const BlogPost = () => {
       "pacientes-nao-fecham-orcamento-clinica-odontologica": {
         title: "Por que pacientes não fecham orçamento na sua clínica odontológica",
         image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=1200",
-        alt: "clínica odontológica atendimento paciente",
+        alt: "dentista atendendo paciente em clínica odontológica",
         content: `
           <p>Muitos dentistas enfrentam a frustração de realizar diversas avaliações e perceber que os pacientes não fecham orçamento dentista no final do dia. Esse problema impacta diretamente a saúde financeira do negócio.</p>
           <p>Entender os motivos reais por trás dessa negativa é o primeiro passo para <a href='/aumentar-faturamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>aumentar faturamento clínica odontológica</a> de forma consistente.</p>
@@ -40,65 +40,53 @@ const BlogPost = () => {
       },
       "como-conseguir-pacientes-clinica-odontologica": {
         title: "Como conseguir mais pacientes para sua clínica odontológica",
-        image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=1200",
-        alt: "dentista analisando resultados",
+        image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1200",
+        alt: "dentista atendendo paciente em clínica odontológica",
         content: `
-          <p>O problema da agenda vazia assombra muitos profissionais que buscam saber como conseguir mais pacientes odontologia. No entanto, atrair pessoas sem estratégia pode ser um erro caro.</p>
-          <p>Para <a href='/aumentar-faturamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>aumentar faturamento clínica odontológica</a>, é preciso atrair o público certo para os procedimentos mais lucrativos.</p>
+          <p>Muitas clínicas enfrentam o desafio de uma agenda inconsistente. Entender como conseguir mais pacientes odontologia é vital para a saúde do negócio.</p>
+          <p>Se sua clínica odontológica com poucos pacientes está estagnada, o problema pode ser estratégico e não apenas falta de marketing.</p>
           
           <h2>Por que sua clínica não atrai pacientes</h2>
-          <p>Um posicionamento fraco no mercado faz com que sua clínica seja vista como apenas mais uma. Sem diferenciação, você compete apenas por preço.</p>
-          <p>O marketing errado também é um fator comum. Investir em anúncios sem um funil de vendas preparado na recepção é desperdiçar investimento todos os meses.</p>
+          <p>Um posicionamento fraco impede que o público certo veja valor no seu serviço. Se você não se diferencia, acaba competindo apenas por preço baixo.</p>
+          <p>A falta de presença digital afasta pacientes que buscam soluções no Google. Hoje, quem não é visto na internet, praticamente não existe para novos clientes.</p>
+          <p>A ausência de diferenciação faz com que sua clínica seja apenas mais uma no bairro. É preciso mostrar por que o paciente deve escolher você e não o concorrente.</p>
           
           <h2>Estratégias que realmente funcionam</h2>
-          <p>A presença digital deve ser estratégica e focada em autoridade. Mostre os bastidores, os resultados e a segurança que sua clínica oferece.</p>
-          <p>Estimular a indicação de pacientes atuais é uma das formas mais baratas e eficientes de crescer. Um paciente satisfeito é o seu melhor vendedor.</p>
-          <p>O posicionamento como especialista em determinadas áreas ajuda a atrair casos de maior ticket médio, melhorando a rentabilidade do negócio.</p>
+          <p>Estar presente no Google garante que você seja encontrado no momento exato da busca. O Google Meu Negócio é uma ferramenta indispensável para atrair pacientes odontológicos.</p>
+          <p>Redes sociais com posicionamento correto geram autoridade e confiança. Mostre os bastidores e a segurança que sua clínica oferece.</p>
+          <p>A indicação de pacientes satisfeitos continua sendo uma ferramenta poderosa. Estimule seus pacientes atuais a recomendarem seu trabalho.</p>
           
-          <h2>O erro de focar só em marketing</h2>
-          <p>Muitas clínicas acreditam que o marketing resolverá todos os problemas. Porém, se a base estruturada não estiver pronta, o marketing apenas acelerará a perda de dinheiro.</p>
-          <p>Antes de escalar, é fundamental garantir que a <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão clínica odontológica</a> esteja alinhada com os objetivos de crescimento.</p>
+          <h2>O erro de depender só de marketing</h2>
+          <p>Marketing sem estrutura interna não resolve o problema. Se a recepção não converte o contato em agendamento, o investimento é desperdiçado.</p>
+          <p>A <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão clínica odontológica</a> deve estar alinhada para receber a demanda. A organização deve vir antes da escala.</p>
           
-          <p>O sucesso sustentável vem da união entre atração eficiente e operação organizada. Comece arrumando a casa para depois convidar os convidados.</p>
+          <p>Reforce a importância de ter uma estratégia clara e uma organização impecável. O crescimento sustentável depende de uma base sólida.</p>
         `
       },
       "como-encher-agenda-clinica-odontologica": {
         title: "Como encher a agenda da sua clínica odontológica com estratégia",
         image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200",
-        alt: "consultoria odontológica estratégia",
+        alt: "clínica odontológica com agenda organizada",
         content: `
-          <p>Muitos dentistas sofrem com a agenda ociosa mesmo investindo tempo e esforço na clínica. Ter uma agenda cheia clínica odontológica exige mais do que sorte: exige método.</p>
-          <p>A base para esse resultado é uma <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão clínica odontológica</a> profissional e focada em produtividade.</p>
+          <p>Ter uma agenda cheia clínica odontológica é o desejo de todo gestor. No entanto, muitos sofrem com a agenda ociosa mesmo com esforço constante.</p>
+          <p>A solução para esse problema passa por entender como lotar agenda dentista com inteligência e <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão de agenda odontológica</a> eficiente.</p>
           
-          <h2>Por que a agenda fica ociosa</h2>
-          <p>A falta de processos claros de confirmação e remarcação gera buracos que custam caro. Cada hora de cadeira vazia é um prejuízo irrecuperável para o faturamento.</p>
-          <p>A baixa conversão de orçamentos também impede que a agenda se mantenha ocupada com tratamentos de longo prazo. Além disso, a desorganização no fluxo de pacientes causa gargalos desnecessários.</p>
+          <h2>Por que a agenda da clínica fica vazia</h2>
+          <p>A falta de um processo de confirmação rigoroso gera faltas inesperadas. Cada buraco na agenda representa um prejuízo financeiro imediato.</p>
+          <p>A baixa conversão de orçamentos impede o preenchimento de horários futuros. Se o paciente não fecha o tratamento, a cadeira fica vazia.</p>
+          <p>A desorganização geral compromete a produtividade da equipe. Sem um fluxo definido, o tempo clínico é desperdiçado com tarefas burocráticas.</p>
           
           <h2>Como organizar a agenda corretamente</h2>
-          <p>O controle deve ser rigoroso. Utilize ferramentas que permitam a previsibilidade dos atendimentos e o acompanhamento em tempo real da ocupação.</p>
-          <p>Crie um fluxo de pacientes que priorize a produtividade do dentista. O tempo clínico deve ser sagrado e protegido por uma recepção eficiente.</p>
+          <p>O controle de horários deve ser rigoroso e preferencialmente digital. Isso permite uma visão clara da ocupação da clínica em tempo real.</p>
+          <p>A previsibilidade permite antecipar buracos na semana e agir antes que eles aconteçam. Use listas de espera para preencher cancelamentos de última hora.</p>
+          <p>Um fluxo de atendimento bem definido otimiza o tempo do dentista. Garanta que o profissional esteja focado apenas no atendimento clínico.</p>
           
-          <h2>Como aumentar ocupação sem depender só de marketing</h2>
-          <p>Trabalhe a base de pacientes inativos. Muitas vezes o lucro que você busca está em pessoas que já conhecem sua clínica mas não retornam há meses.</p>
-          <p>Melhore a taxa de comparecimento com lembretes estratégicos e uma comunicação humanizada. Reduzir as faltas é a forma mais rápida de encher a agenda.</p>
+          <h2>Como aumentar a ocupação da agenda</h2>
+          <p>Melhorar a conversão de orçamentos é o caminho mais rápido para aumentar ocupação clínica odontológica. Treine sua equipe para o fechamento.</p>
+          <p>Reaproveitar pacientes antigos através de campanhas de retorno funciona muito bem. O custo de trazer de volta quem já conhece a clínica é muito menor.</p>
+          <p>Otimizar o atendimento garante que mais pessoas sejam cuidadas com qualidade no mesmo intervalo de tempo. Eficiência é a chave para o lucro.</p>
           
-          <p>Lembre-se: estrutura vem antes de escala. Uma agenda cheia só é lucrativa se a operação for eficiente. Solicite um <a href='/diagnostico-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>diagnóstico estratégico</a> para identificar seus gargalos.</p>
-        `
-      },
-      "por-que-sua-clinica-odontologica-nao-cresce": {
-        title: "Por que sua clínica odontológica não cresce",
-        image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1200",
-        alt: "consultoria odontológica em clínica",
-        content: `
-          <p>A consultoria odontológica é essencial para clínicas que querem aumentar o faturamento com organização, estratégia e processos bem definidos.</p>
-          <p>Muitos dentistas acreditam que o segredo para o crescimento é apenas atrair mais pacientes. No entanto, a realidade de uma clínica odontológica de sucesso envolve uma gestão de clínica odontológica eficiente.</p>
-          <h3>1. Falta de Processos de Venda</h3>
-          <p>Se sua recepção não sabe como lidar com um lead que chega pelo WhatsApp, você está jogando dinheiro fora. O processo de venda começa no primeiro contato.</p>
-          <h3>2. Gestão de Agenda Ineficiente</h3>
-          <p>Janelas vazias são o maior ralo de dinheiro em uma clínica odontológica. Sem uma gestão ativa de confirmações, sua produtividade cai drasticamente.</p>
-          <h3>3. Ausência de Indicadores</h3>
-          <p>Quem não mede, não gerencia. Você sabe qual é o seu ticket médio? Sem esses dados, você está voando às cegas.</p>
-          <p>Uma consultoria odontológica ajuda a identificar esses gargalos e traçar uma estratégia para clínica odontológica vencedora.</p>
+          <p>Lembre-se: estrutura vem antes de escala. Uma agenda cheia só é lucrativa se a operação for organizada. Solicite um <a href='/diagnostico-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>diagnóstico estratégico</a> hoje mesmo.</p>
         `
       }
     };

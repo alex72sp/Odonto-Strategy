@@ -29,7 +29,7 @@ const Blog = () => {
       excerpt: "Descubra estratégias práticas sobre como conseguir mais pacientes odontologia e construir um posicionamento sólido no mercado.",
       category: "Marketing",
       date: "18 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800"
     },
     {
       slug: "como-encher-agenda-clinica-odontologica",
@@ -38,14 +38,6 @@ const Blog = () => {
       category: "Gestão",
       date: "16 Mai, 2024",
       image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      slug: "por-que-sua-clinica-odontologica-nao-cresce",
-      title: "Por que sua clínica odontológica não cresce",
-      excerpt: "Descubra os erros mais comuns que impedem o crescimento de clínicas odontológicas e como a consultoria odontológica pode ajudar.",
-      category: "Gestão",
-      date: "15 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
