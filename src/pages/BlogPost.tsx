@@ -14,6 +14,63 @@ const BlogPost = () => {
 
   const getPostContent = (slug: string | undefined) => {
     const posts: Record<string, any> = {
+      "por-que-clinicas-franqueadas-tem-dificuldade-para-crescer": {
+        title: "Por que clínicas odontológicas franqueadas têm dificuldade para crescer mesmo com estrutura",
+        image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200",
+        alt: "clínica odontológica franqueada moderna",
+        content: `
+          <p>Muitos empreendedores acreditam que ao investir em uma <strong>clínica odontológica franqueada</strong>, o sucesso é garantido pela estrutura da rede. No entanto, a realidade mostra que muitas unidades enfrentam dificuldades sérias para crescer de forma consistente.</p>
+          
+          <h2>As limitações de franquia e o crescimento travado</h2>
+          <p>O primeiro grande desafio é a padronização excessiva. Embora a padronização seja um pilar das franquias, ela pode se tornar uma barreira quando impede a adaptação à realidade local do mercado. O que funciona em uma capital pode não ser a melhor estratégia para uma cidade do interior.</p>
+          <p>A falta de autonomia do franqueado para tomar decisões rápidas sobre marketing local ou ajustes operacionais acaba gerando uma gestão engessada. Quando o mercado muda, a clínica demora a reagir.</p>
+          
+          <h2>O peso da estrutura vs. Resultado real</h2>
+          <p>Muitas vezes, o custo fixo elevado imposto pela franqueadora (royalties, taxas de marketing, compras centralizadas) consome a margem de lucro que deveria ser reinvestida no <strong>crescimento de clínica franqueada</strong>. Sem uma gestão local extremamente eficiente, a conta pode não fechar no final do mês.</p>
+          
+          <h2>Como sair da estagnação</h2>
+          <p>O segredo está em entender que a franquia entrega o modelo, mas a execução estratégica é responsabilidade do dono. É preciso olhar para os indicadores internos com clareza e identificar onde a operação está perdendo eficiência, mesmo seguindo os manuais da rede.</p>
+          <p>Um <a href='/diagnostico-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>diagnóstico estratégico</a> focado em unidades franqueadas pode revelar gargalos que a franqueadora muitas vezes não enxerga.</p>
+        `
+      },
+      "erros-gestao-comuns-clinicas-franqueadas": {
+        title: "Erros de gestão mais comuns em clínicas odontológicas franqueadas",
+        image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1200",
+        alt: "gestão de franquia odontológica",
+        content: `
+          <p>A <strong>gestão de franquia odontológica</strong> possui particularidades que, se ignoradas, podem levar ao fracasso da unidade. O erro mais comum é acreditar que a franqueadora fará toda a gestão por você.</p>
+          
+          <h2>Gestão engessada e decisões centralizadas</h2>
+          <p>Muitos franqueados cometem o erro de esperar passivamente pelas diretrizes da rede. Essa dependência excessiva impede que a clínica aproveite oportunidades locais de parcerias ou campanhas específicas que fariam sentido para o seu público.</p>
+          <p>Outro erro grave é a falta de análise de dados próprios. O franqueado olha apenas para o faturamento bruto (muitas vezes para reportar à rede), mas ignora o lucro líquido real e o custo de aquisição de pacientes local.</p>
+          
+          <h2>Falhas na operação local</h2>
+          <p>Seguir o manual da franquia é obrigatório, mas não é suficiente. Erros na seleção da equipe local ou na falta de treinamento específico para a realidade daquela unidade específica comprometem a conversão de orçamentos.</p>
+          <p>A <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão para clínicas odontológicas</a> franqueadas exige um equilíbrio entre as regras da rede e a agilidade de um negócio independente.</p>
+          
+          <h2>Como profissionalizar a gestão da sua unidade</h2>
+          <p>O primeiro passo é assumir o controle dos seus números. Não dependa apenas dos relatórios do sistema da franquia. Tenha sua própria análise de performance e identifique onde estão os vazios de faturamento.</p>
+        `
+      },
+      "como-melhorar-desempenho-clinica-franqueada": {
+        title: "Como melhorar o desempenho de uma clínica odontológica franqueada sem sair da rede",
+        image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=1200",
+        alt: "dentista trabalhando em clínica franqueada",
+        content: `
+          <p>É perfeitamente possível alcançar um alto <strong>crescimento de clínica franqueada</strong> respeitando as diretrizes da franqueadora. A chave está na otimização interna e na gestão local eficiente.</p>
+          
+          <h2>Otimização interna: Onde o lucro se esconde</h2>
+          <p>Muitas vezes, o aumento de performance não vem de mais pacientes, mas de uma melhor conversão interna. Analise como sua recepção está lidando com os leads que a franquia envia. Se a taxa de agendamento for baixa, o problema é local, não da rede.</p>
+          <p>Melhorar o ticket médio através de um planejamento de tratamento mais completo é uma forma legítima de aumentar o faturamento sem violar nenhuma regra da franquia.</p>
+          
+          <h2>Gestão local eficiente</h2>
+          <p>Foque no que você pode controlar: o atendimento, a organização da agenda e a motivação da sua equipe. Uma clínica franqueada que entrega uma experiência superior ao paciente terá uma taxa de indicação muito maior, reduzindo a dependência do marketing centralizado.</p>
+          
+          <h2>Aumento de performance dentro da franquia</h2>
+          <p>Use os dados da rede a seu favor. Compare seus indicadores com a média da franquia e identifique em quais pontos você está abaixo. Isso dará clareza sobre onde focar seus esforços de melhoria.</p>
+          <p>A <a href='/consultoria-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>consultoria para dentistas</a> franqueados ajuda a encontrar esse espaço de manobra estratégica que gera lucro real dentro do modelo de franquia.</p>
+        `
+      },
       "pacientes-nao-fecham-orcamento-clinica-odontologica": {
         title: "Por que pacientes não fecham orçamento na sua clínica odontológica",
         image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=1200",
@@ -29,7 +86,7 @@ const BlogPost = () => {
           
           <h2>Como melhorar a conversão de pacientes</h2>
           <p>A abordagem correta começa na escuta ativa. Entenda as dores do paciente antes de apresentar a solução técnica. Use uma explicação simples e evite termos excessivamente técnicos que geram confusão.</p>
-          <p>A condução do atendimento deve levar o paciente a uma decisão. Ofereça opções de pagamento claras e reforce os riscos de não realizar o tratamento agora. Veja também <a href='/blog/como-encher-agenda-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>como encher a agenda da sua clínica</a> com estratégia.</p>
+          <p>A condução do atendimento deve levar o paciente a uma decision. Ofereça opções de pagamento claras e reforce os riscos de não realizar o tratamento agora. Veja também <a href='/blog/como-encher-agenda-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>como encher a agenda da sua clínica</a> com estratégia.</p>
           
           <h2>O impacto disso no faturamento</h2>
           <p>Pequenos ajustes na taxa de conversão podem gerar grandes saltos no lucro. Quando você otimiza o processo de vendas, cada hora de cadeira se torna muito mais valiosa.</p>

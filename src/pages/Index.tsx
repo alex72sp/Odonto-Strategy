@@ -14,7 +14,8 @@ import {
   BarChart3, 
   MessageCircle,
   XCircle,
-  CheckCircle2
+  CheckCircle2,
+  Building2
 } from "lucide-react";
 
 const Index = () => {
@@ -86,7 +87,49 @@ const Index = () => {
         </div>
       </section>
 
-      {/* NOVO: Bloco de Identificação */}
+      {/* Seção Franqueados */}
+      <section className="py-20 px-4 bg-white border-y border-gray-100">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1">
+              <div className="bg-[#F5F5F5] p-8 rounded-3xl border border-[#0B6B4F]/10 relative overflow-hidden">
+                <Building2 className="absolute -right-8 -bottom-8 h-48 w-48 text-[#0B6B4F]/5" />
+                <h2 className="text-2xl md:text-3xl font-bold text-[#0B6B4F] mb-6 leading-tight relative z-10">
+                  Clínicas odontológicas franqueadas também enfrentam limitações de crescimento
+                </h2>
+                <div className="space-y-4 text-[#333] leading-relaxed relative z-10">
+                  <p>
+                    Mesmo dentro de redes estruturadas, muitas clínicas franqueadas enfrentam desafios para crescer de forma consistente.
+                  </p>
+                  <p>
+                    Limitações operacionais, pouca autonomia e falta de clareza sobre indicadores acabam dificultando decisões estratégicas mais eficientes.
+                  </p>
+                  <p className="font-bold text-[#0B6B4F]">
+                    O diagnóstico estratégico identifica esses pontos com clareza e mostra caminhos possíveis dentro da realidade da operação.
+                  </p>
+                </div>
+                <Button 
+                  onClick={() => window.open(whatsappLink, '_blank')}
+                  className="mt-8 w-full bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold py-6 rounded-xl shadow-lg relative z-10"
+                >
+                  Solicitar diagnóstico estratégico
+                </Button>
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="rounded-3xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800" 
+                  alt="Clínica odontológica franqueada moderna" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bloco de Identificação */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[#0B6B4F] mb-8 text-center">

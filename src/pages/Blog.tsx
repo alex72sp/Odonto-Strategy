@@ -16,6 +16,30 @@ const Blog = () => {
   
   const posts = [
     {
+      slug: "por-que-clinicas-franqueadas-tem-dificuldade-para-crescer",
+      title: "Por que clínicas odontológicas franqueadas têm dificuldade para crescer mesmo com estrutura",
+      excerpt: "Entenda as limitações de franquia e como a padronização excessiva pode estar travando o crescimento da sua clínica odontológica franqueada.",
+      category: "Franqueados",
+      date: "25 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      slug: "erros-gestao-comuns-clinicas-franqueadas",
+      title: "Erros de gestão mais comuns em clínicas odontológicas franqueadas",
+      excerpt: "Identifique os erros de gestão de franquia odontológica que impedem decisões estratégicas e como sair do modelo engessado.",
+      category: "Franqueados",
+      date: "24 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+      slug: "como-melhorar-desempenho-clinica-franqueada",
+      title: "Como melhorar o desempenho de uma clínica odontológica franqueada sem sair da rede",
+      excerpt: "Estratégias de gestão local eficiente para aumentar a performance e o crescimento de clínica franqueada dentro das regras da rede.",
+      category: "Franqueados",
+      date: "23 Mai, 2024",
+      image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=800"
+    },
+    {
       slug: "pacientes-nao-fecham-orcamento-clinica-odontologica",
       title: "Por que pacientes não fecham orçamento na sua clínica odontológica",
       excerpt: "Entenda os motivos reais por que pacientes não fecham orçamento dentista e como reverter essa situação com processos comerciais.",
@@ -38,30 +62,6 @@ const Blog = () => {
       category: "Gestão",
       date: "16 Mai, 2024",
       image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      slug: "aumentar-faturamento-clinica-odontologica",
-      title: "Como aumentar o faturamento da sua clínica odontológica com organização e estratégia",
-      excerpt: "Estratégias práticas para aumentar faturamento clínica odontológica através de processos sólidos e visão empresarial.",
-      category: "Financeiro",
-      date: "14 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      slug: "erros-gestao-clinica-odontologica",
-      title: "Erros na gestão de clínicas odontológicas que travam o crescimento",
-      excerpt: "Identifique os erros gestão clínica odontológica mais comuns e aprenda como organizar sua operação para crescer.",
-      category: "Gestão",
-      date: "12 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      slug: "melhorar-atendimento-clinica-odontologica",
-      title: "Como melhorar o atendimento na clínica odontológica e aumentar a conversão",
-      excerpt: "O atendimento clínica odontológica é a chave para converter mais pacientes e criar um diferencial competitivo real.",
-      category: "Atendimento",
-      date: "10 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800"
     }
   ];
 
@@ -96,7 +96,9 @@ const Blog = () => {
                   </div>
                   <CardHeader>
                     <div className="flex justify-between items-center mb-2">
-                      <Badge variant="secondary" className="bg-[#EAF7F1] text-[#0B6B4F] hover:bg-[#EAF7F1]">{post.category}</Badge>
+                      <Badge variant="secondary" className={`${post.category === 'Franqueados' ? 'bg-[#0B6B4F] text-white' : 'bg-[#EAF7F1] text-[#0B6B4F]'} hover:opacity-90`}>
+                        {post.category}
+                      </Badge>
                       <span className="text-[10px] text-gray-400 uppercase font-bold">{post.date}</span>
                     </div>
                     <CardTitle className="text-xl font-bold text-[#0B6B4F] group-hover:text-[#2ECC71] transition-colors">
