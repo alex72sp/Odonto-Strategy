@@ -87,7 +87,7 @@ const BlogPost = () => {
       },
       "erros-gestao-clinica-odontologica": {
         title: "Erros na gestão de clínicas odontológicas que travam o crescimento",
-        image: "https://images.unsplash.com/photo-1597764690523-15bea4c581c9?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=1200",
         alt: "dentista tratando paciente em clínica odontológica",
         content: `
           <p>Existem problemas silenciosos que impedem o sucesso de muitos consultórios. Identificar os erros gestão clínica odontológica é o primeiro passo.</p>
