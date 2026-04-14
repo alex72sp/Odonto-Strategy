@@ -73,7 +73,7 @@ const BlogPost = () => {
       },
       "pacientes-nao-fecham-orcamento-clinica-odontologica": {
         title: "Por que pacientes não fecham orçamento na sua clínica odontológica",
-        image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=1200",
         alt: "dentista atendendo paciente em clínica odontológica",
         content: `
           <p>Muitos dentistas enfrentam a frustração de realizar diversas avaliações e perceber que os pacientes não fecham orçamento dentista no final do dia. Esse problema impacta diretamente a saúde financeira do negócio.</p>
@@ -97,7 +97,7 @@ const BlogPost = () => {
       },
       "como-conseguir-pacientes-clinica-odontologica": {
         title: "Como conseguir mais pacientes para sua clínica odontológica",
-        image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200",
         alt: "dentista atendendo paciente em clínica odontológica",
         content: `
           <p>Muitas clínicas enfrentam the desafio de uma agenda inconsistente. Entender como conseguir mais pacientes odontologia é vital para a saúde do negócio.</p>
@@ -122,7 +122,7 @@ const BlogPost = () => {
       },
       "como-encher-agenda-clinica-odontologica": {
         title: "Como encher a agenda da sua clínica odontológica com estratégia",
-        image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&q=80&w=1200",
         alt: "clínica odontológica com agenda organizada",
         content: `
           <p>Ter uma agenda cheia clínica odontológica é o desejo de todo gestor. No entanto, muitos sofrem com a agenda ociosa mesmo com esforço constante.</p>
@@ -148,7 +148,7 @@ const BlogPost = () => {
       },
       "aumentar-faturamento-clinica-odontologica": {
         title: "Como aumentar o faturamento da sua clínica odontológica com organização e estratégia",
-        image: "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1468493858157-0da44aaf1d13?auto=format&fit=crop&q=80&w=1200",
         alt: "consultório odontológico moderno",
         content: `
           <p>Muitos dentistas trabalham exaustivamente, mas percebem que o faturamento clínica odontológica baixo impede o crescimento real do negócio. O esforço clínico nem sempre se traduz em lucro líquido.</p>
@@ -171,7 +171,7 @@ const BlogPost = () => {
       },
       "erros-gestao-clinica-odontologica": {
         title: "Erros na gestão de clínicas odontológicas que travam o crescimento",
-        image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200",
         alt: "gestão de clínica odontológica",
         content: `
           <p>Existem problemas silenciosos que impedem o sucesso de muitos consultórios. Identificar os erros gestão clínica odontológica é o primeiro passo para a profissionalização.</p>
@@ -194,7 +194,7 @@ const BlogPost = () => {
       },
       "melhorar-atendimento-clinica-odontologica": {
         title: "Como melhorar o atendimento na clínica odontológica e aumentar a conversão",
-        image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&q=80&w=1200",
         alt: "atendimento em clínica odontológica",
         content: `
           <p>O atendimento clínica odontológica é, muitas vezes, o fator decisivo para o fechamento de um tratamento. O paciente decide se confia em você muito antes de sentar na cadeira.</p>
