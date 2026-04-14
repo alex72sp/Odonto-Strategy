@@ -35,7 +35,7 @@ const BlogPost = () => {
           <p>Muitos franqueados cometem o erro de esperar passivamente pelas diretrizes da rede. Essa dependência excessiva impede que a clínica aproveite oportunidades locais.</p>
         `
       },
-      "como-melhorar-desempenho-clinica-franqueada": {
+      "como-melhoran-desempenho-clinica-franqueada": {
         title: "Como melhorar o desempenho de uma clínica odontológica franqueada sem sair da rede",
         image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=1200",
         alt: "dentista trabalhando em clínica franqueada",
@@ -87,7 +87,7 @@ const BlogPost = () => {
       },
       "erros-gestao-clinica-odontologica": {
         title: "Erros na gestão de clínicas odontológicas que travam o crescimento",
-        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1513224502586-d1e602410265?auto=format&fit=crop&q=80&w=1200",
         alt: "gestão de clínica odontológica",
         content: `
           <p>Existem problemas silenciosos que impedem o sucesso de muitos consultórios. Identificar os erros gestão clínica odontológica é o primeiro passo.</p>

@@ -33,7 +33,7 @@ const Blog = () => {
       image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=800"
     },
     {
-      slug: "como-melhorar-desempenho-clinica-franqueada",
+      slug: "como-melhoran-desempenho-clinica-franqueada",
       title: "Como melhorar o desempenho de uma clínica odontológica franqueada sem sair da rede",
       excerpt: "Estratégias de gestão local eficiente para aumentar a performance e o crescimento de clínica franqueada dentro das regras da rede.",
       category: "Franqueados",
@@ -79,7 +79,7 @@ const Blog = () => {
       excerpt: "Identifique os problemas silenciosos que impedem o sucesso e a profissionalização do seu consultório.",
       category: "Gestão",
       date: "12 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1513224502586-d1e602410265?auto=format&fit=crop&q=80&w=800"
     },
     {
       slug: "melhorar-atendimento-clinica-odontologica",
