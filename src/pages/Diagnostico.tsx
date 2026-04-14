@@ -1,8 +1,8 @@
 "use client";
 
 import React from 'react';
-import Header from "@/header";
-import Footer from "@/footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Search, AlertCircle, Target, CheckCircle2 } from "lucide-react";
 
