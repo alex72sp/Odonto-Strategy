@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Search, AlertCircle, Target, CheckCircle2 } from "lucide-react";
 
 const Diagnostico = () => {
-  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
@@ -67,12 +67,17 @@ const Diagnostico = () => {
                   </li>
                 ))}
               </ul>
-              <Button 
-                onClick={() => window.open(whatsappLink, '_blank')}
-                className="w-full bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold py-6"
-              >
-                Solicitar diagnóstico
-              </Button>
+              <div className="flex flex-col gap-3">
+                <Button 
+                  onClick={() => window.open(whatsappLink, '_blank')}
+                  className="w-full bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold py-6"
+                >
+                  Solicitar diagnóstico
+                </Button>
+                <p className="text-[10px] text-[#0B6B4F]/60 font-medium text-center">
+                  Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
+                </p>
+              </div>
             </div>
           </div>
         </div>

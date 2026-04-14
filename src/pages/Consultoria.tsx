@@ -9,7 +9,7 @@ import { ShieldCheck, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Consultoria = () => {
-  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
@@ -39,16 +39,21 @@ const Consultoria = () => {
               <p className="text-[#333] mb-6 leading-relaxed">
                 Analisamos números, processos de venda, gestão para clínicas odontológicas e eficiência da equipe para identificar onde o dinheiro está sendo perdido.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  onClick={() => window.open(whatsappLink, '_blank')}
-                  className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold px-8 py-6"
-                >
-                  Solicitar diagnóstico estratégico
-                </Button>
-                <Link to="/blog" className="flex items-center gap-2 text-[#0B6B4F] font-bold hover:underline">
-                  Ver dicas no blog <ArrowRight size={18} />
-                </Link>
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
+                  <Button 
+                    onClick={() => window.open(whatsappLink, '_blank')}
+                    className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold px-8 py-6 w-full sm:w-auto"
+                  >
+                    Solicitar diagnóstico estratégico
+                  </Button>
+                  <Link to="/blog" className="flex items-center gap-2 text-[#0B6B4F] font-bold hover:underline py-2">
+                    Ver dicas no blog <ArrowRight size={18} />
+                  </Link>
+                </div>
+                <p className="text-[10px] md:text-xs text-[#0B6B4F]/60 font-medium text-center sm:text-left">
+                  Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
+                </p>
               </div>
             </div>
             <div className="bg-[#EAF7F1] p-8 rounded-3xl">

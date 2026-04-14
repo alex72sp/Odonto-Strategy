@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 
 const ConsultoriaPilar = () => {
-  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
@@ -76,13 +76,16 @@ const ConsultoriaPilar = () => {
             Uma gestão eficiente permite que o dentista tenha liberdade. Quando os processos funcionam, a clínica não depende 100% da presença do dono para tudo. Isso só é possível com uma consultoria odontológica que entenda as particularidades do setor.
           </p>
 
-          <div className="text-center mt-12 not-prose">
+          <div className="text-center mt-12 not-prose flex flex-col items-center gap-4">
             <Button 
               onClick={() => window.open(whatsappLink, '_blank')}
-              className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold px-8 py-6 rounded-xl text-lg"
+              className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold px-8 py-6 rounded-xl text-lg w-full sm:w-auto"
             >
               Solicitar diagnóstico
             </Button>
+            <p className="text-[10px] md:text-xs text-[#0B6B4F]/60 font-medium">
+              Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
+            </p>
           </div>
         </div>
       </section>

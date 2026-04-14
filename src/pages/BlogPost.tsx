@@ -9,7 +9,7 @@ import { ArrowLeft, MessageCircle, ArrowRight } from "lucide-react";
 
 const BlogPost = () => {
   const { slug } = useParams();
-  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   const getPostContent = (slug: string | undefined) => {
@@ -43,7 +43,7 @@ const BlogPost = () => {
         image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=1200",
         alt: "dentista atendendo paciente em clínica odontológica",
         content: `
-          <p>Muitas clínicas enfrentam o desafio de uma agenda inconsistente. Entender como conseguir mais pacientes odontologia é vital para a saúde do negócio.</p>
+          <p>Muitas clínicas enfrentam the desafio de uma agenda inconsistente. Entender como conseguir mais pacientes odontologia é vital para a saúde do negócio.</p>
           <p>Se sua clínica odontológica com poucos pacientes está estagnada, o problema pode ser estratégico e não apenas falta de marketing.</p>
           
           <h2>Por que sua clínica não atrai pacientes</h2>
@@ -207,16 +207,21 @@ const BlogPost = () => {
             <p className="text-lg text-[#333] mb-8 leading-relaxed">
               Se você se identificou com esses pontos, é bem provável que existam gargalos na sua clínica que não estão visíveis no dia a dia. O diagnóstico estratégico mostra exatamente onde estão esses problemas e quais caminhos fazem sentido para melhorar os resultados.
             </p>
-            <div className="flex flex-col md:flex-row justify-center gap-4">
-              <Button 
-                onClick={() => window.open(whatsappLink, '_blank')}
-                className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold px-8 py-7 rounded-xl flex items-center gap-2 text-lg"
-              >
-                <MessageCircle className="h-6 w-6" /> Solicitar diagnóstico estratégico
-              </Button>
-              <Link to="/" className="flex items-center justify-center gap-2 text-[#0B6B4F] font-bold hover:underline">
-                Voltar para a página inicial <ArrowRight size={20} />
-              </Link>
+            <div className="flex flex-col items-center gap-6">
+              <div className="flex flex-col md:flex-row justify-center gap-4 w-full">
+                <Button 
+                  onClick={() => window.open(whatsappLink, '_blank')}
+                  className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold px-8 py-7 rounded-xl flex items-center gap-2 text-lg w-full md:w-auto"
+                >
+                  <MessageCircle className="h-6 w-6" /> Solicitar diagnóstico estratégico
+                </Button>
+                <Link to="/" className="flex items-center justify-center gap-2 text-[#0B6B4F] font-bold hover:underline py-4">
+                  Voltar para a página inicial <ArrowRight size={20} />
+                </Link>
+              </div>
+              <p className="text-[10px] md:text-xs text-[#0B6B4F]/60 font-medium">
+                Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
+              </p>
             </div>
           </div>
         </div>

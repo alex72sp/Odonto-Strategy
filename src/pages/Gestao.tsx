@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { LayoutDashboard, Users, Calendar, ClipboardCheck } from "lucide-react";
 
 const Gestao = () => {
-  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
@@ -58,12 +58,17 @@ const Gestao = () => {
               <p className="text-[#333] mb-6 leading-relaxed">
                 Desde o primeiro contato até o pós-tratamento, cada etapa precisa de um processo claro para evitar perdas financeiras.
               </p>
-              <Button 
-                onClick={() => window.open(whatsappLink, '_blank')}
-                className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold"
-              >
-                Falar no WhatsApp
-              </Button>
+              <div className="flex flex-col gap-3">
+                <Button 
+                  onClick={() => window.open(whatsappLink, '_blank')}
+                  className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] font-bold py-6 w-full sm:w-auto"
+                >
+                  Falar com um consultor
+                </Button>
+                <p className="text-[10px] md:text-xs text-[#0B6B4F]/60 font-medium">
+                  Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
+                </p>
+              </div>
             </div>
           </div>
         </div>

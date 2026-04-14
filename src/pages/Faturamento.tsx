@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 
 const Faturamento = () => {
-  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
@@ -16,7 +16,7 @@ const Faturamento = () => {
       <section className="pt-32 pb-20 px-4 bg-[#0B6B4F] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm mb-6 text-white/80">
-            A consultoria odontológica é essencial para clínicas que querem aumentar o faturamento com organização, strategy e processos bem definidos.
+            A consultoria odontológica é essencial para clínicas que querem aumentar o faturamento com organização, estratégia e processos bem definidos.
           </p>
           <h1 className="text-3xl md:text-5xl font-extrabold mb-6">Aumentar faturamento da clínica odontológica</h1>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed">
@@ -36,15 +36,20 @@ const Faturamento = () => {
               Para aumentar faturamento da clínica odontológica, é preciso olhar para a estratégia para clínica odontológica como um todo.
             </p>
             
-            <div className="bg-[#0B6B4F] p-8 rounded-3xl text-white text-center">
+            <div className="bg-[#0B6B4F] p-8 rounded-3xl text-white text-center flex flex-col items-center">
               <h3 className="text-xl font-bold mb-4">Quer saber onde sua clínica odontológica está perdendo dinheiro?</h3>
               <p className="mb-6 text-white/80">Nosso diagnóstico identifica os gargalos que impedem seu faturamento de crescer.</p>
-              <Button 
-                onClick={() => window.open(whatsappLink, '_blank')}
-                className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] font-bold px-8 py-6 rounded-xl"
-              >
-                Solicitar diagnóstico
-              </Button>
+              <div className="w-full flex flex-col items-center gap-3">
+                <Button 
+                  onClick={() => window.open(whatsappLink, '_blank')}
+                  className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] font-bold px-8 py-6 rounded-xl w-full sm:w-auto"
+                >
+                  Solicitar diagnóstico
+                </Button>
+                <p className="text-[10px] md:text-xs text-white/60 font-medium">
+                  Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
+                </p>
+              </div>
             </div>
           </div>
         </div>

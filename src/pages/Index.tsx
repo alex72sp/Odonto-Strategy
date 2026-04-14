@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 const Index = () => {
-  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
@@ -46,14 +46,19 @@ const Index = () => {
             <p className="text-sm md:text-base text-white/90 font-medium italic">
               Sem clareza do problema, qualquer tentativa de crescimento vira tentativa e erro.
             </p>
-            <Button 
-              onClick={() => window.open(whatsappLink, '_blank')}
-              size="lg" 
-              className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-8 py-6 text-lg font-bold rounded-xl shadow-2xl transition-all hover:scale-105 w-full md:w-auto max-w-[350px]"
-            >
-              Quero um diagnóstico estratégico
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <div className="w-full flex flex-col items-center gap-3">
+              <Button 
+                onClick={() => window.open(whatsappLink, '_blank')}
+                size="lg" 
+                className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-8 py-6 text-lg font-bold rounded-xl shadow-2xl transition-all hover:scale-105 w-full md:w-auto max-w-[350px]"
+              >
+                Quero um diagnóstico estratégico
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <p className="text-[10px] md:text-xs text-white/60 font-medium">
+                Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -78,8 +83,33 @@ const Index = () => {
         </div>
       </section>
 
+      {/* NOVO: Bloco de Identificação */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0B6B4F] mb-8 text-center">
+            Se você sente que sua clínica está assim
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
+            {[
+              "atende bem, mas o faturamento não cresce como deveria",
+              "perde pacientes na hora de fechar orçamento",
+              "a agenda oscila ao longo do mês",
+              "não tem clareza dos números da clínica"
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-3 p-4 bg-[#F5F5F5] rounded-xl border-l-4 border-[#2ECC71] shadow-sm">
+                <CheckCircle2 className="h-5 w-5 text-[#2ECC71] shrink-0" />
+                <span className="font-semibold text-[#333] text-sm md:text-base">{item}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-base md:text-lg text-center text-[#333] leading-relaxed max-w-3xl mx-auto">
+            Se você se identificou com esses pontos, é bem provável que existam gargalos na operação que não estão visíveis no dia a dia.
+          </p>
+        </div>
+      </section>
+
       {/* Bloco de Autoridade: O que é analisado */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-[#F5F5F5]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B6B4F] mb-4">
@@ -99,7 +129,7 @@ const Index = () => {
                 "Processos internos",
                 "Pontos de perda de receita"
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-4 p-4 bg-[#F5F5F5] rounded-xl border border-gray-100">
+                <div key={i} className="flex items-center gap-4 p-4 bg-white rounded-xl border border-gray-100">
                   <CheckCircle2 className="h-6 w-6 text-[#2ECC71] shrink-0" />
                   <span className="font-bold text-[#0B6B4F]">{item}</span>
                 </div>
@@ -121,7 +151,7 @@ const Index = () => {
       </section>
 
       {/* Bloco de Impacto Original Ajustado */}
-      <section className="py-20 px-4 bg-[#F5F5F5]">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-4xl font-bold text-[#0B6B4F] mb-8 text-center">
             Você pode estar perdendo dinheiro todos os dias sem perceber
@@ -134,7 +164,7 @@ const Index = () => {
               "Processos desorganizados",
               "Marketing sem retorno claro"
             ].map((item, i) => (
-              <div key={i} className="flex items-center gap-3 p-4 bg-white rounded-xl border-l-4 border-red-500 shadow-sm">
+              <div key={i} className="flex items-center gap-3 p-4 bg-[#F5F5F5] rounded-xl border-l-4 border-red-500 shadow-sm">
                 <XCircle className="h-5 w-5 text-red-500 shrink-0" />
                 <span className="font-semibold text-[#333]">{item}</span>
               </div>
@@ -148,7 +178,7 @@ const Index = () => {
       </section>
 
       {/* Diferencial */}
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-[#F5F5F5]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-[#0B6B4F] mb-6 leading-tight">
@@ -174,7 +204,7 @@ const Index = () => {
                 <Link 
                   key={i} 
                   to={item.path}
-                  className="flex items-center justify-between p-6 bg-[#F5F5F5] rounded-2xl shadow-sm hover:shadow-md transition-all border border-gray-100 group"
+                  className="flex items-center justify-between p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-all border border-gray-100 group"
                 >
                   <div className="flex items-center gap-4">
                     <div className="text-[#0B6B4F] group-hover:text-[#2ECC71] transition-colors">
@@ -189,14 +219,19 @@ const Index = () => {
           </div>
 
           <div className="flex flex-col items-center gap-6">
-            <Button 
-              onClick={() => window.open(whatsappLink, '_blank')}
-              size="lg" 
-              className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] px-10 py-7 text-lg font-bold rounded-xl shadow-xl transition-all hover:scale-105 w-full md:w-auto max-w-[350px]"
-            >
-              Quero um diagnóstico estratégico
-            </Button>
-            <Link to="/blog" className="text-[#2ECC71] font-bold flex items-center gap-2 hover:underline text-lg">
+            <div className="w-full flex flex-col items-center gap-3">
+              <Button 
+                onClick={() => window.open(whatsappLink, '_blank')}
+                size="lg" 
+                className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] px-10 py-7 text-lg font-bold rounded-xl shadow-xl transition-all hover:scale-105 w-full md:w-auto max-w-[350px]"
+              >
+                Quero um diagnóstico estratégico
+              </Button>
+              <p className="text-[10px] md:text-xs text-[#0B6B4F]/60 font-medium">
+                Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
+              </p>
+            </div>
+            <Link to="/blog" className="text-[#2ECC71] font-bold flex items-center gap-2 hover:underline text-lg text-center">
               Acesse nosso blog com dicas de gestão para clínicas odontológicas <ArrowRight size={20} />
             </Link>
           </div>
@@ -212,15 +247,18 @@ const Index = () => {
           <p className="text-lg mb-10 text-white/80 leading-relaxed">
             Se sua clínica já atende pacientes, mas o faturamento não cresce como deveria, o problema não está apenas na captação. Está na estrutura. O primeiro passo não é investir mais. É entender o que está travando através de uma estratégia para clínica odontológica sólida.
           </p>
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center gap-4">
             <Button 
               onClick={() => window.open(whatsappLink, '_blank')}
               size="lg" 
               className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-10 py-7 text-lg font-bold rounded-xl shadow-2xl transition-all hover:scale-105 flex items-center justify-center gap-3 w-full max-w-[350px] md:w-auto"
             >
               <MessageCircle className="h-5 w-5 shrink-0" />
-              Falar no WhatsApp
+              Falar com um consultor
             </Button>
+            <p className="text-[10px] md:text-xs text-white/60 font-medium">
+              Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
+            </p>
           </div>
         </div>
       </section>

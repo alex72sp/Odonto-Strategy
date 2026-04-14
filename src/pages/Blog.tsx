@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Blog = () => {
-  const message = encodeURIComponent("Olá, quero solicitar um diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nFaturamento médio:\nPrincipal dificuldade:");
+  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
   
   const posts = [
@@ -111,19 +111,24 @@ const Blog = () => {
             ))}
           </div>
 
-          <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-[#0B6B4F] mb-4">Quer aplicar essas estratégias na sua clínica?</h3>
-            <p className="text-gray-600 mb-8">
+          <div className="flex flex-col items-center text-center max-w-2xl mx-auto gap-4">
+            <h3 className="text-2xl font-bold text-[#0B6B4F] mb-2">Quer aplicar essas estratégias na sua clínica?</h3>
+            <p className="text-gray-600 mb-4">
               Nossa consultoria ajuda você a transformar conhecimento em resultados práticos e faturamento real.
             </p>
-            <Button 
-              onClick={() => window.open(whatsappLink, '_blank')}
-              size="lg"
-              className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] px-10 py-7 text-lg font-bold rounded-xl shadow-xl transition-all hover:scale-105 flex items-center gap-2"
-            >
-              Solicitar diagnóstico
-              <ArrowRight className="h-5 w-5" />
-            </Button>
+            <div className="w-full flex flex-col items-center gap-3">
+              <Button 
+                onClick={() => window.open(whatsappLink, '_blank')}
+                size="lg"
+                className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] px-10 py-7 text-lg font-bold rounded-xl shadow-xl transition-all hover:scale-105 flex items-center gap-2 w-full sm:w-auto"
+              >
+                Solicitar diagnóstico
+                <ArrowRight className="h-5 w-5" />
+              </Button>
+              <p className="text-[10px] md:text-xs text-[#0B6B4F]/60 font-medium">
+                Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
+              </p>
+            </div>
           </div>
         </div>
       </section>
