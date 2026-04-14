@@ -27,10 +27,10 @@ const Index = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-[#0B6B4F] text-white pt-32 pb-24 md:pt-48 md:pb-40 px-4">
+      <section className="relative overflow-hidden bg-[#0B6B4F] text-white pt-32 pb-20 md:pt-48 md:pb-40 px-4">
         <div className="max-w-6xl mx-auto text-center relative z-10">
-          <p className="text-sm md:text-base mb-6 text-white/80 max-w-2xl mx-auto">
-            A consultoria para dentistas é o caminho para clínicas que buscam aumentar faturamento dentista com organização e processos validados.
+          <p className="text-sm md:text-base mb-6 text-white/80 max-w-2xl mx-auto uppercase tracking-widest font-bold">
+            Consultoria Odontológica Estratégica Especializada
           </p>
           <Badge className="bg-[#2ECC71] text-[#0B6B4F] hover:bg-[#2ECC71] border-none mb-6 px-4 py-1 text-sm font-bold tracking-wider uppercase">
             Estratégia para clínica odontológica
@@ -40,13 +40,10 @@ const Index = () => {
             <span className="text-[#F4C542]">mas algo está travando o crescimento.</span>
           </h1>
           <p className="text-lg md:text-2xl font-medium mb-8 text-[#2ECC71] max-w-3xl mx-auto leading-relaxed">
-            Identificamos os pontos que estão limitando o crescimento da sua clínica e mostramos o caminho mais claro para melhorar resultados com mais consistência.
+            Identificamos os pontos que limitam o crescimento da sua <strong>clínica odontológica</strong> e mostramos o caminho para <strong>aumentar o faturamento odontológico</strong>.
           </p>
           
           <div className="flex flex-col items-center gap-4">
-            <p className="text-sm md:text-base text-white/90 font-medium italic">
-              Sem clareza do problema, qualquer tentativa de crescimento vira tentativa e erro.
-            </p>
             <div className="w-full flex flex-col items-center gap-3">
               <Button 
                 onClick={() => window.open(whatsappLink, '_blank')}
@@ -56,11 +53,8 @@ const Index = () => {
                 Quero um diagnóstico estratégico
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <p className="text-[10px] md:text-xs text-white/80 font-bold max-w-xs md:max-w-none">
-                Quanto mais tempo esses problemas continuam, maior tende a ser a perda de faturamento ao longo do tempo.
-              </p>
-              <p className="text-[10px] md:text-xs text-white/60 font-medium">
-                Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
+              <p className="text-[10px] md:text-xs text-white/80 font-bold">
+                O primeiro passo para uma <strong>gestão de clínica odontológica</strong> profissional.
               </p>
             </div>
           </div>
@@ -75,37 +69,31 @@ const Index = () => {
           </h2>
           <div className="space-y-4 text-lg md:text-xl text-[#333] leading-relaxed">
             <p>
-              Na maioria dos casos, o crescimento não acontece por falhas internas que passam despercebidas no dia a dia.
+              Na maioria dos casos, o crescimento não acontece por falhas internas na <strong>gestão de clínica odontológica</strong> que passam despercebidas no dia a dia.
             </p>
             <p>
-              Pode estar na conversão de pacientes, na forma como a agenda é organizada, nos processos internos ou na falta de uma estratégia clara.
-            </p>
-            <p className="font-bold text-[#0B6B4F]">
-              Sem identificar esses pontos, a clínica continua trabalhando muito, mas sem evoluir de forma consistente.
+              Pode estar na conversão, na organização da agenda ou na falta de uma <strong>consultoria odontológica estratégica</strong> clara.
             </p>
           </div>
         </div>
       </section>
 
       {/* Seção Franqueados */}
-      <section className="py-20 px-4 bg-white border-y border-gray-100">
+      <section className="py-16 md:py-24 px-4 bg-white border-y border-gray-100">
         <div className="max-w-5xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <div className="bg-[#F5F5F5] p-8 rounded-3xl border border-[#0B6B4F]/10 relative overflow-hidden">
                 <Building2 className="absolute -right-8 -bottom-8 h-48 w-48 text-[#0B6B4F]/5" />
                 <h2 className="text-2xl md:text-3xl font-bold text-[#0B6B4F] mb-6 leading-tight relative z-10">
-                  Clínicas odontológicas franqueadas também enfrentam limitações de crescimento
+                  Gestão de clínicas franqueadas odontológicas
                 </h2>
                 <div className="space-y-4 text-[#333] leading-relaxed relative z-10">
                   <p>
-                    Mesmo dentro de redes estruturadas, muitas clínicas franqueadas enfrentam desafios para crescer de forma consistente.
-                  </p>
-                  <p>
-                    Limitações operacionais, pouca autonomia e falta de clareza sobre indicadores acabam dificultando decisões estratégicas mais eficientes.
+                    Mesmo dentro de redes estruturadas, muitas clínicas franqueadas enfrentam desafios para crescer de forma consistente devido a processos engessados.
                   </p>
                   <p className="font-bold text-[#0B6B4F]">
-                    O diagnóstico estratégico identifica esses pontos com clareza e mostra caminhos possíveis dentro da realidade da operação.
+                    O <strong>diagnóstico para clínica odontológica</strong> identifica esses pontos e mostra caminhos possíveis dentro da sua realidade.
                   </p>
                 </div>
                 <Button 
@@ -133,14 +121,14 @@ const Index = () => {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-[#0B6B4F] mb-8 text-center">
-            Se você sente que sua clínica está assim
+            Sinais de que sua clínica precisa de ajuste
           </h2>
           <div className="grid md:grid-cols-2 gap-4 mb-8">
             {[
-              "atende bem, mas o faturamento não cresce como deveria",
-              "perde pacientes na hora de fechar orçamento",
-              "a agenda oscila ao longo do mês",
-              "não tem clareza dos números da clínica"
+              "Faturamento estagnado mesmo com muitos atendimentos",
+              "Baixa conversão de orçamentos de alto ticket",
+              "Agenda com muitos buracos e faltas constantes",
+              "Falta de clareza sobre os números reais do negócio"
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-3 p-4 bg-[#F5F5F5] rounded-xl border-l-4 border-[#2ECC71] shadow-sm">
                 <CheckCircle2 className="h-5 w-5 text-[#2ECC71] shrink-0" />
@@ -148,34 +136,31 @@ const Index = () => {
               </div>
             ))}
           </div>
-          <p className="text-base md:text-lg text-center text-[#333] leading-relaxed max-w-3xl mx-auto">
-            Se você se identificou com esses pontos, é bem provável que existam gargalos na operação que não estão visíveis no dia a dia.
-          </p>
         </div>
       </section>
 
-      {/* Bloco de Autoridade: O que é analisado */}
-      <section className="py-20 px-4 bg-[#F5F5F5]">
+      {/* Bloco de Autoridade */}
+      <section className="py-16 md:py-20 px-4 bg-[#F5F5F5]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0B6B4F] mb-4">
-              O que é analisado no diagnóstico estratégico
+              O que analisamos no diagnóstico estratégico
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Uma análise profunda para melhorar resultados clínica odontológica através de dados reais.
+              Uma análise profunda para melhorar resultados através de uma <strong>gestão de clínica odontológica</strong> baseada em dados.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               {[
-                "Faturamento atual da clínica",
-                "Conversão de pacientes em tratamentos",
-                "Organização da agenda",
-                "Processos internos",
-                "Pontos de perda de receita"
+                "Saúde financeira e margem de lucro",
+                "Taxa de conversão comercial",
+                "Eficiência operacional da equipe",
+                "Processos de recepção e atendimento",
+                "Gargalos invisíveis de faturamento"
               ].map((item, i) => (
-                <div key={i} className="flex items-center gap-4 p-4 bg-white rounded-xl border border-gray-100">
+                <div key={i} className="flex items-center gap-4 p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
                   <CheckCircle2 className="h-6 w-6 text-[#2ECC71] shrink-0" />
                   <span className="font-bold text-[#0B6B4F]">{item}</span>
                 </div>
@@ -183,69 +168,42 @@ const Index = () => {
             </div>
             <div className="bg-[#0B6B4F] p-8 rounded-3xl text-white shadow-xl">
               <p className="text-xl leading-relaxed mb-6">
-                O objetivo é identificar com clareza o que está travando o crescimento e quais ajustes fazem sentido para a realidade da clínica.
+                O objetivo é entregar clareza total sobre o que impede o seu <strong>aumento de faturamento odontológico</strong>.
               </p>
               <Button 
                 onClick={() => window.open(whatsappLink, '_blank')}
-                className="w-full bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] font-bold py-6 rounded-xl"
+                className="w-full bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] font-bold py-6 rounded-xl shadow-lg"
               >
-                Quero meu diagnóstico
+                Quero meu diagnóstico estratégico
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Bloco de Impacto Original Ajustado */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-4xl font-bold text-[#0B6B4F] mb-8 text-center">
-            Você pode estar perdendo dinheiro todos os dias sem perceber
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-4 mb-12">
-            {[
-              "Pacientes não fecham orçamento",
-              "Agenda ociosa na clínica odontológica",
-              "Processos desorganizados",
-              "Marketing sem retorno claro"
-            ].map((item, i) => (
-              <div key={i} className="flex items-center gap-3 p-4 bg-[#F5F5F5] rounded-xl border-l-4 border-red-500 shadow-sm">
-                <XCircle className="h-5 w-5 text-red-500 shrink-0" />
-                <span className="font-semibold text-[#333]">{item}</span>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-xl text-center font-bold text-[#0B6B4F]">
-            A gestão para clínicas odontológicas correta resolve gargalos estruturais antes de investir em captação.
-          </p>
-        </div>
-      </section>
-
       {/* Diferencial */}
-      <section className="py-20 px-4 bg-[#F5F5F5]">
+      <section className="py-16 md:py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-[#0B6B4F] mb-6 leading-tight">
-              Gestão de clínica odontológica focada em resultados
+              Consultoria Odontológica Estratégica
             </h2>
             <p className="text-base md:text-xl text-[#333333] max-w-3xl mx-auto leading-relaxed">
-              O mercado foca em execução, como tráfego e redes sociais. Nós atuamos antes disso. Analisamos a clínica, identificamos falhas e entregamos um plano claro para aumentar faturamento dentista.
+              Diferente de agências, nós atuamos na estrutura do seu negócio. Analisamos a clínica, identificamos falhas e entregamos um plano claro para <strong>aumentar faturamento dentista</strong>.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
-            <div className="bg-[#0B6B4F] p-8 rounded-3xl text-white shadow-xl h-full flex flex-col justify-center">
-              <p className="font-bold text-xl mb-4">Não executamos. Não operamos marketing. Não gerenciamos equipe.</p>
-              <p className="text-[#2ECC71] font-black text-2xl uppercase tracking-wider">Entregamos direção estratégica.</p>
-              <p className="mt-6 text-white/80">Consultoria para dentistas estratégica para clínicas que querem organizar antes de investir.</p>
+          <div className="grid md:grid-cols-2 gap-8 items-stretch mb-12">
+            <div className="bg-[#0B6B4F] p-8 rounded-3xl text-white shadow-xl flex flex-col justify-center">
+              <p className="font-bold text-xl mb-4">Foco em Direcionamento Estratégico.</p>
+              <p className="text-[#2ECC71] font-black text-2xl uppercase tracking-wider">Gestão de Clínica Odontológica Profissional.</p>
+              <p className="mt-6 text-white/80">Organizamos sua operação antes de você investir em captação, garantindo que cada lead seja aproveitado.</p>
             </div>
             <div className="grid grid-cols-1 gap-4">
               {[
-                { title: "Consultoria Odontológica", path: "/consultoria-odontologica", icon: <Target /> },
-                { title: "Gestão de Clínica", path: "/gestao-clinica-odontologica", icon: <BarChart3 /> },
-                { title: "Aumentar Faturamento", path: "/aumentar-faturamento-clinica-odontologica", icon: <TrendingUp /> }
+                { title: "Consultoria Estratégica", path: "/consultoria-odontologica", icon: <Target /> },
+                { title: "Gestão Profissional", path: "/gestao-clinica-odontologica", icon: <BarChart3 /> },
+                { title: "Aumento de Faturamento", path: "/aumentar-faturamento-clinica-odontologica", icon: <TrendingUp /> }
               ].map((item, i) => (
                 <Link 
                   key={i} 
@@ -264,50 +222,17 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-6">
-            <div className="w-full flex flex-col items-center gap-3">
-              <Button 
-                onClick={() => window.open(whatsappLink, '_blank')}
-                size="lg" 
-                className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] px-10 py-7 text-lg font-bold rounded-xl shadow-xl transition-all hover:scale-105 w-full md:w-auto max-w-[350px]"
-              >
-                Quero um diagnóstico estratégico
-              </Button>
-              <p className="text-[10px] md:text-xs text-[#0B6B4F]/60 font-medium">
-                Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
-              </p>
-            </div>
-            <Link to="/blog" className="text-[#2ECC71] font-bold flex items-center gap-2 hover:underline text-lg text-center">
-              Acesse nosso blog com dicas de gestão para clínicas odontológicas <ArrowRight size={20} />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action Final */}
-      <section className="py-24 px-4 bg-[#0B6B4F] relative overflow-hidden">
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white leading-tight">
-            Sua clínica odontológica está pronta para o próximo nível?
-          </h2>
-          <p className="text-lg mb-10 text-white/80 leading-relaxed">
-            Se sua clínica já atende pacientes, mas o faturamento não cresce como deveria, o problema não está apenas na captação. Está na estrutura. O primeiro passo não é investir mais. É entender o que está travando através de uma estratégia para clínica odontológica sólida.
-          </p>
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-8 mt-12">
             <Button 
               onClick={() => window.open(whatsappLink, '_blank')}
               size="lg" 
-              className="bg-[#F4C542] text-[#0B6B4F] hover:bg-[#E0B837] px-10 py-7 text-lg font-bold rounded-xl shadow-2xl transition-all hover:scale-105 flex items-center justify-center gap-3 w-full max-w-[350px] md:w-auto"
+              className="bg-[#0B6B4F] text-white hover:bg-[#0F8A5F] px-10 py-7 text-lg font-bold rounded-xl shadow-xl transition-all hover:scale-105 w-full md:w-auto max-w-[350px]"
             >
-              <MessageCircle className="h-5 w-5 shrink-0" />
-              Falar com um consultor
+              Solicitar diagnóstico estratégico
             </Button>
-            <p className="text-[10px] md:text-xs text-white/80 font-bold max-w-xs md:max-w-none">
-              Quanto mais tempo esses problemas continuam, maior tende a ser a perda de faturamento ao longo do tempo.
-            </p>
-            <p className="text-[10px] md:text-xs text-white/60 font-medium">
-              Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
-            </p>
+            <Link to="/blog" className="text-[#2ECC71] font-bold flex items-center gap-2 hover:underline text-lg text-center">
+              Dicas de gestão de clínica odontológica no nosso blog <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
       </section>
