@@ -77,7 +77,7 @@ const Blog = () => {
       excerpt: "Identifique os problemas silenciosos que impedem o sucesso e a profissionalização do seu consultório.",
       category: "Gestão",
       date: "12 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=800"
     },
     {
       slug: "melhorar-atendimento-clinica-odontologica",

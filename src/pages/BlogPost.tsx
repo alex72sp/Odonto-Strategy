@@ -152,7 +152,7 @@ const BlogPost = () => {
         alt: "consultório odontológico moderno",
         content: `
           <p>Muitos dentistas trabalham exaustivamente, mas percebem que o faturamento clínica odontológica baixo impede o crescimento real do negócio. O esforço clínico nem sempre se traduz em lucro líquido.</p>
-          <p>Para <a href='/aumentar-faturamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>aumentar faturamento dentista</a>, é preciso sair do operacional e olhar para a clínica como uma empresa.</p>
+          <p>Para <a href='/aumentar-faturamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>aumentar faturamento dentista</a>, é preciso sair do operacional e olhar para the clínica como uma empresa.</p>
           
           <h2>Por que o faturamento não cresce</h2>
           <p>A falta de controle financeiro impede que você saiba onde o dinheiro está sendo desperdiçado. Sem números claros, as decisões são baseadas em suposições.</p>
@@ -171,7 +171,7 @@ const BlogPost = () => {
       },
       "erros-gestao-clinica-odontologica": {
         title: "Erros na gestão de clínicas odontológicas que travam o crescimento",
-        image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1200",
         alt: "gestão de clínica odontológica",
         content: `
           <p>Existem problemas silenciosos que impedem o sucesso de muitos consultórios. Identificar os erros gestão clínica odontológica é o primeiro passo para a profissionalização.</p>
