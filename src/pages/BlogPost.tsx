@@ -9,7 +9,7 @@ import { ArrowLeft, MessageCircle, ArrowRight } from "lucide-react";
 
 const BlogPost = () => {
   const { slug } = useParams();
-  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:\n\nPode me dar um breve contexto da sua clínica?");
+  const message = encodeURIComponent("Olá! Quero entender o diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nBreve contexto:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   const getPostContent = (slug: string | undefined) => {
@@ -58,7 +58,7 @@ const BlogPost = () => {
           
           <h2>O erro de depender só de marketing</h2>
           <p>Marketing sem estrutura interna não resolve o problema. Se a recepção não converte o contato em agendamento, o investimento é desperdiçado.</p>
-          <p>A <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão para clínicas odontológicas</a> deve estar alinhada para receber a demanda. A organização deve vir antes da escala.</p>
+          <p>A <a href='/gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>gestão para clínicas odontológicas</a> deve estar alinhada para receber a demanda. A organization deve vir antes da escala.</p>
           
           <p>Reforce a importância de ter uma estratégia clara e uma organização impecável. O crescimento sustentável depende de uma base sólida.</p>
         `

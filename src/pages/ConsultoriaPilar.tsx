@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 
 const ConsultoriaPilar = () => {
-  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
+  const message = encodeURIComponent("Olá! Quero entender o diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nBreve contexto:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
@@ -64,7 +64,7 @@ const ConsultoriaPilar = () => {
                 "Aumento real da margem de lucro"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-sm font-medium text-[#0B6B4F]">
-                  <CheckCircle2 className="h-5 w-5 text-[#2ECC71]" />
+                  <CheckCircle2 className="h-5 w-5 text-[#2ECC71] shrink-0" />
                   {item}
                 </div>
               ))}

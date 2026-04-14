@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Search, AlertCircle, Target, CheckCircle2 } from "lucide-react";
 
 const Diagnostico = () => {
-  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
+  const message = encodeURIComponent("Olá! Quero entender o diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nBreve contexto:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
@@ -62,7 +62,7 @@ const Diagnostico = () => {
                   "Saúde financeira e margem de lucro"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm font-medium text-[#333]">
-                    <CheckCircle2 className="h-4 w-4 text-[#2ECC71]" />
+                    <CheckCircle2 className="h-4 w-4 text-[#2ECC71] shrink-0" />
                     {item}
                   </li>
                 ))}

@@ -9,7 +9,7 @@ import { ShieldCheck, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Consultoria = () => {
-  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
+  const message = encodeURIComponent("Olá! Quero entender o diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nBreve contexto:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
@@ -19,7 +19,7 @@ const Consultoria = () => {
       <section className="pt-32 pb-20 px-4 bg-[#0B6B4F] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-sm mb-6 text-white/80">
-            A consultoria para dentistas é essencial para clínicas que buscam aumentar faturamento dentista com organização e estratégia para clínica odontológica.
+            A consultoria para dentistas é essencial para clínicas que buscam aumentar faturamento dentista com organization e estratégia para clínica odontológica.
           </p>
           <h1 className="text-3xl md:text-5xl font-extrabold mb-6">Consultoria odontológica estratégica para clínicas</h1>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed">

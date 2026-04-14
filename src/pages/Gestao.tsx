@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { LayoutDashboard, Users, Calendar, ClipboardCheck } from "lucide-react";
 
 const Gestao = () => {
-  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
+  const message = encodeURIComponent("Olá! Quero entender o diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nBreve contexto:");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (

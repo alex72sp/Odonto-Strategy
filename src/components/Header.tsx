@@ -10,7 +10,7 @@ const Header = () => {
   const location = useLocation();
 
   const whatsappNumber = "5511983232828";
-  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:\n\nPode me dar um breve contexto da sua clínica?");
+  const message = encodeURIComponent("Olá! Quero entender o diagnóstico estratégico.\nNome:\nClínica:\nCidade:\nBreve contexto:");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
 
   const handleCtaClick = () => {
