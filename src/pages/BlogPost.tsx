@@ -101,7 +101,7 @@ const BlogPost = () => {
         alt: "dentista atendendo paciente em clínica odontológica",
         content: `
           <p>Muitas clínicas enfrentam the desafio de uma agenda inconsistente. Entender como conseguir mais pacientes odontologia é vital para a saúde do negócio.</p>
-          <p>Se sua clínica odontológica com poucos pacientes está estagnada, o problema pode ser estratégico e não apenas falta de marketing.</p>
+          <p>Se sua clínica odontológica com poucos pacientes está estagnada, o problema pode be estratégico e não apenas falta de marketing.</p>
           
           <h2>Por que sua clínica não atrai pacientes</h2>
           <p>Um posicionamento fraco impede que o público certo veja valor no seu serviço. Se você não se diferencia, acaba competindo apenas por preço baixo.</p>
@@ -171,7 +171,7 @@ const BlogPost = () => {
       },
       "erros-gestao-clinica-odontologica": {
         title: "Erros na gestão de clínicas odontológicas que travam o crescimento",
-        image: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1200",
+        image: "https://images.unsplash.com/photo-1583912267550-d44d2a3c7975?auto=format&fit=crop&q=80&w=1200",
         alt: "gestão de clínica odontológica",
         content: `
           <p>Existem problemas silenciosos que impedem o sucesso de muitos consultórios. Identificar os erros gestão clínica odontológica é o primeiro passo para a profissionalização.</p>
