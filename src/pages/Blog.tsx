@@ -15,6 +15,7 @@ const Blog = () => {
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
   
   const posts = [
+    // 3 ARTIGOS FRANQUEADOS
     {
       slug: "por-que-clinicas-franqueadas-tem-dificuldade-para-crescer",
       title: "Por que clínicas odontológicas franqueadas têm dificuldade para crescer mesmo com estrutura",
@@ -39,6 +40,7 @@ const Blog = () => {
       date: "23 Mai, 2024",
       image: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&q=80&w=800"
     },
+    // 6 ARTIGOS GERAIS
     {
       slug: "pacientes-nao-fecham-orcamento-clinica-odontologica",
       title: "Por que pacientes não fecham orçamento na sua clínica odontológica",
@@ -77,7 +79,7 @@ const Blog = () => {
       excerpt: "Identifique os problemas silenciosos que impedem o sucesso e a profissionalização do seu consultório.",
       category: "Gestão",
       date: "12 Mai, 2024",
-      image: "https://images.unsplash.com/photo-1583912267550-d44d2a3c7975?auto=format&fit=crop&q=80&w=800"
+      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=800"
     },
     {
       slug: "melhorar-atendimento-clinica-odontologica",
