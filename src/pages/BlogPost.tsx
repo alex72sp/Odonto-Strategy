@@ -9,7 +9,7 @@ import { ArrowLeft, MessageCircle, ArrowRight } from "lucide-react";
 
 const BlogPost = () => {
   const { slug } = useParams();
-  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
+  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:\n\nPode me dar um breve contexto da sua clínica?");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   const getPostContent = (slug: string | undefined) => {
@@ -29,7 +29,7 @@ const BlogPost = () => {
           
           <h2>Como melhorar a conversão de pacientes</h2>
           <p>A abordagem correta começa na escuta ativa. Entenda as dores do paciente antes de apresentar a solução técnica. Use uma explicação simples e evite termos excessivamente técnicos que geram confusão.</p>
-          <p>A condução do atendimento deve levar o paciente a uma decisão. Ofereça opções de pagamento claras e reforce os riscos de não realizar o tratamento agora.</p>
+          <p>A condução do atendimento deve levar o paciente a uma decisão. Ofereça opções de pagamento claras e reforce os riscos de não realizar o tratamento agora. Veja também <a href='/blog/como-encher-agenda-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>como encher a agenda da sua clínica</a> com estratégia.</p>
           
           <h2>O impacto disso no faturamento</h2>
           <p>Pequenos ajustes na taxa de conversão podem gerar grandes saltos no lucro. Quando você otimiza o processo de vendas, cada hora de cadeira se torna muito mais valiosa.</p>
@@ -53,7 +53,7 @@ const BlogPost = () => {
           
           <h2>Estratégias que realmente funcionam</h2>
           <p>Estar presente no Google garante que você seja encontrado no momento exato da busca. O Google Meu Negócio é uma ferramenta indispensável para atrair pacientes odontológicos.</p>
-          <p>Redes sociais com posicionamento correto geram autoridade e confiança. Mostre os bastidores e a segurança que sua clínica oferece.</p>
+          <p>Redes sociais com posicionamento correto geram autoridade e confiança. Mostre os bastidores e a segurança que sua clínica oferece. Aprenda também <a href='/blog/como-encher-agenda-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>como lotar sua agenda</a> com inteligência.</p>
           <p>A indicação de pacientes satisfeitos continua sendo uma ferramenta poderosa. Estimule seus pacientes atuais a recomendarem seu trabalho.</p>
           
           <h2>O erro de depender só de marketing</h2>
@@ -79,7 +79,7 @@ const BlogPost = () => {
           <h2>Como organizar a agenda corretamente</h2>
           <p>O controle de horários deve ser rigoroso e preferencialmente digital. Isso permite uma visão clara da ocupação da clínica em tempo real.</p>
           <p>A previsibilidade permite antecipar buracos na semana e agir antes que eles aconteçam. Use listas de espera para preencher cancelamentos de última hora.</p>
-          <p>Um fluxo de atendimento bem definido otimiza o tempo do dentista. Garanta que o profissional esteja focado apenas no atendimento clínico.</p>
+          <p>Um fluxo de atendimento bem definido otimiza o tempo do dentista. Garanta que o profissional esteja focado apenas no atendimento clínico. Confira como <a href='/blog/aumentar-faturamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>aumentar o faturamento</a> através da organização.</p>
           
           <h2>Como aumentar a ocupação da agenda</h2>
           <p>Melhorar a conversão de orçamentos é o caminho mais rápido para aumentar ocupação clínica odontológica. Treine sua equipe para o fechamento.</p>
@@ -102,7 +102,7 @@ const BlogPost = () => {
           <p>A ausência de uma estratégia comercial faz com que a clínica dependa apenas da sorte. Além disso, a baixa conversão de orçamentos altos trava o ticket médio do consultório.</p>
           
           <h2>O que realmente impacta o faturamento</h2>
-          <p>A organização interna permite que a equipe produza mais em menos tempo. Processos bem definidos na recepção e no consultório reduzem custos e aumentam a percepção de valor.</p>
+          <p>A organização interna permite que a equipe produza mais em menos tempo. Processos bem definidos na recepção e no consultório reduzem custos e aumentam a percepção de valor. Entenda os <a href='/blog/erros-gestao-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>erros de gestão</a> que podem estar travando seu lucro.</p>
           <p>O posicionamento correto atrai pacientes que valorizam a qualidade e não apenas o preço. Isso é fundamental para elevar a margem de lucro de cada procedimento.</p>
           
           <h2>Como estruturar crescimento sustentável</h2>
@@ -123,7 +123,7 @@ const BlogPost = () => {
           <h2>Principais erros na gestão</h2>
           <p>A falta de processos padronizados gera confusão na equipe e insatisfação no paciente. Sem um manual de conduta, cada um trabalha de um jeito diferente.</p>
           <p>A ausência de controle financeiro rigoroso é um erro fatal. Misturar contas pessoais com as da clínica impede a visão real da lucratividade.</p>
-          <p>Um atendimento desorganizado na recepção faz com que leads qualificados sejam perdidos por demora ou falta de preparo da equipe.</p>
+          <p>Um atendimento desorganizado na recepção faz com que leads qualificados sejam perdidos por demora ou falta de preparo da equipe. Veja <a href='/blog/melhorar-atendimento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>como melhorar seu atendimento</a> agora.</p>
           
           <h2>Como esses erros impactam o faturamento</h2>
           <p>A desorganização gera retrabalho e desperdício de materiais. Além disso, a perda de pacientes por falhas de comunicação reduz drasticamente o potencial de ganho da clínica.</p>
@@ -148,7 +148,7 @@ const BlogPost = () => {
           
           <h2>Erros comuns no atendimento odontológico</h2>
           <p>A falta de atenção aos detalhes na recepção pode afastar o paciente logo no primeiro contato. Uma comunicação ruim ou fria gera uma percepção de descaso.</p>
-          <p>A ausência de condução durante a jornada do paciente faz com que ele se sinta perdido. O paciente precisa ser guiado desde o agendamento até o pós-operatório.</p>
+          <p>A ausência de condução durante a jornada do paciente faz com que ele se sinta perdido. O paciente precisa ser guiado desde o agendamento até o pós-operatório. Entenda por que <a href='/blog/pacientes-nao-fecham-orcamento-clinica-odontologica' class='text-[#0B6B4F] font-bold hover:underline'>pacientes não fecham orçamentos</a> na sua clínica.</p>
           
           <h2>Como melhorar o atendimento e converter mais</h2>
           <p>Pratique a escuta ativa para entender as reais necessidades e dores do paciente. Uma explicação clara sobre o tratamento, sem termos técnicos excessivos, facilita a compreensão do valor.</p>

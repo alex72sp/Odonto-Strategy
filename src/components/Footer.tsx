@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { MadeWithDyad } from "@/components/made-with-dyad";
 
 const Footer = () => {
-  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
+  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:\n\nPode me dar um breve contexto da sua clínica?");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (

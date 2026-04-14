@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 const Index = () => {
-  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:");
+  const message = encodeURIComponent("Olá, gostaria de entender melhor como funciona o diagnóstico estratégico.\n\nNome:\nClínica:\nCidade:\n\nPode me dar um breve contexto da sua clínica?");
   const whatsappLink = `https://wa.me/5511983232828?text=${message}`;
 
   return (
@@ -55,6 +55,9 @@ const Index = () => {
                 Quero um diagnóstico estratégico
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+              <p className="text-[10px] md:text-xs text-white/80 font-bold max-w-xs md:max-w-none">
+                Quanto mais tempo esses problemas continuam, maior tende a ser a perda de faturamento ao longo do tempo.
+              </p>
               <p className="text-[10px] md:text-xs text-white/60 font-medium">
                 Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
               </p>
@@ -256,6 +259,9 @@ const Index = () => {
               <MessageCircle className="h-5 w-5 shrink-0" />
               Falar com um consultor
             </Button>
+            <p className="text-[10px] md:text-xs text-white/80 font-bold max-w-xs md:max-w-none">
+              Quanto mais tempo esses problemas continuam, maior tende a ser a perda de faturamento ao longo do tempo.
+            </p>
             <p className="text-[10px] md:text-xs text-white/60 font-medium">
               Indicado para clínicas odontológicas que já estão em operação e buscam melhorar resultados.
             </p>
