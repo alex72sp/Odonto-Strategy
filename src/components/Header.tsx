@@ -21,6 +21,7 @@ const Header = () => {
     { name: 'Início', path: '/' },
     { name: 'Consultoria', path: '/consultoria-odontologica' },
     { name: 'Gestão', path: '/gestao-clinica-odontologica' },
+    { name: 'Trajetória', path: '/nossa-trajetoria-clinicas-odontologicas' },
     { name: 'Blog', path: '/blog' },
   ];
 

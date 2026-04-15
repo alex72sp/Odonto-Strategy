@@ -12,6 +12,7 @@ import Diagnostico from "./pages/Diagnostico";
 import ConsultoriaPilar from "./pages/ConsultoriaPilar";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import Trajetoria from "./pages/Trajetoria";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/consultoria-odontologica-completa" element={<ConsultoriaPilar />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/nossa-trajetoria-clinicas-odontologicas" element={<Trajetoria />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

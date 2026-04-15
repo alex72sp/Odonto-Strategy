@@ -29,6 +29,7 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-white transition-colors">Início</Link></li>
               <li><Link to="/consultoria-odontologica" className="hover:text-white transition-colors">Consultoria</Link></li>
               <li><Link to="/gestao-clinica-odontologica" className="hover:text-white transition-colors">Gestão</Link></li>
+              <li><Link to="/nossa-trajetoria-clinicas-odontologicas" className="hover:text-white transition-colors">Trajetória</Link></li>
               <li><Link to="/blog" className="hover:text-white transition-colors">Blog</Link></li>
             </ul>
           </div>
