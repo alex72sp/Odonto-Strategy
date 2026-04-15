@@ -32,10 +32,18 @@ const Trajetoria = () => {
           <h1 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight">
             A maioria das clínicas odontológicas não cresce por falhas de gestão, não por falta de pacientes
           </h1>
-          <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-3xl mx-auto">
-            A Odonto Strategy nasce da experiência prática dentro da operação, identificando falhas que impedem o crescimento mesmo quando há demanda.
-          </p>
-          <div className="flex flex-col items-center gap-3">
+          <div className="space-y-4 mb-10">
+            <p className="text-lg md:text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
+              A Odonto Strategy nasce da experiência prática dentro da operação, identificando falhas que impedem o crescimento mesmo quando há demanda.
+            </p>
+            <p className="text-lg md:text-xl font-bold text-[#2ECC71] leading-relaxed max-w-3xl mx-auto">
+              "Se sua clínica atende bem, mas não cresce, o problema pode estar na operação — não na demanda."
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-sm md:text-base text-white/70 font-medium">
+              Em poucos minutos é possível identificar os principais gargalos da sua clínica.
+            </p>
             <Button 
               onClick={() => window.open(whatsappLink, '_blank')}
               size="lg"
@@ -101,7 +109,7 @@ const Trajetoria = () => {
               <h2 className="text-2xl font-bold text-[#0B6B4F] mb-8 mt-0">O que essa experiência permite</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "Identificar falhas operacionais em clínicas odontológicas",
+                  "Identificar rapidamente falhas que estão travando o crescimento da clínica odontológica",
                   "Melhorar a conversão de pacientes em tratamentos",
                   "Organizar processos internos e padronizar a operação",
                   "Aumentar o faturamento da clínica odontológica com a estrutura atual",
@@ -126,7 +134,7 @@ const Trajetoria = () => {
 
             <div className="bg-[#F5F5F5] p-8 rounded-2xl border-l-4 border-[#2ECC71] mb-12">
               <p className="text-lg font-bold text-[#0B6B4F] m-0">
-                Essa experiência permite uma análise rápida e objetiva da clínica odontológica, identificando exatamente o que precisa ser ajustado para melhorar os resultados.
+                Essa experiência permite uma análise rápida, objetiva e baseada na realidade da clínica odontológica, identificando exatamente o que precisa ser ajustado para melhorar faturamento, conversão e organização.
               </p>
             </div>
           </div>
